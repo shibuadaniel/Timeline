@@ -1,6 +1,7 @@
 export type SceneDTO = {
   id: string;
   url: string;
+  sourceUrl: string | null;
   sceneDescription: string;
   yearRaw: string | null;
   sequence: number | null;

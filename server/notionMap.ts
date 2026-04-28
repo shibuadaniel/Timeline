@@ -3,6 +3,7 @@ import { NOTION_PROPS } from "./notionProperties.js";
 export type SceneDTO = {
   id: string;
   url: string;
+  sourceUrl: string | null;
   sceneDescription: string;
   yearRaw: string | null;
   sequence: number | null;
@@ -87,6 +88,7 @@ export function mapPageToScene(page: unknown): SceneDTO | null {
   return {
     id: page.id,
     url: notionPageUrl(page.id),
+    sourceUrl: null,
     sceneDescription,
     yearRaw,
     sequence: numberVal(

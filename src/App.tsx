@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   CartesianGrid,
   Customized,
@@ -37,6 +37,11 @@ export default function App() {
   const [error, setError] = useState<string | null>(null);
   const [locFilter, setLocFilter] = useState<string>("all");
   const [stageFilter, setStageFilter] = useState<string>("all");
+  const [selectedSceneId, setSelectedSceneId] = useState<string | null>(null);
+  const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
+  const [popupViewportPos, setPopupViewportPos] = useState<{ left: number; top: number } | null>(null);
+  const chartCardRef = useRef<HTMLDivElement | null>(null);
+  const popupRef = useRef<HTMLDivElement | null>(null);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -62,6 +67,23 @@ export default function App() {
   useEffect(() => {
     void load();
   }, [load]);
+
+  useEffect(() => {
+    const onDocumentPointerDown = (event: PointerEvent) => {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      if (target.closest(".click-popup")) return;
+      if (target.closest(".timeline-dot")) return;
+      setSelectedSceneId(null);
+      setPopupPos(null);
+      setPopupViewportPos(null);
+    };
+
+    document.addEventListener("pointerdown", onDocumentPointerDown);
+    return () => {
+      document.removeEventListener("pointerdown", onDocumentPointerDown);
+    };
+  }, []);
 
   const { plottedRaw, needsYear } = useMemo(() => {
     if (!scenes)
@@ -151,6 +173,8 @@ export default function App() {
         locations: p.locations,
         onStage: p.onStage,
         sequence: p.sequence,
+        sourceUrl: p.sourceUrl,
+        url: p.url,
       };
     });
   }, [plotted, ordered, otherLabel]);
@@ -167,6 +191,49 @@ export default function App() {
   }, [ordered, otherLabel, plottedRaw]);
 
   const hasShownAbout = chartData.some((d) => d.flags.about);
+  const selectedScene = selectedSceneId
+    ? chartData.find((d) => d.id === selectedSceneId) ?? null
+    : null;
+
+  useLayoutEffect(() => {
+    if (!selectedScene || !popupPos || !chartCardRef.current || !popupRef.current) {
+      setPopupViewportPos(null);
+      return;
+    }
+
+    const compute = () => {
+      const margin = 8;
+      const offset = 10;
+      const cardRect = chartCardRef.current!.getBoundingClientRect();
+      const popupRect = popupRef.current!.getBoundingClientRect();
+
+      let left = cardRect.left + popupPos.x + offset;
+      let top = cardRect.top + popupPos.y + offset;
+
+      if (left + popupRect.width > window.innerWidth - margin) {
+        left = cardRect.left + popupPos.x - popupRect.width - offset;
+      }
+      if (top + popupRect.height > window.innerHeight - margin) {
+        top = cardRect.top + popupPos.y - popupRect.height - offset;
+      }
+
+      left = Math.max(margin, Math.min(left, window.innerWidth - popupRect.width - margin));
+      top = Math.max(margin, Math.min(top, window.innerHeight - popupRect.height - margin));
+
+      setPopupViewportPos((prev) => {
+        if (prev && prev.left === left && prev.top === top) return prev;
+        return { left, top };
+      });
+    };
+
+    compute();
+    window.addEventListener("resize", compute);
+    window.addEventListener("scroll", compute, true);
+    return () => {
+      window.removeEventListener("resize", compute);
+      window.removeEventListener("scroll", compute, true);
+    };
+  }, [selectedScene, popupPos]);
 
   return (
     <div className="app">
@@ -217,7 +284,7 @@ export default function App() {
       {error ? <div className="error">{error}</div> : null}
 
       <div className="layout">
-        <div className="chart-card">
+        <div className="chart-card" ref={chartCardRef}>
           <p className="chart-head">Timeline (Year → horizontal position)</p>
           {chartData.length === 0 ? (
             <p className="muted">
@@ -250,6 +317,7 @@ export default function App() {
                 <ReferenceLine x={0} stroke="#94a3b8" strokeDasharray="4 4" />
                 <Tooltip
                   cursor={{ strokeDasharray: "3 3" }}
+                  active={false}
                   content={({ active, payload }) => {
                     if (!active || !payload?.length) return null;
                     const d = payload[0].payload as (typeof chartData)[number];
@@ -287,6 +355,13 @@ export default function App() {
                 />
                 <Scatter
                   data={chartData}
+                  onClick={(point) => {
+                    if (!point?.id) return;
+                    setSelectedSceneId(point.id);
+                    if (typeof point.cx === "number" && typeof point.cy === "number") {
+                      setPopupPos({ x: point.cx, y: point.cy });
+                    }
+                  }}
                   shape={(props: {
                     cx?: number;
                     cy?: number;
@@ -296,6 +371,7 @@ export default function App() {
                     if (cx == null || cy == null) return null;
                     return (
                       <circle
+                        className="timeline-dot"
                         cx={cx}
                         cy={cy}
                         r={7}
@@ -309,6 +385,43 @@ export default function App() {
               </ScatterChart>
             </ResponsiveContainer>
           )}
+          {selectedScene ? (
+            <div
+              ref={popupRef}
+              className="tooltip-box click-popup"
+              style={popupViewportPos ? { left: `${popupViewportPos.left}px`, top: `${popupViewportPos.top}px` } : undefined}
+              onClick={() =>
+                window.open(selectedScene.sourceUrl || selectedScene.url, "_blank", "noopener")
+              }
+            >
+              <div className="tooltip-title">{selectedScene.sceneDescription}</div>
+              <div>
+                <strong>Year:</strong> {selectedScene.yearRaw}
+                {flagSuffix(selectedScene.flags) ? (
+                  <span
+                    className="flags"
+                    style={selectedScene.flags.about ? FLAG_ABOUT_STYLE : undefined}
+                  >
+                    {flagSuffix(selectedScene.flags)}
+                  </span>
+                ) : null}
+              </div>
+              <div>
+                <strong>Location:</strong>{" "}
+                {selectedScene.locations.length ? selectedScene.locations.join(", ") : "—"}
+              </div>
+              <div>
+                <strong>On stage:</strong>{" "}
+                {selectedScene.onStage.length ? selectedScene.onStage.join(", ") : "—"}
+              </div>
+              {selectedScene.sequence != null ? (
+                <div className="muted">Sequence # {selectedScene.sequence}</div>
+              ) : null}
+              <div className="muted" style={{ marginTop: "0.25rem" }}>
+                Click popup to open source
+              </div>
+            </div>
+          ) : null}
           {chartData.length > 0 ? (
             <div className="legend" aria-label="Location colors">
               {legendItems.map((item) => (
@@ -353,6 +466,7 @@ export default function App() {
           )}
         </div>
       </div>
+
     </div>
   );
 }

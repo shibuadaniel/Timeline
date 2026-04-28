@@ -86,6 +86,10 @@
   box-shadow: 0 1px 2px rgb(15 23 42 / 4%);
 }
 
+.chart-card {
+  position: relative;
+}
+
 .chart-head {
   font-size: 0.8rem;
   font-weight: 600;
@@ -108,7 +112,7 @@
 }
 
 .needs-list li {
-  padding: 0.45rem 0;
+  padding: 0.35rem 0;
   border-bottom: 1px solid #f1f5f9;
 }
 
@@ -151,6 +155,17 @@
   box-shadow: 0 4px 12px rgb(15 23 42 / 12%);
 }
 
+.tooltip-clickable {
+  cursor: pointer;
+}
+
+.click-popup {
+  position: fixed;
+  z-index: 20;
+  width: min(320px, calc(100% - 1rem));
+  cursor: pointer;
+}
+
 .tooltip-title {
   font-weight: 600;
   margin-bottom: 0.35rem;
@@ -159,4 +174,39 @@
 .muted {
   color: #64748b;
   font-size: 0.75rem;
+}
+
+.drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: min(560px, 92vw);
+  background: #fff;
+  border-left: 1px solid #e2e8f0;
+  box-shadow: -8px 0 30px rgb(15 23 42 / 12%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 0.75rem;
+}
+
+.drawer-actions {
+  padding: 0.65rem 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.drawer-frame {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
 }

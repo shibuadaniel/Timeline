@@ -1,12 +1,13 @@
 {
   "version": "v1",
-  "generatedAt": "2026-04-28T16:48:39.586Z",
+  "generatedAt": "2026-04-28T18:20:48.113Z",
   "source": "notion",
   "recordCount": 20,
   "records": [
     {
       "id": "350cb257-e13c-81cd-b96d-c5aaa75243a1",
       "url": "https://www.notion.so/350cb257e13c81cdb96dc5aaa75243a1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:1-1:21:7",
       "sceneDescription": "G21:1-7 Birth of Isaac",
       "yearRaw": "1918 BCE",
       "sequence": 100,
@@ -22,6 +23,7 @@
     {
       "id": "350cb257-e13c-8152-867b-f5337101287a",
       "url": "https://www.notion.so/350cb257e13c8152867bf5337101287a",
+      "sourceUrl": "https://www.notion.so/350cb257e13c81b9b6c8e087d00127c3",
       "sceneDescription": "G21:8-9 Ishmael mocks Isaac",
       "yearRaw": "1913 BCE",
       "sequence": 101,
@@ -37,6 +39,7 @@
     {
       "id": "350cb257-e13c-81c9-8c26-cd94e6e0dba1",
       "url": "https://www.notion.so/350cb257e13c81c98c26cd94e6e0dba1",
+      "sourceUrl": null,
       "sceneDescription": "G21:10-13 Sarah asking Abraham to drive out Hagar",
       "yearRaw": "1913 BCE",
       "sequence": 103,
@@ -51,6 +54,7 @@
     {
       "id": "350cb257-e13c-81bd-9393-f741a02c2461",
       "url": "https://www.notion.so/350cb257e13c81bd9393f741a02c2461",
+      "sourceUrl": null,
       "sceneDescription": "G21:14-19 Hagar being driven out",
       "yearRaw": "1913 BCE",
       "sequence": 104,
@@ -65,6 +69,7 @@
     {
       "id": "350cb257-e13c-815c-843a-ff3678fce99a",
       "url": "https://www.notion.so/350cb257e13c815c843aff3678fce99a",
+      "sourceUrl": null,
       "sceneDescription": "G21:20-21 Hagar and Ishmael settles down",
       "yearRaw": "1913 BCE",
       "sequence": 105,
@@ -79,6 +84,7 @@
     {
       "id": "350cb257-e13c-815e-8598-f8c4f703dfc1",
       "url": "https://www.notion.so/350cb257e13c815e8598f8c4f703dfc1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:22-1:22:32",
       "sceneDescription": "G21:22-32 Abraham’s covenant with Abimelech (King of Gerar)",
       "yearRaw": "1913 BCE (About)",
       "sequence": 106,
@@ -94,6 +100,7 @@
     {
       "id": "350cb257-e13c-81e5-b417-e5acf0fbcfcc",
       "url": "https://www.notion.so/350cb257e13c81e5b417e5acf0fbcfcc",
+      "sourceUrl": null,
       "sceneDescription": "G21:33-34 Abraham plants a tamarisk tree at Beersheba",
       "yearRaw": "1913 BCE (About)",
       "sequence": 107,
@@ -107,6 +114,7 @@
     {
       "id": "350cb257-e13c-8172-a153-ce521b7b7780",
       "url": "https://www.notion.so/350cb257e13c8172a153ce521b7b7780",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:1-1:22:8",
       "sceneDescription": "G22:1-8 Jehovah puts Abraham to the test",
       "yearRaw": "1893 BCE (About)",
       "sequence": 108,
@@ -122,6 +130,7 @@
     {
       "id": "350cb257-e13c-818b-ae4d-fffe37401ba1",
       "url": "https://www.notion.so/350cb257e13c818bae4dfffe37401ba1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:9-1:22:13",
       "sceneDescription": "G22:9-13 Jehovah’s angel stops Abraham from sacrificing Isaac",
       "yearRaw": "1893 BCE (About)",
       "sequence": 109,
@@ -136,6 +145,7 @@
     {
       "id": "350cb257-e13c-8169-80c5-eeb326d21fc5",
       "url": "https://www.notion.so/350cb257e13c816980c5eeb326d21fc5",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:15-1:22:19",
       "sceneDescription": "G22:15-19 Jehovah blessing Abraham",
       "yearRaw": "1893 BCE (About)",
       "sequence": 110,
@@ -152,6 +162,7 @@
     {
       "id": "350cb257-e13c-8182-bc85-e80e22ec9981",
       "url": "https://www.notion.so/350cb257e13c8182bc85e80e22ec9981",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:20-1:22:24",
       "sceneDescription": "G22:20-24 Rebekah’s family",
       "yearRaw": "1893 BCE (After)",
       "sequence": 111,
@@ -165,6 +176,7 @@
     {
       "id": "350cb257-e13c-81d4-931d-dc4c6619fba0",
       "url": "https://www.notion.so/350cb257e13c81d4931ddc4c6619fba0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/23#study=discover&v=1:23:1-1:23:2",
       "sceneDescription": "G23:1-2 Abraham mourns the death of Sarah",
       "yearRaw": "1881 BCE",
       "sequence": 112,
@@ -179,6 +191,7 @@
     {
       "id": "350cb257-e13c-81fa-9480-d065f5a263ca",
       "url": "https://www.notion.so/350cb257e13c81fa9480d065f5a263ca",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/23#study=discover&v=1:23:3-1:23:20",
       "sceneDescription": "G23:3–20 Abraham buys the cave at Machpelah to bury Sarah",
       "yearRaw": "1881 BCE",
       "sequence": 113,
@@ -194,6 +207,7 @@
     {
       "id": "350cb257-e13c-815e-b64c-e09af844df20",
       "url": "https://www.notion.so/350cb257e13c815eb64ce09af844df20",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:1-1:24:14",
       "sceneDescription": "G24:1-11 Abraham instructs his servant and sends him to Mesopotamia",
       "yearRaw": "1881 BCE (After)",
       "sequence": 114,
@@ -208,6 +222,7 @@
     {
       "id": "350cb257-e13c-8136-988e-d3c2086bef63",
       "url": "https://www.notion.so/350cb257e13c8136988ed3c2086bef63",
+      "sourceUrl": null,
       "sceneDescription": "G24:12-14 Eliezer’s prayer to Jehovah",
       "yearRaw": "1878 BCE (After)",
       "sequence": 115,
@@ -221,6 +236,7 @@
     {
       "id": "350cb257-e13c-8191-a3cb-da8ae8b46166",
       "url": "https://www.notion.so/350cb257e13c8191a3cbda8ae8b46166",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:15-1:24:27",
       "sceneDescription": "G24:15-27 Abraham’s servant meets Rebekah and her family",
       "yearRaw": "1878 BCE (Before)",
       "sequence": 116,
@@ -234,6 +250,7 @@
     {
       "id": "350cb257-e13c-8183-93dd-e96464b673df",
       "url": "https://www.notion.so/350cb257e13c818393dde96464b673df",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:28-1:24:33",
       "sceneDescription": "G24:28-33 Rebekah relates meeting the stranger at the well to her family",
       "yearRaw": "1878 BCE (Before)",
       "sequence": 117,
@@ -251,6 +268,7 @@
     {
       "id": "350cb257-e13c-819d-90f0-f52686bf1182",
       "url": "https://www.notion.so/350cb257e13c819d90f0f52686bf1182",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:34-1:24:58",
       "sceneDescription": "G24:34-61 Abraham’s servant returning with Rebekah from Mesopotamia ",
       "yearRaw": "1878 BCE (Before)",
       "sequence": 118,
@@ -267,6 +285,7 @@
     {
       "id": "350cb257-e13c-8184-9a0e-c90c675bbf54",
       "url": "https://www.notion.so/350cb257e13c81849a0ec90c675bbf54",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:62-1:24:67",
       "sceneDescription": "G24:62-67 Isaac meets Rebekah",
       "yearRaw": "1878 BCE",
       "sequence": 119,
@@ -282,6 +301,7 @@
     {
       "id": "350cb257-e13c-813f-a652-cb208951e8ca",
       "url": "https://www.notion.so/350cb257e13c813fa652cb208951e8ca",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:1-1:25:6",
       "sceneDescription": "G25:1-6 Abraham takes Keturah as wife ",
       "yearRaw": "1878 BCE (About)",
       "sequence": 120,
