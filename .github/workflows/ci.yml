@@ -45,9 +45,7 @@ jobs:
     runs-on: ubuntu-latest
     if: >
       github.ref == 'refs/heads/main' &&
-      (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') &&
-      secrets.NOTION_API_KEY != '' &&
-      secrets.NOTION_DATABASE_ID != ''
+      (github.event_name == 'push' || github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
     permissions:
       contents: read
       pages: write
@@ -67,6 +65,16 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Ensure Notion secrets are configured
+        env:
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+        run: |
+          if [ -z "$NOTION_API_KEY" ] || [ -z "$NOTION_DATABASE_ID" ]; then
+            echo "Missing NOTION_API_KEY or NOTION_DATABASE_ID repository secrets."
+            exit 1
+          fi
 
       - name: Build public bundle (ingest + SPA)
         env:
