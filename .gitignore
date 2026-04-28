@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Env
+.env
+.env.*.local
+
+# Editor
+.DS_Store
+*.sw?
+
+# TS
+*.tsbuildinfo
+
+# Generated data artifacts (keep latest + manifest)
+public/data/snapshot.*.json

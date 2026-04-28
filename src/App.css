@@ -1,0 +1,162 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+.app h1 {
+  font-size: 1.35rem;
+  font-weight: 650;
+  margin: 0 0 0.35rem;
+}
+
+.sub {
+  color: #475569;
+  font-size: 0.9rem;
+  margin: 0 0 1.25rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.toolbar label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.toolbar select {
+  min-width: 11rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+}
+
+.btn {
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background: #f1f5f9;
+}
+
+.error {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.layout {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr 280px;
+    align-items: start;
+  }
+}
+
+.chart-card,
+.side-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: 0 1px 2px rgb(15 23 42 / 4%);
+}
+
+.chart-head {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+  margin: 0 0 0.5rem;
+}
+
+.side-card h2 {
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem;
+}
+
+.needs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 420px;
+  overflow: auto;
+  font-size: 0.85rem;
+}
+
+.needs-list li {
+  padding: 0.45rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.needs-list li:last-child {
+  border-bottom: none;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+}
+
+.flags {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.tooltip-box {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.8rem;
+  max-width: 240px;
+  box-shadow: 0 4px 12px rgb(15 23 42 / 12%);
+}
+
+.tooltip-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 0.75rem;
+}
