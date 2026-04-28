@@ -31,6 +31,26 @@ function flagSuffix(flags: { after: boolean; before: boolean; about: boolean }) 
   return ` (${parts.join(", ")})`;
 }
 
+function splitSceneDescription(sceneDescription: string): {
+  tags: string[];
+  title: string;
+} {
+  const trimmed = sceneDescription.trim();
+  if (!trimmed) return { tags: [], title: "Untitled" };
+
+  const firstSpace = trimmed.indexOf(" ");
+  if (firstSpace === -1) return { tags: [trimmed], title: "" };
+
+  const firstToken = trimmed.slice(0, firstSpace).trim();
+  const title = trimmed.slice(firstSpace + 1).trim();
+  const tags = firstToken
+    .split(",")
+    .map((token) => token.trim())
+    .filter(Boolean);
+
+  return { tags, title };
+}
+
 export default function App() {
   const [scenes, setScenes] = useState<SceneDTO[] | null>(null);
   const [loading, setLoading] = useState(false);
@@ -193,6 +213,9 @@ export default function App() {
   const hasShownAbout = chartData.some((d) => d.flags.about);
   const selectedScene = selectedSceneId
     ? chartData.find((d) => d.id === selectedSceneId) ?? null
+    : null;
+  const selectedSceneParts = selectedScene
+    ? splitSceneDescription(selectedScene.sceneDescription)
     : null;
 
   useLayoutEffect(() => {
@@ -389,14 +412,34 @@ export default function App() {
             <div
               ref={popupRef}
               className="tooltip-box click-popup"
-              style={popupViewportPos ? { left: `${popupViewportPos.left}px`, top: `${popupViewportPos.top}px` } : undefined}
+              style={
+                popupViewportPos
+                  ? {
+                      left: `${popupViewportPos.left}px`,
+                      top: `${popupViewportPos.top}px`,
+                    }
+                  : undefined
+              }
               onClick={() =>
                 window.open(selectedScene.sourceUrl || selectedScene.url, "_blank", "noopener")
               }
             >
-              <div className="tooltip-title">{selectedScene.sceneDescription}</div>
-              <div>
-                <strong>Year:</strong> {selectedScene.yearRaw}
+              <div className="popup-tags">
+                {(selectedSceneParts?.tags.length
+                  ? selectedSceneParts.tags
+                  : [selectedScene.sceneDescription]
+                ).map((tag) => (
+                  <span key={tag} className="popup-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <div className="tooltip-title">
+                {selectedSceneParts?.title || selectedScene.sceneDescription}
+              </div>
+              <div className="popup-line">
+                <i className="fa-solid fa-calendar" aria-hidden="true" />{" "}
+                <span>{selectedScene.yearRaw}</span>
                 {flagSuffix(selectedScene.flags) ? (
                   <span
                     className="flags"
@@ -406,19 +449,19 @@ export default function App() {
                   </span>
                 ) : null}
               </div>
-              <div>
-                <strong>Location:</strong>{" "}
-                {selectedScene.locations.length ? selectedScene.locations.join(", ") : "—"}
+              <div className="popup-line">
+                <i className="fa-solid fa-location-dot" aria-hidden="true" />{" "}
+                <span>
+                  {selectedScene.locations.length
+                    ? selectedScene.locations.join(", ")
+                    : "—"}
+                </span>
               </div>
-              <div>
-                <strong>On stage:</strong>{" "}
-                {selectedScene.onStage.length ? selectedScene.onStage.join(", ") : "—"}
-              </div>
-              {selectedScene.sequence != null ? (
-                <div className="muted">Sequence # {selectedScene.sequence}</div>
-              ) : null}
-              <div className="muted" style={{ marginTop: "0.25rem" }}>
-                Click popup to open source
+              <div className="popup-line">
+                <i className="fa-solid fa-masks-theater" aria-hidden="true" />{" "}
+                <span>
+                  {selectedScene.onStage.length ? selectedScene.onStage.join(", ") : "—"}
+                </span>
               </div>
             </div>
           ) : null}

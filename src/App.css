@@ -171,6 +171,34 @@
   margin-bottom: 0.35rem;
 }
 
+.popup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.popup-tag {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.35rem;
+  border: 1px solid #facc15;
+  border-radius: 999px;
+  color: #713f12;
+  background: #fef9c3;
+}
+
+.popup-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.popup-line i {
+  width: 0.95rem;
+  margin-top: 0.15rem;
+  color: #475569;
+}
+
 .muted {
   color: #64748b;
   font-size: 0.75rem;
