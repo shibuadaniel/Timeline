@@ -74,6 +74,7 @@ Required repository secrets:
 Optional repository variables:
 - `PILOT_SEQUENCE_MIN`
 - `PILOT_SEQUENCE_MAX`
+- `VITE_BASE_PATH` (for project pages, set to `/<repo>/`, e.g. `/Timeline/`)
 
 If the Notion secrets are not set, validate still runs and publish is skipped.
 

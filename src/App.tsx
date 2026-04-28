@@ -42,7 +42,8 @@ export default function App() {
     setLoading(true);
     setError(null);
     try {
-      const r = await fetch("/data/latest.json", { cache: "no-store" });
+      const snapshotUrl = `${import.meta.env.BASE_URL}data/latest.json`;
+      const r = await fetch(snapshotUrl, { cache: "no-store" });
       const data = (await r.json()) as SnapshotV1 & { error?: string };
       if (!r.ok) {
         setError(data.error ?? r.statusText);

@@ -82,6 +82,7 @@ jobs:
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           PILOT_SEQUENCE_MIN: ${{ vars.PILOT_SEQUENCE_MIN }}
           PILOT_SEQUENCE_MAX: ${{ vars.PILOT_SEQUENCE_MAX }}
+          VITE_BASE_PATH: /Timeline/
         run: npm run build:public
 
       - name: Configure Pages
