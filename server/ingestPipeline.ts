@@ -20,6 +20,13 @@ type IngestConfig = {
   sequenceMax: number;
 };
 
+function envNumber(name: string, fallback: number): number {
+  const raw = process.env[name];
+  if (raw == null || raw.trim() === "") return fallback;
+  const parsed = Number(raw);
+  return Number.isFinite(parsed) ? parsed : fallback;
+}
+
 export function readIngestConfigFromEnv(): IngestConfig {
   const notionApiKey = process.env.NOTION_API_KEY?.trim();
   const notionDatabaseId = process.env.NOTION_DATABASE_ID?.trim();
@@ -32,8 +39,8 @@ export function readIngestConfigFromEnv(): IngestConfig {
   return {
     notionApiKey,
     notionDatabaseId,
-    sequenceMin: Number(process.env.PILOT_SEQUENCE_MIN ?? 100),
-    sequenceMax: Number(process.env.PILOT_SEQUENCE_MAX ?? 120),
+    sequenceMin: envNumber("PILOT_SEQUENCE_MIN", 100),
+    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 120),
   };
 }
 
