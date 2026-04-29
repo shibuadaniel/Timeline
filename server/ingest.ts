@@ -2,6 +2,7 @@ import "dotenv/config";
 import {
   buildSnapshot,
   fetchScenesFromNotion,
+  persistSourceImagesToPublic,
   readIngestConfigFromEnv,
   writeSnapshotArtifacts,
 } from "./ingestPipeline.js";
@@ -9,6 +10,7 @@ import {
 async function main() {
   const config = readIngestConfigFromEnv();
   const records = await fetchScenesFromNotion(config);
+  await persistSourceImagesToPublic(records);
   const snapshot = buildSnapshot(records);
   const artifacts = await writeSnapshotArtifacts(snapshot, undefined, config.chunkSize);
 

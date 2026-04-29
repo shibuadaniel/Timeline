@@ -43,6 +43,16 @@ const HORIZONTAL_UNIT_OPTIONS = [20, 50, 70, 100, 200] as const;
 
 const FLAG_ABOUT_STYLE = { opacity: 0.55 };
 
+/** Bundled snapshots use paths like data/images/…; older JSON may still have https URLs. */
+function resolveSceneImageSrc(url: string | null | undefined): string | null {
+  const t = url?.trim();
+  if (!t) return null;
+  if (/^https?:\/\//i.test(t)) return t;
+  const base = import.meta.env.BASE_URL;
+  const pathPart = t.replace(/^\/+/, "");
+  return base.endsWith("/") ? `${base}${pathPart}` : `${base}/${pathPart}`;
+}
+
 function flagSuffix(flags: { after: boolean; before: boolean; about: boolean }) {
   const parts: string[] = [];
   if (flags.after) parts.push("After");
@@ -675,7 +685,7 @@ export default function App() {
                 <div className="popup-thumb-viewport" aria-hidden="true">
                   <img
                     className="popup-thumb"
-                    src={selectedScene.sourceImageUrl.trim()}
+                    src={resolveSceneImageSrc(selectedScene.sourceImageUrl) ?? ""}
                     alt=""
                     loading="lazy"
                     decoding="async"

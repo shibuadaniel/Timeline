@@ -2,7 +2,7 @@ export type SceneDTO = {
   id: string;
   url: string;
   sourceUrl: string | null;
-  /** Present after re-ingest; may be absent in older snapshots */
+  /** Ingested snapshots use a site-relative path under data/images/; may be https in older data */
   sourceImageUrl?: string | null;
   sceneDescription: string;
   yearRaw: string | null;

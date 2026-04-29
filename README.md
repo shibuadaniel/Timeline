@@ -1,6 +1,6 @@
 # Bible Events Timeline
 
-Pilot **horizontal timeline** for Bible study scenes: **Sequence #** 100–350 from the **sandbox** Notion database by default (overridable via env/CI vars). **Year** → X position; **Location** → color; **On stage** → tooltip + filters; **Needs year** queue for empty or unparseable years.
+Pilot **horizontal timeline** for Bible study scenes: **Sequence #** 100–400 from the **sandbox** Notion database by default (override locally via `.env`; see `server/ingestPipeline.ts`). **Year** → X position; **Location** → color; **On stage** → tooltip + filters; **Needs year** queue for empty or unparseable years.
 
 See **[Project Brief](https://www.notion.so/350cb257e13c8186b4bfeb980aa6748e)** in Notion for full scope.
 
@@ -72,10 +72,7 @@ Required repository secrets:
 - `NOTION_API_KEY`
 - `NOTION_DATABASE_ID`
 
-Optional repository variables:
-- `PILOT_SEQUENCE_MIN`
-- `PILOT_SEQUENCE_MAX`
-- `VITE_BASE_PATH` (for project pages, set to `/<repo>/`, e.g. `/Timeline/`)
+Pilot **sequence bounds** for CI ingest use the defaults in `server/ingestPipeline.ts` (override locally with `PILOT_SEQUENCE_MIN` / `PILOT_SEQUENCE_MAX` in `.env`). Pages base path is set in `.github/workflows/ci.yml` (`VITE_BASE_PATH`).
 
 If the Notion secrets are not set, validate still runs and publish is skipped.
 

@@ -21,3 +21,4 @@ dist-ssr
 
 # Generated data artifacts (keep latest + manifest)
 public/data/snapshot.*.json
+public/data/images/

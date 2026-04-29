@@ -1,16 +1,16 @@
 {
   "version": "v1-chunk",
-  "generatedAt": "2026-04-29T11:26:50.590Z",
+  "generatedAt": "2026-04-29T23:27:39.406Z",
   "source": "notion",
   "chunkIndex": 0,
   "chunkCount": 1,
-  "recordCount": 248,
+  "recordCount": 298,
   "records": [
     {
       "id": "350cb257-e13c-81cd-b96d-c5aaa75243a1",
       "url": "https://www.notion.so/350cb257e13c81cdb96dc5aaa75243a1",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:1-1:21:7",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/8ede13b7-1c8b-4813-ba53-e14ea1463be1/B7B1758F-5C89-4289-BF68-8C6B7C6C9996.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466THJ3NFSM%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112634Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQD109vgE0a96DZYQDOerVYxbJrL3axuyG7J%2FTI91%2BSmJgIhAKMPxZsT3DVaXvZqcrHjkEsSUTbZ0Hbc48K%2FJQ%2B%2FLZIwKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwBcWdzXkio0JLXzusq3APa4Urw9WDff%2BE8tcP5dU94vKIETrX2CXUTneYaM4pdj3HhEInyOztcaHK8hCkuosQymeIWcIdGRJqDAPPEzHf8usz%2FOmNF6M92hHc2v9AJShq3qswZQZ7dp7zwqkgSQ6MqmzuFf5F1A0QQW3Ih46o3Owo0rY2ZucpVUNgmBCNL7dRKp4%2FUruLoXrnSxRUrBOTHxelweu751Ph7S0QBgngXLw7FRwmX8C3yRQNeGcl%2BWYkQELeb5K4z5YxKOF6xEnazg8io8YMxoL6KYwhDxQ%2BC8pcGKneNl2IUImIGgH2TjUGcPS63T5Fz9zNs9g3pWYsUsGl6DpdPKAQaD1Xe40HskQ9I6311sbV8ooFZmGX8BP3nxegmjE2CynjcdYm%2FndQvpvhI4rsnZpDq27L6uNOB1iih76rsAeaAmHEG%2BW6CYBgY%2F6P5i2bDETS9ZWXBK%2BIU3qpcHITb4Fr9Jm1ugop3J4RLgnlPoqBimcmVGy6avB7cV2%2FpYTRxB2W%2BQXxVvbHcUS60cJShkuseXataj%2FXm7r7%2FWh5TJWnWIYtPiEZFeXEA7SP9KfbSKKiNJFv7WsbwPwgYPOFLs8UK9WHW9OriOV9Qnw4FRgb5yoUhTHNzUNsUL2E323Oh3AgF1TCYssfPBjqkAZVVFUQdgud6r8PxpHz6zDgRUxCShiYkss5NpCw4YPrjWTq3cfGEUGwSxGXyUWWC1gu17Y6uR%2FqnLe9lQ5CULaiCLrbGVL2SRL6pvN%2BG1Er0cw3282uo%2FWnTedDa%2FnCJXSaqiP%2Fvj559ZRkvRubUFTZQ8yaErkanD%2BcuG8bo0LXzGfmgzkBTpmxyw34%2BaNDFJKpTiHmXQ3p%2B1gxxvPv5u6YXRUhb&X-Amz-Signature=3e438d906d870ab140576ecc5ff901692664ae160528a2d9b4269478ed257d15&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81cd-b96d-c5aaa75243a1.jpg",
       "sceneDescription": "G21:1-7 Birth of Isaac",
       "yearRaw": "1918 BCE",
       "sequence": 100,
@@ -124,7 +124,7 @@
       "id": "350cb257-e13c-8172-a153-ce521b7b7780",
       "url": "https://www.notion.so/350cb257e13c8172a153ce521b7b7780",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:1-1:22:8",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/47ecd2a9-e1d5-4aa4-85c8-2cae02cccb1d/DEDB1622-7E01-4697-89DA-4854D7288C63.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XN5C35WP%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112609Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIG8gPAV9s8fTuLeDnvSM7b4sNbp7E9FxrY427uYhxFFtAiEAwxIjbyT4EufOkZMU4A4HKnPrzThrAjjGQwdMRyk%2BxycqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJEhZbh989cSoPdc%2FyrcA3ypEuAv4hdJPCO7z22fnU%2Bh8PrYb8eao7gjXFTIaXR1RWWF5dlmris2LTJMFQAcNKwX8pPI32p856iXDCTYPcsP6xIhX%2FOpFjeCRrMKwPmMPAzD68SCE0R8dW%2FIO1Wo29qHwS3wwSYalkdfzeWMmsR9F3N0A0luw6oKHxQ%2FU97dviaRG0CNn3cOjS9vUD8wJObKULufPi01tK53fXam4rUsrmj2aX5HfjeIjtGFS8wQ7Z0VFhuQ7YxxjlVN46kVPx%2FPczClQC6JXAWy2mo4YEsDN9B6DdfkmyqJOR%2Fa4dYBcHzziI1seogYRhdboPKvJadusFqmAiX2YlH4wZcuOKb5F21oSEClhgHKFU7xicrlnhMNuXqSVrF1d04ov5aDea1kE7I%2Bw%2FFeWMUxXWKUYaHniQlpbMvTskEiW8N9WBD5rU1HaqzZ6cwgiY3M1mL8%2Bc05Aw5XjNYgMBTHeKlAZ6JVgBvA5kW17Es33N6l9Na3pdxxf%2B0MS1MOHZFV1wc3ikpulpsCBi8kKDwzXJhuNIe4%2Fhvi8ubOLaiYZS8MY3lcFwRqf3FmpuWpkTt1Gf%2B72%2Fg2FAvSTJQv%2BzbDse9NZ5w3SQK9Fsa95%2FPk2e9GyFtXrDwG5Kgc1aDOmgnvMPuxx88GOqUBBuD7kdxLHO4FwyOIJAmdfw%2BEWUhVnNVbFmeGaA%2F2en6GpFwYMMgMTWjTZAXmHSdFqlOJWS7iFOtyidocGvm8qh6Bm%2Bwey1USlAHcXNZriI%2FWncJ9L3f9jAH9eGX4NODM50s7XeCeWXtKkVt7ZDVEwiZUesORjPiguAwJn%2BSf7xN18Pafr8cK8pOJcOFZd2Nwr9SVdC5RgE%2FQ9QWFQ2LZljl57pNz&X-Amz-Signature=b0675d045a650d814a309962e42b26501dc035cf5d8609b6635fd467db8b9e82&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8172-a153-ce521b7b7780.jpg",
       "sceneDescription": "G22:1-8 Jehovah puts Abraham to the test",
       "yearRaw": "1893 BCE (About)",
       "sequence": 108,
@@ -141,7 +141,7 @@
       "id": "350cb257-e13c-818b-ae4d-fffe37401ba1",
       "url": "https://www.notion.so/350cb257e13c818bae4dfffe37401ba1",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:9-1:22:13",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/a52f0666-b061-4a68-8389-c9c394aa1a89/FD8D8699-F37E-452D-9BD0-816D867949A3.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667JG7J2SP%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112616Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIFdB4rIXx3rpVHN%2Fh%2Bj3X4boYQ8MeBAjAf3gvN89%2BXqvAiBWEQ4z5BxxDVVUIm75zFrM0fIdYKorhKtbOhvzZqYM4CqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMMltf%2BmAeD872GJWUKtwDa93Ah5xSWLcgoNi3EC6EBJ3IJm1nImluTGQyO5hNAf%2FxstQTEME55o33Fxt3GdiDIk%2BZpRlpfB%2FvGKOkFP%2FVwckGohyRK3XqhWkJ9P9zHD4Kwd2yTSQ251%2FNR9zDlPxEtbio5lkcSr2OQ%2FxCGJaAgUsmvvTKLx7rZGeUWqO2f%2FI%2BhnbGFbtyId%2FNmdTtnsoIazYqjQ2NmT75Tvh0vO%2BcOg5eXVIN0CZNa15nGrIIsYHGrN%2Bs5D5PchjpG1GPdeU9Q%2BIPCmnkzCPiR2%2FOLcfdZlLVWwO0tCLcg3%2FjeY8tCzZfAACHgbyZEJ4UU8z1WLDis1EE%2FtWoXVwhTRfWyxgdW6n3b7tJK6GCz8AUjhB8%2BcwtybvYZzaVrt66bSG8iPMtgd%2BRRMswI7HqiK5j4kF%2FJ31QZ1PdhubbIaKN7MKNUGuizKYodT55r%2BxBNenAazlpiOZ9IjJPtuWyLGWIjLLI5%2BHE8W7Vw872%2BJMKFSWx5xEpkrQ5XzxFznqpz3G0D2DFZ3239ycr4IFHrGDfYq7BYGvRAL2nctB0XwAB2TJgxEFt0ClLhxkC7JHLbTYEGoON0psX5b5GWbsph%2B9uh2OZKDLqjmdODMUNfnCiiHxPWGPai1YuSdGF7xqRQPYwjLTHzwY6pgHIy0cdUL8ZPy6kRTApUIMuESVuh3r8cAHIDLSEAmYEviqURHTXsXWfAmHxyB5u5SswVFlTuSqU6mR2nndnmqMkVgt9rSF5jFi6Msrc9%2BGG9LfFFVNLr45QTyDeRzESdUAAPwWu85SxvWzjtw2d49ksqWvtVXwZ5aftXcpZ2lfquaUHeiyU0lqp6iAWg7VZukQX9euTd2HFS1zE%2BexSMZm1q294SxpC&X-Amz-Signature=d43d703b41d52c0d4de1ca8bea93ce0bbed896e9369cdf6d484d84812a6c8d6d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-818b-ae4d-fffe37401ba1.jpg",
       "sceneDescription": "G22:9-13 Jehovah’s angel stops Abraham from sacrificing Isaac",
       "yearRaw": "1893 BCE (About)",
       "sequence": 109,
@@ -157,7 +157,7 @@
       "id": "350cb257-e13c-8169-80c5-eeb326d21fc5",
       "url": "https://www.notion.so/350cb257e13c816980c5eeb326d21fc5",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:15-1:22:19",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/bf009c31-f3a7-4626-8508-ba30233fd4b4/3E07DA57-0A14-42BC-A6AE-F904EECF0C5C.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662YWAFXNT%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112606Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQCa3eSEPkvqqK2HBttAVK8fCVD2az8FVFnjLqfEuYeCwAIhAMeTWX3QD8MOEVewgoAtdv5lGTWeoU%2FDxkodXZlkL4gKKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxfT8IQCVuiVjzB5Sgq3AM0OFOf%2F7SUEssIcF5L2mWsNfkJ5Br1cI1Bcp8wYBRax6pZEoAbMmAVKA6jzt3WZ%2Fwa%2FJ6wbqJgiqm5chJHh9oePnaushzC%2FZPLwBf8vxPboKxSEDGXPvPTEqu73PU6zRFtBZRPpwpwaYAyqPyZljLuXufMjkpX4dRqmIOg%2BovJqe%2F6AJd%2BlAxbJl99%2BwwLwjGu3W8ahpoVHLNzDPxJ3hJFtU%2B1q62uVDVyIyeaxlrJpxy4OPLgh6Xk7zCtfLMYfej7lHeVfz4kUysVu9CuwLGQwI8MwILj80tHuGtO9B9U6%2BRXcci5%2FsEHAG2iMRF8R7EGTZYukjovAoLOJokxT1mxZW%2BbrMc6Q5WVNMtJdr5RIbTM1z%2BMaa3J1pcwZ%2BSiUygjJfoj50c2IMdm5ML%2B7CgWBRMmUSyDqzvlruzT2uN1e%2FsT5qvJ0EYal%2FnLCSDyc6Es9hlRErYuivPORHRB%2F17im8fXj0WrPtYwkabJSISZ1Dn%2B9YAMRWM2JYWtPqwIy6hgjmhI57fBO3DtJ8Sf%2Fc3B7rbDM4FmYTfDkNNlHYpsckHAIFnccLAjgshbxO4mhYlEXw1N4yQtRFOQ2Uxba9f%2BBbac%2FCfuY%2BdkxDEREy5M%2FKD9N0fQf2vw%2Fli39jCys8fPBjqkAXuG2wvYjf9FFKKXVLSTvwDcPHSS67rHJE3w3kXD%2FoGuC9smIytd0INl5XgRLQPI9uptGzGASYjU9El02qpO4KacQ8445OkuiyYz8aSJOWwL2ET%2Fv0mv4NDhEk6A8WlrrbiQb7KSGbJWVREF0RCQHjr7VLxoAp%2FbrlxaX4yE13iEPULQ13DRLLkr%2FXyba7nC7hxt%2FSZZaPrU32Jluw4u0AiWI%2F4f&X-Amz-Signature=bcbe4e0c927a18bc60fd3d7ca9157dc873ba0af8812d5aa8b124e1f29ec3e64b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8169-80c5-eeb326d21fc5.jpg",
       "sceneDescription": "G22:15-19 Jehovah blessing Abraham",
       "yearRaw": "1893 BCE (About)",
       "sequence": 110,
@@ -190,7 +190,7 @@
       "id": "350cb257-e13c-81d4-931d-dc4c6619fba0",
       "url": "https://www.notion.so/350cb257e13c81d4931ddc4c6619fba0",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/23#study=discover&v=1:23:1-1:23:2",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/9ce33bda-c912-4a19-b508-3e99f52f9cd2/B5955783-FDDE-4CDB-9927-D51A6057E059.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663VDS7JCY%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112638Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIF10dFucS26oiIjBoj0QI0HSoWeUa%2FbJM%2BCcYqBLj986AiEAyGfgdACepvFEH%2FxwFkMiSDgcKOiSVeW%2FzaFIIQ21g7EqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDC0RRxhywp6d3QmvsSrcA4jOL8am5kanoAs1INoT7iJW4TAdT1ny5dZgqwAB%2FlrPAZtHpHz8dfg7dOzqQHIK6jgLw9r6yLyadkMQ7op3CcLVH0bewZhjszuqebffrX7CCqFCwoTWiNpu9gsSxVzNNiNAePDadUzmjnMxQuLfsSKhw13Llw625ab7UyR1IagQJxFsPQA5kxL9cxkVIeR7MvsMzWjxA25b6wRTHVBhkO4kP%2BDrgUGreQV4CjctjtDlNDDz%2BAHgmAfRVQpu8Ic0CsZNyxCV7kGBSdXMYmX7sU5ggJbREz5KN%2B1Rbg81uqAAZvskr1vlO4YgG8V5mfXMiW9MKRooo0zjxyXxUTbCFT2lt5%2BzEw7CGkFlDhA6okl9tCff1YqIwsSFcEQF47y4jsyK57n1Z8pVzcEz0U6LdLunBvWpDdvYG1xgDwZS8AgXnAK94sfEJg05sm%2FhMhPreYgHZ5VPEOstkVA3DEvgEu%2FZVZA5NTqMcWI4xjOQf5rB3x9ro%2BvipCtCBmG%2Fyr36ayjHDtepL%2Fg%2Bbkk4PokbeG%2B4FcQIXx%2BnegelkVPesuj48t758FpJRpgAS0JBowUZWbGOiX3FcD5JZmx21xpgntprcc%2B9jX58kPmboPptSvE7uEnonuJVWtx7vH8yMJ60x88GOqUB3uSqlxiSytu8SBa4CRAv%2FXJa4VDR3WS5D3j1Osd38JQrgiJUIggx%2F2wv3dc8r5r4wL%2BpoY76tCNyXC0qiPrnDnJgtBc14i0ia%2BdcZxdrmnZ3QuFaYDpgObJLVZMdplvJPp1O72EflH9pwWSOXgeQCzAKaKJWAioSnGWBg1qIGZa3meQUTWsYLennbJm0K2ogI6miFSyDVPe3qcE7uHTVJu%2BC0k5g&X-Amz-Signature=d18a5a7a1c3c1894a376b1073bb13df48fafd2dd313cdb0b6bb6f007d3bc931c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81d4-931d-dc4c6619fba0.png",
       "sceneDescription": "G23:1-2 Abraham mourns the death of Sarah",
       "yearRaw": "1881 BCE",
       "sequence": 112,
@@ -206,7 +206,7 @@
       "id": "350cb257-e13c-81fa-9480-d065f5a263ca",
       "url": "https://www.notion.so/350cb257e13c81fa9480d065f5a263ca",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/23#study=discover&v=1:23:3-1:23:20",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/bcdfc3bf-5041-47e3-8d00-844954a0e1e3/E386CDAE-5F25-45DD-B796-4D804320CF0C.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666GOWPNFG%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112649Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQCkqFNo9qp6%2BG3mSVoVcdr1cjoDUbsNyr6SMUdqS1a9NAIgLb3B07j2gwcdjEeeIHSpEfOtXwpeT4G66bDuwEXdBFwqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDMxvB9aihbiqz%2FcPgyrcAwX2wKnNFiaj5MMD4mwAb7H%2BcGIQi0sp6xEth%2FzysrMDZMA28VoZNb%2BunJF19%2BDLCoHu65I7zEhADOuW0GT7JrSFVEqQWKMDKS8MAR9rv3kcRWFRIrajsYWd2MCyBLzmpKZUkEbADIH54jY5B21GBLPAUfI1ZGFF6LXvWfqzmEZVPT0PdFgo7xnpE4OIZFmYCui8e2t8y0CC%2BdQi%2Bd%2FTmg2aOpbk4KArt7m8S0w5a8ZdVzHmDTkzRmAgGpW2cArKnT%2BfGroO7XfFH9ZGp88S5h5fmWOqFCeBsr8u%2F8OO1d1vSwuoJwbNC2QOzBY2AaKWUg6tQT%2FTUygu7crdMK19%2BH0wx8liSk4XIooApLao9%2FNUa3s3KGvqRAAPvzoD%2FMdg0kSfGN13ATCtSQOam6RvWcGrcqUNMyxuBZ1kvv0ZTC%2BdnbLFmOEJ0vnKb7qrGQvh6odnEEk9tCJoIVK9GHS%2BpXNOtnpmpz5jSMRzhH2nbYV9bi9yUmSobYI7abHA68%2BkJlQ4S10tkH3hImBgbOrtoTKrEWw9KnIPCIilRuHPjrr41j1wtEss3YHKx7WGhoS6l8YVoknfP5C8DXKP9WigjW%2FOHjx5PXYR9HZTebDrBirb8H90gHTSyYy%2BFRiQMK2xx88GOqUBgZ0Ru0BkO9soSky0OUsp6MECXRC4L%2FkhicIxp503Jdl02U%2BA53Vv9o6yY6eg%2BgDYY1aoNbScfThfs%2BYDiVA6RVFbSD7Vr%2B9tCOHWXhQUFOlaqBTKgsIVtVig0LSiUVlIyPTBdfNkvZxXNjEzkcYGLMup4cUCEdsBIGjRYHCtHRDEvhCy3wMS9%2B2wTxFLMcrpqgcWjGHPcNLACbuBPii5yQpM7e6t&X-Amz-Signature=435927df789334fcf8ffd60b163458f2140fcf7d34018329d754fe2f3443f3be&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81fa-9480-d065f5a263ca.png",
       "sceneDescription": "G23:3–20 Abraham buys the cave at Machpelah to bury Sarah",
       "yearRaw": "1881 BCE",
       "sequence": 113,
@@ -223,7 +223,7 @@
       "id": "350cb257-e13c-815e-b64c-e09af844df20",
       "url": "https://www.notion.so/350cb257e13c815eb64ce09af844df20",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:1-1:24:14",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/ab5b114f-0a33-451a-877b-cfc1f1e8fe64/944CD23F-8724-475E-8058-19B59DC99E97.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666A473MFK%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112604Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIBW%2Fw8VS3iwumFlxSmcMKyLCpd8JsHWNFA2ruhzGgZ1lAiEA3NvOqvkA%2F9%2BVvbr%2FTSM%2FYsf9pFjpXP0gpqCPoJKkM2sqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDKZ7i7Lf62iOGK%2F0sircA7yZRkVzylvuraXzh9gNER1ZkzNLCP6k%2FeC%2BnNPnhV3c%2FYtXJBgbQLcgPQa4cvwLXUK9ku0AKCkZSkCK%2BiC2GH%2F5xbDxVkUQQZlCHtMXwgiK7lF0K2QWNhuz%2BuvK%2FqmW0FjpK1TCbSbMWf9Rk3Wgx2ZtHGm2%2F4W1AvZF5vrLMa8l7HFwddZZkjhwE26R18sfXREifWSweBRnxc9UH0LzH49MqQciy976SG3lBjB%2FZCJZQCe5Y2RP%2FQehS4WRXbD9z3OtpykedhEVepxy6YD0CQi1%2FvEdByj%2Fr0iDtPmc5eP2Ea0d4rR5YIBL0ITTcc%2BsJoBPgCl%2BbuwtzW0Ce5iDk6Nq7DH8OZHdWHu0Td7AfxwcsEV0HviTK64N3W211s9PlFuOMN3Hcwjd0cOjdHNuJeTeuuFIVu0rClCtNK9NF27ieHlxH1Ul%2BG%2FdizVDK%2BKHgMgVywS%2FX3q6irQfq9lvVjJZA9IfGLbm14BqVcYL1HjoGQuww0MJCRZ6UYuks1KQoYCiOk1IQMqPq0YsKXy3hCNkaBz2c6e%2BAWEYny81Zw%2F73h7nKTPQtAXl1H6gPVdQW%2FzHaIDQi%2BExrhyKDHScaubcaUHcQkxrLL1wLCDpIjGiMQOMs1mV9re4vhvLML2xx88GOqUByMLD5FUA3%2Fv8RJDAZ9pplTa%2BOTXTKhN0gyJw9URQ9Je6mA5NeqfpAEkNDjZcsKNhyxVEUewJYlJMqGtrbJWHpWniPIuT5mdeJIz1hmbi7gAWLZ8NfVnr5jF4Wn8RMQ2Sx%2FwxGGs%2B1CvKhTHUsjEoaT6Ie90bYMKaLfoXwdKhgPH%2F80dbc8XYpPt15ehb3TA799oU9gcVRKwNizOTi2cIkHXWoe0M&X-Amz-Signature=30c643cf757fd92cb722962d25a29e3dda16a757b583006b09d2890acd25c5b6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-815e-b64c-e09af844df20.jpg",
       "sceneDescription": "G24:1-11 Abraham instructs his servant and sends him to Mesopotamia",
       "yearRaw": "1881 BCE (After)",
       "sequence": 114,
@@ -254,7 +254,7 @@
       "id": "350cb257-e13c-8191-a3cb-da8ae8b46166",
       "url": "https://www.notion.so/350cb257e13c8191a3cbda8ae8b46166",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:15-1:24:27",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/52988a93-0b8e-413b-b9e0-3c6775405b67/FDEC5B45-7229-4E59-AA22-B88EF1CD2DA4.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663NJLVWQK%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112619Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJIMEYCIQDTFB1FL7RlL%2Flw3lIm1fiHRbnicNg%2FdChyae1hHml0jAIhAM3U9VcB%2Fiy0c3lrC0BtMk8DjkBhSJSN1N7lHoniqirLKogECPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwinUhAQNNBvBFIRowq3AO9beqmbCkMEy3PFbicsfQxtoTPpT0EQxTm9UdysoVsbNW95ZJ634t5Gyc4lEzKJky428JV8GB7zMLy2x%2FrCiPtmD7Vas05qT0kCa3TVrNLZNHs6WGUkiB1r7sT3ELorZik8GY9eGvJxCb%2BDUJ%2F5%2FjBu7P%2B3Mtj%2FA2FcPS2w9ivXMXmkuqEhDh%2FFj%2FonzYUwWbTFhhbKFG3bYv5q5JAjMeKh9IT8jjOmtsXXOfmL1DWvzN431K183c5AwUKV5YUkdw%2F4BpKiBPvklLdbPe%2BNq8yf5zGQBgZKL18zA2v%2F9Vuqq%2FrX1FPwLaT%2Fht4RVYEUXIqTFWy8LOl9fd1zET%2BbFZTk%2B6zSHNVtsQG6kcJdJrMo7ttLNsLAqXtIFmIAso7YScG4JcsCRo3WN8PU2mihGHGl0NZEM8xK%2B6mh0btpQqOzAtVqYnRLAfAHV64OkJ4%2FXHnqt32iVWZ0cT6JKnfZ5qIRXiE3VM6lG6%2F6vAXICsEGLBX%2Fk0vyBvkpn7kefqkCXQZ%2FC99tIGnYNySE1GWK0fBndDtMq1vgN3QwbxDpZfGHvPsyQMRQG5tv1X4INAuE51XToavdk2%2B%2BBVAw11r4akRykrhe%2FNnytE9WWXCH%2Bf8q6xWGwO4sNbR6hQCdjD9vsfPBjqkAcD5hTiJ32VK22Wp112yesd4UHs6aR58225bta7bJM%2F61nTeOt%2BiE%2FnIcfnMF7bmWayWKbo5oK8Uv4o%2Fe1Qv2jjo0NF0zCi7hB86WPCNXhF7ft178Ljdpz70XEHEFB%2Fj56TeDiN%2By1BYRQQhGI0s0SkjaGlFhVVpfLud6Bp8Xa6UNzlPGu9XbpQygwYguJqtC3UlC6uLYv8jiEcvKNxLdC0zaOeY&X-Amz-Signature=3015fedf459261373e70d95d1bb2f598ac6ef45694fbc7da6a370db36a151f04&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8191-a3cb-da8ae8b46166.jpg",
       "sceneDescription": "G24:15-27 Abraham’s servant meets Rebekah and her family",
       "yearRaw": "1878 BCE (Before)",
       "sequence": 116,
@@ -269,7 +269,7 @@
       "id": "350cb257-e13c-8183-93dd-e96464b673df",
       "url": "https://www.notion.so/350cb257e13c818393dde96464b673df",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:28-1:24:33",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/12ddbc2a-62c3-48b0-a4e8-4308914846a2/A4613E25-5FF5-4EB5-81E2-66BC1BF38C92.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TAC3ZMD4%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112612Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIG3h6YpSAExBNlEQalQ3fjtw96Vql21cdA4dF6K5WDbKAiEA3%2BGs4S%2BoOVbMCBB8B2S9HzRKy7LTGTVHUyTaIlYrMIcqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDMe0o4uprzR%2BhUxP9yrcA2CBDu4SRzq%2BCLkqIaWDv2xrrkqS6fmgsq4aC6VHaRqLsFDDMbGdW9FaERG%2FYaWvt370HzrXwnnvpHb0YDE8qllWeRGkjLdLvXRu9B7x9WPipATkXNFYGiYAaPCEN7Y%2FllisRdjOCcrRUWWcDIFPiapRm6fiAtt7rdQ2pzoY4EIYbGuXVGaZKLoIciu9YFXgmFdjIGVYaHJfwMKaNwNPlJZUxYwkyEIGPuyaudycvV1Tqk8bOGndCffDMlzkmNyo7YIvPhiDzU3SAQJHOjzwSuQz6mHX3Qw3AGLWK397UvCmI9ctc00B8VZFKPfFFa0deCA0vzZlRiUCNGOjZCNcqvNLBEnyBsaKUQONfT5D%2Bg%2Ffr61dN9jJrpl5Nus%2FZlKD0B8EUPnyTA6bAyx2thNqMiP4imNaNsNFDNVHhgfD0igPMNj1E4Cxt5GEPJccow%2F4BwEBMafjP22l6itx9NVgB8J%2BYMBDZQNlmrMVUVDRPEQIF4WcUNIpwnYwv5rMiFjz1v3DyjzriuMAcagfIIKuFpcuCcAsNKbPJlA%2FP3aJDjYXVX2zGuRk4Nnzf59lYl3rAky26IU2hdfZLoqxN8qpynz1OOUFyenZyXGGty7fuyQhRzAU5zDKlrV0PtEGMIKyx88GOqUBwtoMVY7HyKOkGtbeEz2CI4W%2BlbWJHDq2wv7HzoRllUoumeSgWs3mPbMebwaH2YCM9nbanjoltHGpmssYMMQyqaosxK3JXuJyXkKO%2BKQSnzQxpGdihsKbUx2gFgKiYF71dQwE5io74pfb24DPSE%2BMcTffitKtzVAomK6LwFoi0bLWCQVIASrzxdtKRXRdMTI66qbfdTcwVC7nHqVATtNXrUexpEYw&X-Amz-Signature=7fdb9b3a99c7898c2efabda260275506b6b6b1a2a29ade9856e2f2d6ce5ab2f6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8183-93dd-e96464b673df.jpg",
       "sceneDescription": "G24:28-33 Rebekah relates meeting the stranger at the well to her family",
       "yearRaw": "1878 BCE (Before)",
       "sequence": 117,
@@ -288,7 +288,7 @@
       "id": "350cb257-e13c-819d-90f0-f52686bf1182",
       "url": "https://www.notion.so/350cb257e13c819d90f0f52686bf1182",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:34-1:24:58",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/490cfb8d-07ec-4a75-a5be-eb84746d24d6/1F7F8104-6BAF-437F-9FA4-6AC7F2BB8E4B.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UB623RQS%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112622Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIGfipjrYDayVLp6AFoFVjhmj5hVeX6yszzOgsydE4GISAiEAyDszEq6E%2FF2jlkC8es4SP1aahxokb5SapIRenw9HsTwqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDICbshciJgsiS7EKeyrcA9pT%2FP2Alwuwg%2FFFCJIHCGGjOPO8hR4IS55E7usFV%2F86AEoR3Qm%2Bc2XwBarHNE31Z2x1Zw3nUj4eL2%2BS13Q36FYOKeSqT8J%2FRhwzj4JukzHtPq93Y7kkiBLMhLXtxBWfyTNrYskoyX%2F1vlqJ2tYYOorKF%2FILIv0FZ7LbkHNHLBdqiJpojSy3AHsTn6GkGFkumKSXAOXWKBEjtK7R8SyhAd1AKyWlAWz8vBfG69wbCu4LIwsHC1O%2FeRc62tbmklNynhlnj2fR8ZC6UZbOJagbXdCWxjYP9XzR73sSKecbNGRQfKcCBdWXrnlDbiXvKdYrDP4r531RSeOxCsGaxq9Lq5uQvevyywICKxZuWoxL2PlGHaUO5KM7LSWKR9IlptsONMAON%2BTUTf4CdMab4dKDVhTnIIC114upb92drr53CMOs2kjvEU8l5XLpK8CuGAjcGMF3tYWXNgWe8or6hEA4w0q5r9vsMzWJCuEyBkmffLcARRYOMMYm2NXVPP6YLfXlpRqz1UvBiSPFUFODrC%2BoIxdRCEBFdAi6nO4Oe7fe9o5KJTiG2iUmWaDLX7ARtPc5icWsLf%2BFcvoR%2Bf3ozuQY9pY%2FWq4IdxsjTvnmft2ynAX32l5yg%2BlXcq9qsVFMMIezx88GOqUBoCACdjsWQyHyB11vRhhOZNNFbJ8%2F9y0thKkD57OGHetnWiyLF9RTWi2lo83l3SCTF5nVo8FbhqaEbNul%2FiVIr9Nmz2CrUWsDqlJHlTmlvcKKsXR2FTJL0MaW9RpsKjgROznmEbktfDYTGyCOOhQN75N5ayiH9U93TJ2EsfG9a%2FlAD%2Bb2hUR1k7iFdF3v%2BLRLb6cWOIYZ5kL8XKJwg0x0lQTwoqU9&X-Amz-Signature=06c394e334383cd9528cd30b8d1f50519e90d0b5ef40935c46a8453bdfc5add7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-819d-90f0-f52686bf1182.jpg",
       "sceneDescription": "G24:34-61 Abraham’s servant returning with Rebekah from Mesopotamia ",
       "yearRaw": "1878 BCE (Before)",
       "sequence": 118,
@@ -306,7 +306,7 @@
       "id": "350cb257-e13c-8184-9a0e-c90c675bbf54",
       "url": "https://www.notion.so/350cb257e13c81849a0ec90c675bbf54",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:62-1:24:67",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/3a58150a-f850-4093-9eca-5d54b035a735/D647E15C-8E58-49EF-88CF-4BB3A784FD22.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X77MO67I%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112613Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQCMWNEdvup4DdsKoQ520vHNVX7T5v68j9Cj62gWT6LczgIgFC03LKRoGhpXU8ZpH6Csq0wz5W0aJWlMnFnfBSF8SoQqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBTd%2BXLr%2B9jEbRKu6CrcA1j5pA%2B58VmZROh%2B4JXHhVjD%2BjFCxstu%2FaOgEdc%2BefiBr9Pkp%2BFi0RE48iqJZC8jwSbHjLkDPT4ET%2BtNYcL7Hvsa4QXiPsIKWgasbvoPLCK8zZls0f1MwtPuOPW5aVABJ8pDg%2BR8dpxS9%2B7HmZCKjnFJMYjc5Y7Pm3B1xINkoa%2BgBYLeF0Mi%2Bfddz%2BuPVglAJGEqGNz6aeTxm883GpBgx4f%2BfQxphqI7Gy%2FN4lUyGkBoljK0xu1uuL4ZiLl4y8XUOenfKySQEy5X6UeHn%2F9WVUZ1dj3Ze07qT6PnfgMQjGGxy57m3ixyItLVK8EGOZkHInApi89p72Tbu%2F7A3qgzNwWoRg8fEPBQXmtS58BJquIeN3y2XllU9XlG0C8ZF%2FjFpBG9rmFMfhlCx4dB7vPEHIwM2tHEy1%2BONex4fq1cwvLA%2BMLV8qxnp6VOZLeXxnbTQUsQ0R8mSRhT1N37eMy0U4WCyZ1NbVRcVtGXal327hvCSJRoZcTNFCgrMiYqeeIvnRd6czS5rEIcjBuDKiq3fmTDlnxPVoecflnBpqzIVTYdplbUDlc3SBDEAwC1LOfLaVe6TQW%2BmjaSM%2BlvkKP9nJB1L7PL%2F6qdqnYjBPk0aXrs5tOmGLOAlV7ziFXiMPayx88GOqUByChvjvtipxJwa9CAr5BD0b8PdbCZiznJSe0wlPk7x9Kam1HlM3CAS2HzWxZGhfSeEyuO14KbA91JIpW2NfG9y8H7VO7k61NhjUWIqSMHsbD%2B7ijboRF0Il8TcsNecVciZ%2BivLSph%2FoysA1zrlyuS1g1DXION5FjCFijY9IdTB9eX%2BlxNeB2aqWiXQ2D9NG8klSWgM2ypPausscTFhpgQuZXmzVui&X-Amz-Signature=df99f4713981221a4be7b7f29a85dae202c805084d73ad5910f87c7269ad57a8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8184-9a0e-c90c675bbf54.jpg",
       "sceneDescription": "G24:62-67 Isaac meets Rebekah",
       "yearRaw": "1878 BCE",
       "sequence": 119,
@@ -339,7 +339,7 @@
       "id": "350cb257-e13c-81e8-aa03-f6d3c8405d28",
       "url": "https://www.notion.so/350cb257e13c81e8aa03f6d3c8405d28",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:7-1:25:11",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/82dc28d5-e568-4119-9002-122902a1a864/75E081E9-5D3B-47D8-AD51-48AA3ADD24A7.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663GTPPBXQ%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112645Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQCsmURBbqfewDHSjesoswPl0cG%2FW09u5Ayx89xaC3oscAIhAPJGyvAJMJW5QrGtd9PMDpSgeWiJUl%2BIkCznK9AjuGsiKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igx%2BZnz1%2F4KVizQk1DUq3AN8BuvR2tQ16R4aVD%2BWATVAZkN3pumYjru9BR1R5qkQ%2B4ttX97%2FwxLIg%2FjKJHtMUcbYvGoe30OnXHftvbEIjHW5dy7YsRjpkckBiuK8pc9a04zK%2FQvUOFV03r4l8EiDufLoNGvRwg03V4nOyKQ5VZKdBSJcRS4lhEjpXf%2FBdjESQlelv5wnbYX8fZR4m9%2FKYsLS4%2Bltnr3czWFgKj1OvhUeLn%2BWcD%2BpXNmpG%2F0jHYTSunsPkh%2BRhlz6PZaMob9xa9P1KzFwt8EWXZqUSnjNOyL4tqDtNJjqlDC8W7umfFvBBU0EIJoKBBoAy5tA%2BXFYmVwp1Y%2FDUe9SVBP5RVyvjdSY4Zh6yMyQgv%2FrjUWaUauAzHG%2Buvw02RtnTp9T%2FAfCsUvVOhbk4CqVhKBrUmO4Ic6OT6Fo%2FuLqnClBSNVpqqtQ1kl0SXoocPF8%2FYLJLttUXy6J6RqNuBtkN0wy1Ragd%2FGuIlT7Icj1uFKd5bIsf3si%2F3MWqVYs322WlNHg3mBfsFDx8zP8gsJAzoyqwHkJIOkXPKyr6bROr5pPBTA1bOme53yFAiiYi3dCy419584PygEnhGEdigynIapo4X8oMqvEBNNpTbIjfIIET%2B1VGOyN9vyI5mOjObBkc9eSNzCds8fPBjqkAaScvSW6dppuVBYiaTUVC0jPM6YkItKjt4FaogmFL4%2BtYw05TWZgsi3MMIWaj5aBvTNtXpLkTBynkmZ2qfKus%2FL6s3lVCubVT6wWBcxKiJuHVGL1ieyvEaaSUKoaFaob7wWJ5ze4OHaK60cL1zkQaRz%2B68vA%2FpB6dUHkDFjPo9HXmAUCa1vnovbiLtcfQrYe9QRjyOVAwFG95TtJ87tNigCKYk%2F%2B&X-Amz-Signature=0a60e054d1c827bf45800be1d3d3635a22d4a20f3dbeb9e3d63fbbece9db5ab1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81e8-aa03-f6d3c8405d28.jpg",
       "sceneDescription": "G25:7-11 Death of Abraham",
       "yearRaw": "1844 BCE",
       "sequence": 121,
@@ -386,7 +386,7 @@
       "id": "350cb257-e13c-811d-a94e-fb961f371e6f",
       "url": "https://www.notion.so/350cb257e13c811da94efb961f371e6f",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:19-1:25:26",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/edb3cb9c-97ab-4642-9d81-d6c7b2c6d1e3/FB19EA0A-F965-4757-A59B-65796CE5FCC0.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RUMFZQGK%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112548Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQCjj9PVgN8HXUfHGtwF%2Bwa0%2BXeQgVY%2BdRNVz4mxWYaZ%2BAIhAKdpQRNibiMKhkUJK4jSzzGeNQHJ8iqkBRl8%2BfvqwU6FKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igw1PRfIZld9vV2an%2FEq3AN3TfRyEJdZG%2BZmgUNeESaCISJD1M3X8XnZoh9JgfdxB24SiYSyFre6FVoM20U%2FhUbv5O2etigVjYlVtLW8L%2FBmOeCJ2FMoTd%2F4z6Ld9r%2BOJqh1tdqDm9BQF3%2FuaHzPp6nnmhdR8j3xKn%2BKVXpTBt9HSWvgolLQqx2vlwrj%2BnaZQuEUTydLKDfs6Q2p9InnbKKhT8owt%2FThK6tEG%2F9UTo8XUoKPpmXWvV7LP2jqByO9jXSci1MIq7qLjXap5pXA7qoplltQYXdsOxqg8dPKnXEfcfV5kXvaA0Bbg2Gb1z%2BiPFenfg92QFjt0S4vfH1lHxaqizuRO7rM0NuDrOYRkxrvTEghgnrem%2Ftg5dbxOQaf9P59sEVpfieCjjy6c3N0vEcNLzcilI1pH84VY4b0DqAHs%2Bsi%2FRS5Qiu2OyXj8VAjAcK09wobHeVZIsuiscp2LqKvYOHXhMKA5%2BQfmrgB1TuEYOev838bAEpICZ6cB25WU9fLsOJqAvDzjRWYiiv1gPkuRmMbv3mVF76wsX0oYw7XpTcToKG4DRkYYmNfdM2oh5P3v%2FgK6POtt06K0fv%2FaP8mxF72Yf%2Bh2d5mF8rvAuwB6EIJr6M8KxYZpYbuJDXsXM6XuT157QWZ1DZM5TDrssfPBjqkAV7vkDerh32p1zisZe1SFOgxv2nIiLr43IPXbus3G4Ii389tlDxPlawCCmt5WYz%2FkqbJFqD7HGzUbTQ3qw7CCp6Kkmj%2B4g3DVqx8NDj4uqcj96OD%2F380owUVa5gpeTdsB6k3mS6f7uouMGZEr%2BZSCg1ZA8EKUdKtN6T9x2D%2FfdO4c9wV8H2o6kyqM5XpWjJgq0SoN8te%2BsJFxantIrDh5Wy5aB3W&X-Amz-Signature=5bcd8c79bcb34231a6ab88a16c7306ea6f61ede2fe6e9d35795eead0c52946ee&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-811d-a94e-fb961f371e6f.jpg",
       "sceneDescription": "G25:19-26 Twin sons were born to Isaac and Rebekah",
       "yearRaw": "1858 BCE",
       "sequence": 123,
@@ -404,7 +404,7 @@
       "id": "350cb257-e13c-8146-b580-c38f2d49c462",
       "url": "https://www.notion.so/350cb257e13c8146b580c38f2d49c462",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:27-1:25:34",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/0db3d2f9-204b-4357-8fd1-415558de7c17/114C0C5E-D98A-4EF6-896D-5904AE9B3538.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XP7MZLGI%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112557Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQCih5hPnUyVESk8imWD9ClP4rtjMSYopFBAnEXH0UWXawIgB5wStpyb1ss4eIHbQwoO6Ha%2FM22okoHM0bMG77FLhHYqiAQI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPe7GU48v6M2nIOQOCrcA4o%2FHxtPCgQ4uxR3d06Lu8FHy8eDQlBsoCEu7I80AgWHq8ZjIhZzVb%2FlYGu21Wtl4KJJzdgFSpq%2F1Xo5UtQmr3kV32838I4dk%2FcmiR1fQcAh30b%2FP7e%2B7MypEOsekAPusasntzHfyxmt%2FT2g%2F5fctFRANMs3%2FoDAynCMA29sX9QGW1awvOsR7lxv4LQfJd4JOTRNCyqQ0NuyHWOQsLcZEHLpSKSLItwwdVe3lcG2S0yrzucRgHJtXFjpDJ5JS3wB7LDHC5cOsX5xHXtuCRASBwPUv6M%2F%2Fc5VWWnIafmiI5pTlj5z7u%2Bkzpu%2Fp2YdzWCGYAG2gAOTtoY%2BY0PpYyfuSwBVB2adRRgT1r%2FlC1iDVhFwZLtLAlOyPvKXApauV3JHOe%2BADoiO7mkCzCcZL7uMyN%2F37aSlwEjrcBed7d9VmsGAP05P1zfz5mP%2B3L8vCgMw9G5zE3cVFk%2B9CuLbhwxaeAAsYXMOg4A9tQEMMdprwfA7Iboas%2FYzDlhXw6El4Id%2B1jrwl2R7yUksJ%2FPaVIiBNQeqk1XigRAMcTJxDpeJoLcaOy%2Fz4vjG1JR9Q20GF65fEzbOF6RrHxtDXqblD%2FE8OGBd%2FW6pB2TLz6O%2BOdatuXFC%2BJhdgjZEzv8AKXG4MLDUx88GOqUBJO1MIl2RsGEBWo9ekQKYfApfggjKGh3V53qiTJ%2Bm5mj30tVYLjCiNDxJXSprf7koAt78ighqxBPffgonyKW5hhUzXAGVA3AwHyjuBLKDb1%2FtWzLIjXIRcljGym98uWOowGnsT6HjP9Vg0qXwG10F6Y49cNiQ9xlLDshw9SbFLbbCMWc9Uk6FKAtcTtsQZvC7KwfVD3PntrRvZD0HJ4IaOOrp8c47&X-Amz-Signature=cdd2d3dc7cea768a87ee0cb9f21cf4e65d4f276e8e6c3db4430f47e835c66e78&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8146-b580-c38f2d49c462.jpg",
       "sceneDescription": "G25:27-34 Esau sells his birthright to Jacob",
       "yearRaw": "1844 BCE (About)",
       "sequence": 124,
@@ -505,7 +505,7 @@
       "id": "350cb257-e13c-81ca-8e0c-d9cc750f0e7e",
       "url": "https://www.notion.so/350cb257e13c81ca8e0cd9cc750f0e7e",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:1-1:27:27",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/58aab67a-03ae-447b-b209-e24c8c97f76d/76304928-1D75-4B04-B2D0-178D7117E7B1.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466S3G6ZJSR%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112634Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJGMEQCIF9fRWuyXqJEqwOgQK1xL6WqgCgRkojAQ%2FfuO5SRLNTqAiBMTVRp13rWrVGz1r%2Fl6DzPxk5pjm9gWa%2Bnm8tnl%2FAm8iqIBAj0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMoWUz5TIWDAbS23eSKtwD0ZnWZYFQWnck4L2zKnd6WIfTfbPuiLahKxp%2B3H6Spiw2UFNvLy%2FpoN7RiVNV5uZRmsa%2BzFbfUSck74I3fqbnsIg3iL31Wl2IWKdcuBjb8oU6DsAA9jA9uggLGwxat0%2BktW3%2FQSVcY41fpTWGx3y8A1hOlaLao6jQ12gTyWSdJAuaTxHcJXzKDS%2BiFV76yU%2FTxMIkA0pXoAJM4Gqf1SsmscLk8Y7Rym1TrXAmNNM0bpjcwau6INI0DgdBhWZwKt2f36JC84D%2BYjNZn8MDEV3vOQRrttJ%2Bb%2B8hWmPKi%2BR%2F2ojCzMTjN21BSYDNuv9qNGtHDcpG6j2RgxkPnSbZXmffgnGw1YV0gm6lSK9uzk4k6%2FjAJ2khoZLz15ELJQw6n8aL1YkeHbF3m6gwP%2BOqSas6RqYOegLquBmZJ4HaWywSDAjV%2FcKgxg9i8ZXAztUS5REuylzfn93RwlICAKf2WIUN12i819n9fZW5r4TEFNPsvxoe58AAdDyFaG0XWujCWRRdH0j1D7qfbJuxNTcsdxU2De4txVMrReHYBgFeV1I7zllJyBLSXCi6sUVndZR0H4euig2zjy8uIq7poqOHY8aXrEiqr0f46cBS1abgXSuiQamIwAtuABsM4p4wGIMwyczHzwY6pgH%2Fhl7dazCsWyHbie0olh0Omt%2FNKa8mbaZb0i5BOoVnwL9kEU9mz%2Bg8vJRM0QuLKla3NvC3LMNIbPPHj9r47nlHdXZMZImnQmbY0VWZi8ugN5LdRQNia1TIs6YIDdcjs21iF%2F%2BSWNVanEfWf%2Fa7XjZPPDwe4Hy29bPMTpbvgUPQ0PtqKWH8AJu%2BRs2tlTTMTcxeoDsaTMEX%2Fk6rvPLFTAuWI7rWSUmD&X-Amz-Signature=bb02c8c600f989ea454cecc468f15f221c2cfcd800fe559781925636a75533ec&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81ca-8e0c-d9cc750f0e7e.jpg",
       "sceneDescription": "G27:1-27 Rebekah sends Jacob to receive blessings from Isaac",
       "yearRaw": "1781 BCE (Before)",
       "sequence": 130,
@@ -522,7 +522,7 @@
       "id": "350cb257-e13c-8105-af4b-c6a37bea86da",
       "url": "https://www.notion.so/350cb257e13c8105af4bc6a37bea86da",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:28-1:27:29",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/ab2c0647-3784-4d0d-ac2c-aa87be6072d8/598AFBCB-B8CC-477E-9BE7-0A7C8FA7BBF2.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RIJRILD4%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112541Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDEi58zeBqPQXGyRHc3KIvAXuZP%2F1LJ89%2Fqm0srKeMjJQIgHVrieD%2F%2BwJmIda%2Bpwog2ZBDO%2BznoR4S6yJEcxiWkzqwqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDNJFEknNPvhAYtScGyrcAxK3wQtPfTaYI1O0CgxNO25lO%2BTNV6D0RhTWWKoI%2BJDX9zujGTBrTmb42IpPnWy6ROcLwY4aCOlf%2FMwbDXheGriBv925pEsFLAM8f57E633feA15jJ%2FBrB2vTWmbBxhtJhy1LNYEJesrO7ZY65reB%2FwUiktbcEYeG4b1ZQ4c%2FHSiRinQOK6HlGj4G5h7tsu2ZX%2B2Cy%2FBViY0WfgUzZU6qa4xojfkZaKM8ANtELkNASicnbf6LIy0gZzx6%2BR3n66fkQdmCx1MC8HlQxOKebnP7zzKP%2FK7DB5N1aV9nKTu3EOmZnA7LOwqZxn%2BQfNGYvo2JV4s2lOpzIQL8qchNbJEUOLaz7Q4bl1Jxp%2FxQrDGlmpYdzF3a%2Fl%2F6oV3S4WBEi4%2FbDrUdmPztlAyOEh5WsuA4vfgSLpBLiQt6cHWQBe3qDLjy8GwX%2FwYaTSHU58TLYb8SIyarM%2FbvJbYjSDFDczH8dh%2BLzTZtAxsIX%2B29Bs4Fizfo%2FQpRArcxrlQ8%2FYE2UJwzi5KsFs2q8BLyIfuV%2FoTo7E8eTP5NuVpoIMsZISrPGAgthLrGpq2HL1BHeJJ0EhAI4ziFj6bcjVeVn886YPwBIg60yDc%2BBWDS4wA96VXRr3h404Vqbg7LnVCGThyML2xx88GOqUBIATzEMyl5u5IaZ%2B%2BCgLuXn621QIHKyM8Twyd6S3iWkavdaqGIwLUk2sIFfxb9DFqk5w%2BGMhzbeAMSyHDG6CvYuCWnXlkNFdsal9GLWOPbn1gAQehCAa%2FOXd6cLphBXAsDGCUw7R%2Fmktn0bEEmU%2FdZe7bhB5mhklzEZiUXUs5yAoRPLrrL32u7gF5sivVy99HADpPa7sjTB09HWPvynWdKr%2BUhbyw&X-Amz-Signature=d85ae4a196ca49b31fc9227c2f23b1500e6a2d54b436810d8a60af64312e0fdf&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8105-af4b-c6a37bea86da.jpg",
       "sceneDescription": "G27:28-29 Jacob gets the blessing from Isaac",
       "yearRaw": "1781 BCE (Before)",
       "sequence": 131,
@@ -633,7 +633,7 @@
       "id": "350cb257-e13c-810a-87a4-ef484472d50f",
       "url": "https://www.notion.so/350cb257e13c810a87a4ef484472d50f",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/28#study=discover&v=1:28:10-1:28:22",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/490b404b-6e77-4efd-9717-deeab5c4f1d4/4B075071-010A-43B5-81D1-1E49546ED124.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZV7AUAIX%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112543Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQCaXcqjc%2F1%2FHMNMIO8qLaEuIAOPK8nFO%2ByWG9Yz6xhP%2FwIgPifcajJWGVEiCe7SXj4OlYkY%2FCcB63E8UwIFHCYcZt4qiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBj6KRGiJlIdhU%2F52CrcA9K9S%2FkFfRpDw6F1PJJ3yWzzuu65mBvgakjt5LaafXdAKN8pn8er3rualj6Pn5iz6TcwVO5Z%2B2znd1ZJXEV89xVGT1UnDOtkV42wy16%2FInwt2NHmPVSAVO0hhXydcRWcAYWAEWYY0TMj4uzmgLDn%2Fl7%2FD8lxKy4TrbHzFRjM%2BfiKcE1O4gz61u6TmQWkK3Tayd%2BMzL9GjlG1d2DR%2BtaQOtrO2xlY%2B7ZoXRjuCKLdheE7tblx%2FSKgLSsQkUPTNiroLryTmDKABjnizAKXzECvBqbCnUlv1IGRgfDXWlrpAdhRNaMgvCySEmCqCw05L8dr058%2BCiUOWmrGjwBK%2FpFkndjDefeadGgFynMjxzhnqsKz5eoihYwzv8dR6vFme8P7PEhaxSXRu6gX%2FVetHqvCGx%2BG2SE1yE0vQlzVwk508Ly0LNJyOnz%2BTCW2YAJ8%2BQSqqPNXFlQGbms5CpCRUPGwSmlI%2Bf7s8vQFjYjA5sDYvALaBZX5ERwtUvlGK%2BCVNG7mn7CokVjdW%2FxkpEuKbJxdaoDRcyxeHUgAJtzF2QmkJR%2Bpd4kP19DQffEIH%2F8G48W36%2FxH3XH5gUCrvNHl10dmAOqssvMWsrpgBKeh8mOO8XfURY3%2BEqqQOchb3AzqMNWyx88GOqUBpx8l%2FDDX68t5iSi%2BZOvlad6OAq1vV5K%2FEa5ikqWnMiiVdhV4uI7x911LFGX0BiYKTZooaOqDO%2Bl7LwnUqinmBUo%2F0uokLaAYiQ5Fj2TuKTUuufQNQh64XCbVrMPzkVXa%2FV7HxtxefY7SUX5SqXenEgleIL4O9XxBiVgON8kXJ4PqvodrPeB%2FcyW3i%2BfDZEAeWNZv5aAa%2B48o9b3b34O6KH121Us4&X-Amz-Signature=6a9b1114aabd010b69ab229574e05e46fff096c807f99c4c61e2b3c35a696103&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-810a-87a4-ef484472d50f.jpg",
       "sceneDescription": "G28:10-22 Jacob departs for Haran; Jacob’s dream",
       "yearRaw": "1781 BCE",
       "sequence": 138,
@@ -650,7 +650,7 @@
       "id": "350cb257-e13c-81c7-a6bd-d42f58a1f7b7",
       "url": "https://www.notion.so/350cb257e13c81c7a6bdd42f58a1f7b7",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/29#study=discover&v=1:29:1-1:29:11",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/8e03cde8-cd84-446c-b989-6141b494cf5f/D8108457-3E36-4830-8AC3-FDFD981C3769.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TUE6EHML%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112632Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQDQ395u0Cj6bqnmV3NrDp7GrZmAqYkN8KfUKCeg0kXanQIhANJDATJIChk%2BNaiIBHN3cpjznWq6XIabfvpkpJzqQWTjKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzT6PxWgZ%2BznNmjtN0q3AMTH2Bbhqm2rlQIjB3RA4JVrUHjgUKYDgqxLeDUxx8A5%2By6M8%2FJLtQf2DxVOGtayh4m%2FtrUztUTNWQvAtOeiA%2BVoQ0dTPE%2FRmtVXLL91KTQup14TGadC74gCVCjLqzPQwRjRwcf47VMiMmmCUujvBYNDEMKtYf9IJBsyrHC6o3%2FfCCQmQBRq3H5hEPkXSTFBBP0Bon5%2B7RAEvUO00UFnjiWayyb%2Bl2S4HNUmFGc8wmsx%2Fw5CvG1uC%2BXKDLvPS%2BP%2BW22HCjeSRTCUUfWLukPnEGvdMOBkDyPtjZW6hcF12NRdLkFyE4Xldh%2B%2BjHybnonNoDHyyNRMFT80p5ITGO2yfPL%2B7fXTjGNyxINzNLbxH%2Ffd55WHuxGibXwltXOjcf4Znh1wuxYQ1laeGEV9SSsYtN2FYxgacVHoMLU0NajlcgWjVgzUbu%2BrNdjJ9XAQTLu%2Bg2lrAmPgqmPATq2T0043ODANsMUXJXoAcaJAOTDp3HAPcMac1Y9lbAZtmfiJY5z%2BMiSCDQL3U5q9jTtto%2FCLIvXvSg%2BeqZaL4bksaP48vWkYh2j5EgQIk862bG17VaN97059xmdnk9n0DYzospx9i3RrO9xVLI6v1ZCGTYKKLhsnuXy%2FLYnZfQhMx542jCCssfPBjqkAaX8vN3XyIv8QayOmb4vaB97OxALPHAaD1TZHsrO1nFPtYo0y1JFwbJzcksPT%2F7wZVgCotZ5hfLOfz1p4uXfqTZ6jzmB0OnIl%2FKFBFhfYJPXqlzkzoJSGc2WopNmPjOguVuNXBUMJI7%2Bl1N9vSGwrYPXnZQUJkzBMMbyp4abQQNLrNRPgdBttFIGfiktqB8qwWPBKH6GidtmSrWHv3rqZy6ngYDr&X-Amz-Signature=16fea3cfa35082e022380572d92dd1e3e814965d6ffeb44eb27b2bc7e6f8d83d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81c7-a6bd-d42f58a1f7b7.jpg",
       "sceneDescription": "G29:1-12 Jacob meets Rachel at the well",
       "yearRaw": "1781 BCE (After)",
       "sequence": 139,
@@ -1017,7 +1017,7 @@
       "id": "350cb257-e13c-8174-b6ba-d9252acf358e",
       "url": "https://www.notion.so/350cb257e13c8174b6bad9252acf358e",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:24-1:32:32",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/a4fb1961-81a3-4d9d-8030-58ab90c0ef5d/498CFEB8-A544-49D7-9632-2B2E8AA2AF5E.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46666K54CQB%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112609Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIEmcf2azQK7Su5qeoKuvP9IMB4hqT%2BDGzB22VxR41likAiEA79Oi287tCn4MV%2F%2BwXH7hYdA4AOoGJ4eoJEbvoqclI7wqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDM0HaU3HUuLTlILsxSrcAxHZ5gB2crgnKngNJtbuUW8ZRCevn2giGT9%2Fi3NaZeYX6VNpnBEeBxUzvRF7Mnw4lSGIVkIBUmbVzCt68j7zJ53Sz%2FRyglYMR5ry9j%2FgWeLk3gapmq1vqwLrPyygg1M%2B1GAS7NkMYLOAvoPeFknf3jlvjx2Os9rkYWkUF10p8sDjiz4v3ID3E1ZLTlOGUTNJ76dgoEwoQDfDDXwBwNgCk%2FScx4JZMT36U78gJ08n08LgjZLvT%2BowmIhpBIx8F0uJBPf42TSwQc4j%2Fc%2FSYJ8LthoiGpRPfvPRB0dFX5mz8ZKCxvLvZBc7EuMe3XTaZxkKF9OYtyNcGSg7ZLcDZTAlhRW28nBFI5acxPCtv%2BUU7yV1lwOkCwWOR19mdjizNOlqqpFX%2BvbSiu2KIBhKSfLQm%2F8t04HgC4cIJbPoL0O5vA1r1%2BEO%2FbcLeXdZ7qvCJA6TRmhbDprQ8vRcaECr2ajM%2BS2DJwzb98WvMZWCziU7omCAxF1KcOTQ20EJWl3Bq1o80ri%2FNzfb9ywp%2FpmZKUJJkWNRHpKnZSoiIkrjSbbkTvFafr7vFp2BabNBEw44v2uqvMrwS8D1y3zHVq72%2F3Bv0nlGhz6F6zjRiRTzRNd4qaEIrR%2FKrnq6ZIEshJ%2F9MOCzx88GOqUBfi32GlgrH5M0LIuLxqCke5GwK5BV4OoCbJ55J5YtVFXnKl2d3zdKTx70ycP39QLpz9sBvmMYRwk3S9H0p4sMj5HfnLAfq9A%2BErmX1gfYHbh4cR7A1gQeAVVkU%2FlZOG8rWydGa6Ezszer8wUVV%2Bj74E8WnEyozwxZT%2FihTPEHOji6HajH%2BeBK7smR3IbPrbuauOLvEg9kkzF05KkbKJkwoAYG%2FPby&X-Amz-Signature=737271f54400134f30bde192b18ab4b3332904720863ad4e4883990370d6739a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8174-b6ba-d9252acf358e.jpg",
       "sceneDescription": "G32:24-32 Jacob wrestles with an angel",
       "yearRaw": "1761 BCE",
       "sequence": 160,
@@ -1033,7 +1033,7 @@
       "id": "350cb257-e13c-81fc-a39a-c5b2803d3df6",
       "url": "https://www.notion.so/350cb257e13c81fca39ac5b2803d3df6",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/33#study=discover&v=1:33:1-1:33:11",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/75fede14-4396-407c-8a17-246a77fe2855/C8A78047-F5D5-46E4-9379-AE6DBCDBAFAD.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ST72YGAC%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112650Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJIMEYCIQCRzn2mA1Wz%2BdXl4t6%2BIK1eORJi7lfSowsdEsmoM6xOmQIhANdyR%2FSPM1T0izV1GiyewMUMdE9FZg0MxQoGT76jmFwiKogECPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgxYhvb7izKdlplZev0q3AOzHqkbTqlBNLGh%2F1cgQdQpmy13RZHzestnQk7I%2BnCZ1z6Kxq4u%2FU6RpO8%2FgGaPYs93oc1a%2FZarMud%2Be2C9eFH6GL%2Fd8cTD6%2B1q%2F5kpzpBya4bV350lV4QbPD2LX0G5ApYOfyXEpZ4gOeBBMiDkpjYDEt2cRJhltlpKW005EKPIYhxFR%2B5d5u34R7Mb2rRioKlSuQu0ioyfHvVq51b0WIBXxMI7cxxUYObOWUlOydYNI74pP6l9L6pgu2Km8vJPTLQxTBk9kgPHOTAgScnEnZiX85Q2xaoFzfKspm984CVDiveuDNLnBHneDRWKoNn7cHi7ntflZqIVEirQubIhf1MoKRZU62yWE6uUY0TMCxl%2FSjPxem2uhwIIHkLx2h2bR7csSnhIHvCS7SBSY%2Bt3mgZMJA%2BIy8ZmW4XNt4STIVtEYZEzx63RORzboPivadifbJm1jzJnIjgP8WytxCL6%2BsbeHAriGBxqrnOVIplY6NNQtlb1in08AnEy6WXaf2tjaN0hUR0Kq%2BJYxBgJFH1WLfSDC9hZEbo2MS90%2BLDVldJaO7Nzg17y%2FnEx6J%2FYGhl307AOvk%2BxSLeLDlXM9TPaT%2FkOi94P6AjHh2rRBpCgDwzrnC0uI3dGBODhg1kEhDDazcfPBjqkAYiUk9RpjBjIBMTwRVt9qjdEFWj0BUu46sOdNRcwb2lk943mLyCHHucoNE1fOwaCvDK0TtIZUoFrG4kDVKo6VtkCHY0a7Xgo2pyYfzgFKOLzfNt4uFN63vFcipqsFkkVEn6BbJjSw%2FviltbGCHG79H5MvtlMORkeNZYaf8tzcMq1rbuWkb%2FQLAir1ENxLh7k8Uh2EyEkBL1k2zlBk8nrOCKGAQo2&X-Amz-Signature=3ec9986ace38ad81cf06fe807c224430ff86f0a71c5576530bdb203ccc1260f1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81fc-a39a-c5b2803d3df6.jpg",
       "sceneDescription": "G33:1-11 Esau meets Jacob and his family",
       "yearRaw": "1761 BCE",
       "sequence": 161,
@@ -1391,7 +1391,7 @@
       "id": "350cb257-e13c-81e8-b844-e37cb7b50652",
       "url": "https://www.notion.so/350cb257e13c81e8b844e37cb7b50652",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:1-1:37:4",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/395e3f1c-039f-4295-9e15-cc241007d03a/DC0B0701-521E-49EA-8343-F1BAB480B60B.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466U4JAWIL4%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112645Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQDOxYIC2sedusfnfubdoCQZhNpVEJeyQwI2tuijiknk9QIhANBmnUroP8Mtz%2FVLIP8Fr1SZDoieJqUDe2%2FVQgCR7HbYKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgwEDGgGv5h5G01tAoAq3APJf98siNFQcmy%2BRo5i1Ds8RKCrwS1XuRheGbScWEwuNGahWVTfKGRTaA9f5jbUY%2BQdtFI%2BOcwAxXF2QzEsaYTx0o9zQE69v2vVCNXPJilacPF1dpB4QR6gLHwVTSdTZ9xp4Q65zXSvs%2FbSXGWSJP1fgzzINVahxM%2BLhUxOmBmLjb%2F%2B4GgIuXz8CGxkQOvw5dUX6iN8mkcLgBdhPlwN9OCqV8EY3s%2Bm1%2BAZD4EK0mH6fqpmWSnLsTaHgnRPXptqu9sz5T7bu2xzXyovN59osFQhH8iz6E0RD6dCtWwrl68xZnEm%2F7nFpdRQsykOFFX9JCdyzUFxHi0Vr3nPuRlCtcp71bOH7ivDXe%2FG59kg4xpyuLarwc6keChqQUv3Io5F4NU7bRJqHqARWJN7xtmR%2FWATBJ7P%2F6tjaZBWc2ZBQ%2B98hWgnNtiU4I%2FyRNCeSM%2BOb1GC2QWL4OZQ08AOyfkLddSQ%2F4GJdOthmVo7RqBIYPYG0E8jFIG8%2ByvXsO3UbWUz2GTxgcq1hEykWt%2FpzD2GHk1oVGbo0tZCAQFTBMxbnIqlHUs9%2BaJEvHuBk4bDjqvVwR0wBwuxcLrzn8kZPGF0u7u93X5i4YWokHb4mO28W6cW%2Boeyo%2FvbbGMQKuUxhDDVssfPBjqkATEJbaxLcA%2FCrVsdclsZeN4ibo1Ms5jIu2wrwP%2BAmqDoK4ND7UDWuguSmP3YF8zWPmov3ti9SuYO%2FGI1ShHeHNyJ0h0cPBjDZhO2KtYzJurhAqJt6aGXULB8vZZdXNi7RqOu1I%2FM9vJjJp9%2FFTdsBgAhtS3BNU3NB1b1p7WFEWfUt8%2BdaODhoyMiVWkFgs7kvYO8BjdO3K5ccYs%2BsJK6VOAiCIuJ&X-Amz-Signature=5feec26cce9ae4f02f2506ef187add2f2462e7f4899d084d7f16ea62a4e136e0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81e8-b844-e37cb7b50652.jpg",
       "sceneDescription": "G37:1-4 Jacob loved Joseph more than all his brothers",
       "yearRaw": "1750 BCE",
       "sequence": 183,
@@ -1441,7 +1441,7 @@
       "id": "350cb257-e13c-81c7-b3e9-d5777f5df31a",
       "url": "https://www.notion.so/350cb257e13c81c7b3e9d5777f5df31a",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:18-1:37:24",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/e2832044-b37c-4b61-a9d1-5c1b8650495f/2568D600-D211-4FCA-9BF9-314D1066D09D.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466263O7I43%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112632Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDr2YEqh3ss%2BaIxiFtrEots62uVqQxQ1OjXooILDKXxJQIgLmdVugwlB4fHY%2FzVwOz0lUJgkRdcCHisIRSxKxe1K2IqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDPOSjlDwHPQPHtgVWSrcA%2B40y%2Br8szgqIF6yRmIvHdNYMubp%2Bn8OoAjBZmd7ppQ8Y6dRVaLeut4XeR6btkW%2F%2BN18iHiz2Zk4br9FaoOEJ%2Bv0A3S1OSB7WRYXHlaH74TWohSfAx3%2F9jdbHW5NjNhu4mcWwRuF2Y6BIkew7k6yuDIjdv4vsELf8%2BHhiYgP2LEBLXBsyDO580sAJXoWWVP3l%2BkrXieVCaGEE%2BlQZxUck%2Fc9PJWEkg4fnCO0uFC82QT7LXKdGwgjBL2ZNSAKKkn3OYKPU3Cuw5RGmcGIIvXDqoBDMQmpZJvKIXKnPxzTr%2FIe%2BVnqqEUSzGvHn1tJ118jlqa6FTHM9VtFISbq8yqE6tXJXi35ysqyruSupo%2BWzY4jPABOvYB%2BMcbR%2F7MVb1No8Zy84AZb7ezW%2FsOpI1oQcOZMukG8pGBwRCL%2F0z7D0xZs3o5wsfv9nkPXAzkr1lFiWeMUGApUvJS1ZkYUGNNtO0woWKygt8RFKv4bTuCX2jraWApJf5JmhJjz3xg02ceLvaM%2FuVi1Nxm6wbNdhnToXDX1zNPz6p3SGpXHpV93dGYmbPy8pwIJiRysLrdFlM58NI94fXb9aIBRcFov58Cke03qI6UQ2rTgqLq5pb%2BO6SirUTpAEin1UdwabzpAMJuzx88GOqUBJjqt3Lfh5mkM7Vo6pg5eMikLQ08npImtVqB9sYDUVC%2FHM%2BuVlNnqWZhvs%2FssDTkzcQealC%2BNy1ZHMZvq6%2B6g6B1bSSNb13WcKmjWsm4qnudUOMMOFDniAoyf9vIjlLKdXw236xVDg78Fz8pwsemhJk2FabHzvTzTMk9BR6dp59%2FqwvBUItoCavVpMs8XCCSQNugzm0XX2RRELbjqEyyushdNtDpF&X-Amz-Signature=ac14524a4ede9ee55103d9a420bd4e05c0fd87d33b8bcf44b3aff7bbb19e787e&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81c7-b3e9-d5777f5df31a.jpg",
       "sceneDescription": "G37:18-24 Joseph’s brothers plot to kill him ",
       "yearRaw": "1750 BCE",
       "sequence": 186,
@@ -1457,7 +1457,7 @@
       "id": "350cb257-e13c-8175-9ace-fb0f6ba5909d",
       "url": "https://www.notion.so/350cb257e13c81759acefb0f6ba5909d",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:25-1:37:28",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/5cc16395-d58d-4f40-abbe-05a5830790e1/F98E0D72-DBB9-4F53-8823-9507FD1BABE3.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4664BS4QUWY%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112610Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIBFrkCL4ZaYOLdGW84NW5bKJCY2HyZQoMyOp51TSwzRlAiAC%2BtNZD27ft3TKXKcOB%2B0VxxyusyEls01xPfy73pinACqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMs7Z7UcTKrHUETgs7KtwDsY%2BGWD0xUDmBwhH%2BZ6kODytT%2BxWkHdkndPvHzl3WK0RNikQOvS2K46UyC%2FeNNY2VTbO7LadLVYFxZmht9JOydLPEdpMzjSuJA5nEpEK9DyBdo2LX7041CuWByWg0ZX7Z0NuRuTCVrn%2FVI%2FpPp71RI50WDNex%2FySKVZnu1xubmeOrczATeD3fI%2F0GYiWRmccbw6Y7VpeDVGaccDBQM6ZnrD6iT%2BHBwevqpsySZ1rr%2BkNtlOOH5j1uuKfDh25HTGnCWJ09YY6xCdifNw7EX%2BBxAr1ANEIYGnL1kIrLso41cEtq4As0JNRCy8xD%2Fm%2BsMG%2F6LYqrycv016dMBHCQBlTeNPrpGx5Hy9djGD4VKJWq6EWXee3kbh06VeBl7KtEBZ%2BtyQhAj4qJujcZDZZRWMlgWp47i%2BoM2cioT%2FJ6h8yNaXjSrli8TMfJsNS2ogXXsAKU9WHQVue9LJXoYe81qXJPtVtK%2F3pGIr%2BhqXCttzZa20bz1tzLiBLtHebbg9KfC6%2B0fg3cjMSZVhY7swhxAVV77AwkkCKU2hW0%2FDvTsV0RdKaoLfuAhEMHlumnEXxriR7J57uJYH1eiXQPT9qzPkj7Cr2d8fXV3mqBqu5YwT%2B%2FnV0355F7y%2BecXrbQiX8w%2FLHHzwY6pgEWW7YrNbp1NGlYl2il2Gl0ixjyYgDGXy1R5tEjYbvvH%2FuuL%2FZPCrPeOzfNU4091dvAzJ90c4VS9zq22tdhfOkYFb4tMpTf5V6Rc8g0LE%2B%2Bi4wIVaPubXFTAq5%2FwVP8aWRHG3jEroZytHshC6LDZuRSeo94vvOcZ5Ris7O%2BNBzAV2JCpAmsB1H5F5rxSyELM62UnEmTqYglIyWZZvOXIz35tn0EUxcp&X-Amz-Signature=928635909999f6f1737bd9300e46d895fbd7b701e5c3ac3e1ca0a407ee18a1a3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8175-9ace-fb0f6ba5909d.jpg",
       "sceneDescription": "G37:25-28 Joseph is sold to Ishmaelites (Midianite merchants) for 20 pieces of silver ",
       "yearRaw": "1750 BCE",
       "sequence": 187,
@@ -1622,7 +1622,7 @@
       "id": "350cb257-e13c-8191-8f98-db1efe615074",
       "url": "https://www.notion.so/350cb257e13c81918f98db1efe615074",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/39#study=discover&v=1:39:1-1:39:6",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/c886b597-43e5-4446-9397-5d7f45b24177/3B0B13EE-ACAF-45CC-BFDD-58396D6FD0BA.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466URDS67GD%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112618Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDgQQnl6UF8grc%2BYuIKC9aSzD%2Bz1R4Z%2FLobV2TZ%2FVl6eQIgRKP9jXwxQ1mOOU4iTiVDgSDUDMcNXiiIkZNc6mqf8IIqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDBafQClcud6IvRSx7CrcA0eot4vgT41f6IpGddKoq8ChFSu%2BGvjWhRqZ028g67v9yRlw5BXTxdo6eNAjlFay2zy5x%2BuQUVhk7sI0rlLyeuReYwBRK5nN4%2BHG9tVwOQLRSSYjhYfBHYLY2mJ3Hozgi3v%2F5JFWqMI07TmkNl%2Fz55rBmNPb86L1wIiHH2LcgmzbEv%2F8A1L0z5SLVIvdO8OKF13J1QAtrwpzosS6Z4EREMIuQ%2BbR2qhJQTPtsp9a%2BiJ%2Fc1Pk9zA47L7Tpo5xOxNT3mwE%2F4LOIPXUgfFw%2BCa7OdK3p835NgLCG1%2FLfwquo9T6M2QH3PX9CEfxt1CgcnbAEuHQ4jRDJa7%2FfDy%2BOscnADfPcnHF6%2Bg6f4Fyf6DMQavBOmmMyI2l8gCRX0u0T6Mq0YukEkXFn45AZs7cPaqO5f0rnP8gceBsNtMILYgwRJ%2BJ9tdxDs4%2FH3ph2NSbb%2Fu5iIUgyGg3U9pa%2FASesYK8nE32Lg7lfewM8DN5UUuYnTFN1JivD%2F9QOHwZCX7IGUK%2FDhSFCpuHMuLOQBOQFft0dak0gr3x5ttZzZ0FfwW053ALOs%2FeUL9H1r6OlLontG6TaWj%2FYdmrQX%2FjSbxl522uMEIeFLRsLXqLrVDis8z1FA6UmqmsC%2BMA4nBy0wTEMOmxx88GOqUBwF0Ob%2F5nI5p7S%2B%2BSDxecpUw1Ob5QKpFwkgSjdIGMCx7rgqKHXGGhOisOs1tnOnqdcBzSlk7cgdCWjXUWHYei%2FJoPwerXCLiOYPjU28PUUK7Ii7HqxT%2B5iUlysZPM3xfEQTUxRFuNPoYm8QZ7OsRwEdRyY8yPv7XSUqQAQADiHvdjysdT0e31%2F51EIqt3TMs5O2a9axpqm1E13Bgx2PsjEDzJtHUj&X-Amz-Signature=f5602205ef961f1c44f05f606691d570ad3e9040f007d6f4ab0ce583041de6a6&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-8191-8f98-db1efe615074.jpg",
       "sceneDescription": "G39:1-6 Egyptian court official named Potiphar buys Joseph",
       "yearRaw": "1750 BCE (After)",
       "sequence": 197,
@@ -1638,7 +1638,7 @@
       "id": "350cb257-e13c-81da-affa-c5ff7b8bf400",
       "url": "https://www.notion.so/350cb257e13c81daaffac5ff7b8bf400",
       "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/39#study=discover&v=1:39:7-1:39:20",
-      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/aba035b1-cbcc-4ed9-9bdb-94f1d8cc77ad/4A0D3A27-388B-4BC7-9EEF-D8D72B36A471.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46655ZCW64O%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T112641Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDGKwt5DjkGrbbtQyxgtU%2B%2F%2FmPafuBKZap542K3%2F%2FFpKwIgQZ848CpTLzlEBEzRJ%2B8ta9hqN%2FQJdtXx%2By9HUtj%2F7ZIqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDOxkHrPXzckJbXtGOyrcA6MyoRLBJZbwOMI91UDVHZgJUlLJ2U7QyIra0vLTU6JQNpG1hyt6lYffoXvJW8fysErMXn0KSjAel1OoRhinc9UcBor8glSzqrdSkJ40mVEgIGxKoVviJP2O7O4hUIQFRCc%2FYeD6pLhn3a1CE%2BKfVQbMIqovXrqSPm3nDhZ4quzdXBs3oiwugop90t7JawwF0vTSRXLEZ6avzZXfQUtWr6KYgzr8ufiQBvEhVX5SbP4MAwRMTMhwZbhxQ9Ru7SiXgdx875Q1PX3NP1RT2VURrns8SNhaYQei4IP%2Bxm8m%2B3Er1xhJ%2BtwAKpF7fY1QMZuQDcHF17dYhPKaMx1Pp%2BchVGHHBWNFqj89wNwIxYmin4lGzMjytlssxevywtUIocHAN7sBRozmA3UDF%2BV6ZnYjxMfKQGXd8j6XP8klZXlc1%2B7PQJF1MFwb9bw%2FQ9gyml7%2FeTqsLhHVBs0pgNTXP8RHxJWd%2B3VIi%2FQ8UDeJYEhpzW8OOyYua4lv1TJZZh29c7SAELXXG7gNvvgICJGJRp4Fo2aLJZvyGK2cbU8XBxhLv7CzL8xu2t6qo2G1dVx8TgSkq4G1vCMCXG%2Fh9cDo4LWINJggObmHXmEPdWiSqa%2Fc9ORQOlUbCvj0Bljn3L4oMPCxx88GOqUB9Ij28GI4mIcxNyX2f1hrhN6wvm0nOwwLES7nqVZFGyWVmYld%2Fjdw%2B6KGevRkuMBh%2BfbGcFDLIEIn5GapbfecO2feuAgd0Gsde64mYRA28QnLbvAu6EU5Uh93HrGs4RWd6oqqoccX9XyrxsEBo3GDMNz343CEvJXgFtqK6NPj601Snn%2B7lThKH2hI4mLi9zDEnLW8ecHuNMfCH0pdUMhITMeHgOsZ&X-Amz-Signature=ac9bdcab2f8b9ce32065f0315cf8274f63c296a82f645bf8e477395bac432283&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sourceImageUrl": "data/images/350cb257-e13c-81da-affa-c5ff7b8bf400.png",
       "sceneDescription": "G39:7-20 Joseph is false accused of trying to lie down with Potiphar’s wife and he is put in jail",
       "yearRaw": "1750 BCE (After)",
       "sequence": 198,
@@ -4116,6 +4116,806 @@
       "sceneDescription": "L7:1-21 Instructions on offerings ",
       "yearRaw": "1512 BCE",
       "sequence": 350,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-817e-97dc-f0a0c686bf78",
+      "url": "https://www.notion.so/350cb257e13c817e97dcf0a0c686bf78",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/7#study=discover&v=3:7:22-3:7:27",
+      "sourceImageUrl": null,
+      "sceneDescription": "L7:22-27 Eating fat or blood forbidden",
+      "yearRaw": "1512 BCE",
+      "sequence": 351,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8128-a42a-fc3e7d19d873",
+      "url": "https://www.notion.so/350cb257e13c8128a42afc3e7d19d873",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/7#study=discover&v=3:7:28-3:7:36",
+      "sourceImageUrl": null,
+      "sceneDescription": "L7:28-36 Jehovah’s instruction on priestly share",
+      "yearRaw": "1512 BCE",
+      "sequence": 352,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-814a-9466-c60a9180243d",
+      "url": "https://www.notion.so/350cb257e13c814a9466c60a9180243d",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/7#study=discover&v=3:7:37-3:7:38",
+      "sourceImageUrl": null,
+      "sceneDescription": "L7:37-38 Conclusion on offerings",
+      "yearRaw": "1512 BCE",
+      "sequence": 353,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8112-8611-c827bcd35142",
+      "url": "https://www.notion.so/350cb257e13c81128611c827bcd35142",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/8#study=discover&v=3:8:1-3:8:36",
+      "sourceImageUrl": null,
+      "sceneDescription": "L8:1-36 Installation of Aaronic priesthood",
+      "yearRaw": "1512 BCE",
+      "sequence": 354,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8119-8e7a-fe7552849e9e",
+      "url": "https://www.notion.so/350cb257e13c81198e7afe7552849e9e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/9#study=discover&v=3:9:1-3:9:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "L9:1-24 Aaron makes offerings",
+      "yearRaw": "1512 BCE",
+      "sequence": 355,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ed-b463-ebe6a4a6adc1",
+      "url": "https://www.notion.so/350cb257e13c81edb463ebe6a4a6adc1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/10#study=discover&v=3:10:1-3:10:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "L10:1-7 Fire from Jehovah kills Nadab and Abihu",
+      "yearRaw": "1512 BCE",
+      "sequence": 356,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-812e-bfb9-c440048b5b82",
+      "url": "https://www.notion.so/350cb257e13c812ebfb9c440048b5b82",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/10#study=discover&v=3:10:8-3:10:20",
+      "sourceImageUrl": null,
+      "sceneDescription": "L10:8-20 Regulations for priests regarding drinking and eating",
+      "yearRaw": "1512 BCE",
+      "sequence": 357,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e1-a250-c5a02fceec0e",
+      "url": "https://www.notion.so/350cb257e13c81e1a250c5a02fceec0e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/11",
+      "sourceImageUrl": null,
+      "sceneDescription": "L11:1-47 Clean and unclean animals",
+      "yearRaw": "1512 BCE",
+      "sequence": 358,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8116-bcbf-d874aece138c",
+      "url": "https://www.notion.so/350cb257e13c8116bcbfd874aece138c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/12#study=discover&v=3:12:1-3:12:8",
+      "sourceImageUrl": null,
+      "sceneDescription": "L12:1-8 Purification after childbirth",
+      "yearRaw": "1512 BCE",
+      "sequence": 359,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b6-a2b7-e60e9db5c921",
+      "url": "https://www.notion.so/350cb257e13c81b6a2b7e60e9db5c921",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/13#study=discover&v=3:13:1-3:13:46",
+      "sourceImageUrl": null,
+      "sceneDescription": "L13:1-46 Regulations about leprosy",
+      "yearRaw": "1512 BCE",
+      "sequence": 360,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8155-a101-f54cff652c09",
+      "url": "https://www.notion.so/350cb257e13c8155a101f54cff652c09",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/13#study=discover&v=3:13:47-3:13:59",
+      "sourceImageUrl": null,
+      "sceneDescription": "L13:47-59 Leprosy on clothing",
+      "yearRaw": "1512 BCE",
+      "sequence": 361,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8103-92da-f253ab2fc0b8",
+      "url": "https://www.notion.so/350cb257e13c810392daf253ab2fc0b8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/14#study=discover&v=3:14:1-3:14:32",
+      "sourceImageUrl": null,
+      "sceneDescription": "L14:1-32 Cleansing from leprosy",
+      "yearRaw": "1512 BCE",
+      "sequence": 362,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b0-a2da-eb206dbce494",
+      "url": "https://www.notion.so/350cb257e13c81b0a2daeb206dbce494",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/14#study=discover&v=3:14:33-3:14:57",
+      "sourceImageUrl": null,
+      "sceneDescription": "L14:33-57 Cleansing of infected houses",
+      "yearRaw": "1512 BCE",
+      "sequence": 363,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8158-9149-cce5f95d90ec",
+      "url": "https://www.notion.so/350cb257e13c81589149cce5f95d90ec",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/15#study=discover&v=3:15:1-3:15:33",
+      "sourceImageUrl": null,
+      "sceneDescription": "L15:1-33 Unclean genital discharges",
+      "yearRaw": "1512 BCE",
+      "sequence": 364,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8105-9afa-f8508b3a1c89",
+      "url": "https://www.notion.so/350cb257e13c81059afaf8508b3a1c89",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/16#study=discover&v=3:16:1-3:16:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "L16:1-34 The Day of Atonement",
+      "yearRaw": "1512 BCE",
+      "sequence": 365,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8195-a375-f4886cfe7974",
+      "url": "https://www.notion.so/350cb257e13c8195a375f4886cfe7974",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/17#study=discover&v=3:17:1-3:17:9",
+      "sourceImageUrl": null,
+      "sceneDescription": "L17:1-9 The tabernacle, the place for sacrifices",
+      "yearRaw": "1512 BCE",
+      "sequence": 366,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818f-9517-c580e85f52f4",
+      "url": "https://www.notion.so/350cb257e13c818f9517c580e85f52f4",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/17#study=discover&v=3:17:10-3:17:14",
+      "sourceImageUrl": null,
+      "sceneDescription": "L17:10-14 Eating of blood forbidden",
+      "yearRaw": "1512 BCE",
+      "sequence": 367,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81db-a957-ebbe56a2ab1e",
+      "url": "https://www.notion.so/350cb257e13c81dba957ebbe56a2ab1e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/17#study=discover&v=3:17:15-3:17:16",
+      "sourceImageUrl": null,
+      "sceneDescription": "L17:15, 16 Regulations on animals found dead",
+      "yearRaw": "1512 BCE",
+      "sequence": 368,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8101-9eee-e5d27b800ec7",
+      "url": "https://www.notion.so/350cb257e13c81019eeee5d27b800ec7",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/18#study=discover&v=3:18:1-3:18:30",
+      "sourceImageUrl": null,
+      "sceneDescription": "L18:1-30 Unlawful sexual relations",
+      "yearRaw": "1512 BCE",
+      "sequence": 369,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8144-a997-dff523b16756",
+      "url": "https://www.notion.so/350cb257e13c8144a997dff523b16756",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/19#study=discover&v=3:19:1-3:19:37",
+      "sourceImageUrl": null,
+      "sceneDescription": "L19:1-37 Various laws on holiness",
+      "yearRaw": "1512 BCE",
+      "sequence": 370,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-813c-83ad-db8ef1dda21e",
+      "url": "https://www.notion.so/350cb257e13c813c83addb8ef1dda21e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/20#study=discover&v=3:20:1-3:20:6",
+      "sourceImageUrl": null,
+      "sceneDescription": "L20:1-6 Worship of Molech; spiritism",
+      "yearRaw": "1512 BCE",
+      "sequence": 371,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e2-8686-f91ffdf1fe28",
+      "url": "https://www.notion.so/350cb257e13c81e28686f91ffdf1fe28",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/20#study=discover&v=3:20:7-3:20:9",
+      "sourceImageUrl": null,
+      "sceneDescription": "L20:7-9 Be holy and respect parents",
+      "yearRaw": "1512 BCE",
+      "sequence": 372,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8141-9f00-e350988e77d1",
+      "url": "https://www.notion.so/350cb257e13c81419f00e350988e77d1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/20#study=discover&v=3:20:10-3:20:21",
+      "sourceImageUrl": null,
+      "sceneDescription": "L20:10-21 Death for sex offenders",
+      "yearRaw": "1512 BCE",
+      "sequence": 373,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8134-b95c-eb78187565b3",
+      "url": "https://www.notion.so/350cb257e13c8134b95ceb78187565b3",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/20#study=discover&v=3:20:22-3:20:26",
+      "sourceImageUrl": null,
+      "sceneDescription": "L20:22-26 Be holy to stay in the land",
+      "yearRaw": "1512 BCE",
+      "sequence": 374,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8150-9095-d4939be7767c",
+      "url": "https://www.notion.so/350cb257e13c81509095d4939be7767c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/20#study=discover&v=3:20:27",
+      "sourceImageUrl": null,
+      "sceneDescription": "L20:27 Spiritists to be put to death",
+      "yearRaw": "1512 BCE",
+      "sequence": 375,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f8-8b96-f016e997baf2",
+      "url": "https://www.notion.so/350cb257e13c81f88b96f016e997baf2",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/21#study=discover&v=3:21:1-3:21:9",
+      "sourceImageUrl": null,
+      "sceneDescription": "L21:1-9 Priests to be holy and undefiled",
+      "yearRaw": "1512 BCE",
+      "sequence": 376,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8173-924d-ccc26b384da6",
+      "url": "https://www.notion.so/350cb257e13c8173924dccc26b384da6",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/21#study=discover&v=3:21:10-3:21:15",
+      "sourceImageUrl": null,
+      "sceneDescription": "L21:10-15 High priest not to defile himself",
+      "yearRaw": "1512 BCE",
+      "sequence": 377,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81a0-b8d0-f0f0badee541",
+      "url": "https://www.notion.so/350cb257e13c81a0b8d0f0f0badee541",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/21#study=discover&v=3:21:16-3:21:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "L21:16-24 Priests to have no physical defects",
+      "yearRaw": "1512 BCE",
+      "sequence": 378,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c5-9a62-ea1bfc74d8b3",
+      "url": "https://www.notion.so/350cb257e13c81c59a62ea1bfc74d8b3",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/22#study=discover&v=3:22:1-3:22:16",
+      "sourceImageUrl": null,
+      "sceneDescription": "L22:1-16 Priestly purity and the eating of holy things",
+      "yearRaw": "1512 BCE",
+      "sequence": 379,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8121-868a-eb94dca8f2eb",
+      "url": "https://www.notion.so/350cb257e13c8121868aeb94dca8f2eb",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/22#study=discover&v=3:22:17-3:22:33",
+      "sourceImageUrl": null,
+      "sceneDescription": "L22:17-33 Only sound offerings acceptable",
+      "yearRaw": "1512 BCE",
+      "sequence": 380,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-813d-9fc9-df0fccad57ab",
+      "url": "https://www.notion.so/350cb257e13c813d9fc9df0fccad57ab",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/23#study=discover&v=3:23:1-3:23:44",
+      "sourceImageUrl": null,
+      "sceneDescription": "L23:1-44 Holy days and festivals",
+      "yearRaw": "1512 BCE",
+      "sequence": 381,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b1-847e-e493ce4acd45",
+      "url": "https://www.notion.so/350cb257e13c81b1847ee493ce4acd45",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/24#study=discover&v=3:24:1-3:24:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "L24:1-4 Oil for the tabernacle lamps",
+      "yearRaw": "1512 BCE",
+      "sequence": 382,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-813c-ae0c-f1f3b3cc74be",
+      "url": "https://www.notion.so/350cb257e13c813cae0cf1f3b3cc74be",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/24#study=discover&v=3:24:5-3:24:9",
+      "sourceImageUrl": null,
+      "sceneDescription": "L24:5-9 Loaves of showbread",
+      "yearRaw": "1512 BCE",
+      "sequence": 383,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b7-8829-d9e402be02c0",
+      "url": "https://www.notion.so/350cb257e13c81b78829d9e402be02c0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/24#study=discover&v=3:24:10-3:24:23",
+      "sourceImageUrl": null,
+      "sceneDescription": "L24:10-23 Abuser of God’s name stoned",
+      "yearRaw": "1512 BCE",
+      "sequence": 384,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81a2-88f7-d6ac13ef13b0",
+      "url": "https://www.notion.so/350cb257e13c81a288f7d6ac13ef13b0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/25#study=discover&v=3:25:1-3:25:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "L25:1-7 The Sabbath year",
+      "yearRaw": "1512 BCE",
+      "sequence": 385,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c2-a968-d6435b6e73a6",
+      "url": "https://www.notion.so/350cb257e13c81c2a968d6435b6e73a6",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/25#study=discover&v=3:25:8-3:25:22",
+      "sourceImageUrl": null,
+      "sceneDescription": "L25:8-22 The Jubilee year",
+      "yearRaw": "1512 BCE",
+      "sequence": 386,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ee-8c36-dc9e8ed03aa5",
+      "url": "https://www.notion.so/350cb257e13c81ee8c36dc9e8ed03aa5",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/25#study=discover&v=3:25:23-3:25:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "L25:23-34 Restoration of property",
+      "yearRaw": "1512 BCE",
+      "sequence": 387,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-814a-b123-d16aa60f1e9f",
+      "url": "https://www.notion.so/350cb257e13c814ab123d16aa60f1e9f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/25#study=discover&v=3:25:35-3:25:38",
+      "sourceImageUrl": null,
+      "sceneDescription": "L25:35-38 How to treat the poor",
+      "yearRaw": "1512 BCE",
+      "sequence": 388,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8149-ba98-d5cc91b7eb58",
+      "url": "https://www.notion.so/350cb257e13c8149ba98d5cc91b7eb58",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/25#study=discover&v=3:25:39-3:25:55",
+      "sourceImageUrl": null,
+      "sceneDescription": "L25:39-55 Laws on slavery",
+      "yearRaw": "1512 BCE",
+      "sequence": 389,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8173-ae67-f67b7f0423c3",
+      "url": "https://www.notion.so/350cb257e13c8173ae67f67b7f0423c3",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/26#study=discover&v=3:26:1-3:26:2",
+      "sourceImageUrl": null,
+      "sceneDescription": "L26:1-2 Keep away from idolatry",
+      "yearRaw": "1512 BCE",
+      "sequence": 390,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8192-9234-ed4d86953fe8",
+      "url": "https://www.notion.so/350cb257e13c81929234ed4d86953fe8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/26#study=discover&v=3:26:3-3:26:13",
+      "sourceImageUrl": null,
+      "sceneDescription": "L26:3-13 Blessings for obedience",
+      "yearRaw": "1512 BCE",
+      "sequence": 391,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f4-8c8c-d263b8166cb2",
+      "url": "https://www.notion.so/350cb257e13c81f48c8cd263b8166cb2",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/26#study=discover&v=3:26:14-3:26:46",
+      "sourceImageUrl": null,
+      "sceneDescription": "L26:14-46 Punishment for disobedience",
+      "yearRaw": "1512 BCE",
+      "sequence": 392,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c4-8266-cff0eb215ab0",
+      "url": "https://www.notion.so/350cb257e13c81c48266cff0eb215ab0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/27#study=discover&v=3:27:1-3:27:27",
+      "sourceImageUrl": null,
+      "sceneDescription": "L27:1-27 Redemption of vowed things",
+      "yearRaw": "1512 BCE",
+      "sequence": 393,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e0-8447-f90b3637b10f",
+      "url": "https://www.notion.so/350cb257e13c81e08447f90b3637b10f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/27#study=discover&v=3:27:28-3:27:29",
+      "sourceImageUrl": null,
+      "sceneDescription": "L27:28-29 Things unconditionally devoted to Jehovah",
+      "yearRaw": "1512 BCE",
+      "sequence": 394,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8172-8590-cef2ebb7aeda",
+      "url": "https://www.notion.so/350cb257e13c81728590cef2ebb7aeda",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/3/27#study=discover&v=3:27:30-3:27:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "L27:30-34 Redemption of the tenth parts",
+      "yearRaw": "1512 BCE",
+      "sequence": 395,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e8-b033-f84ba44c1c71",
+      "url": "https://www.notion.so/350cb257e13c81e8b033f84ba44c1c71",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/4/1#study=discover&v=4:1:1-4:1:46",
+      "sourceImageUrl": null,
+      "sceneDescription": "N1:1-46 Registration of men for the army",
+      "yearRaw": "1512 BCE",
+      "sequence": 396,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8111-b225-dd3232a59c0e",
+      "url": "https://www.notion.so/350cb257e13c8111b225dd3232a59c0e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/4/1#study=discover&v=4:1:47-4:1:51",
+      "sourceImageUrl": null,
+      "sceneDescription": "N1:47-51 The Levites exempted from the army",
+      "yearRaw": "1512 BCE",
+      "sequence": 397,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810b-b7a3-d9b459581644",
+      "url": "https://www.notion.so/350cb257e13c810bb7a3d9b459581644",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/4/1#study=discover&v=4:1:52-4:1:54",
+      "sourceImageUrl": null,
+      "sceneDescription": "N1:52-54 Orderly arrangement of the camp",
+      "yearRaw": "1512 BCE",
+      "sequence": 398,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c4-9d46-ecfc665672b4",
+      "url": "https://www.notion.so/350cb257e13c81c49d46ecfc665672b4",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/4/2#study=discover&v=4:2:1-4:2:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "N2:1-34 Camp organized into three-tribe divisions",
+      "yearRaw": "1512 BCE",
+      "sequence": 399,
+      "locations": [
+        "Wilderness of Sinai"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Moses"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-815c-9699-fc22879751e1",
+      "url": "https://www.notion.so/350cb257e13c815c9699fc22879751e1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/4/3#study=discover&v=4:3:1-4:3:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "N3:1-4 Aaron’s sons",
+      "yearRaw": "1512 BCE",
+      "sequence": 400,
       "locations": [
         "Wilderness of Sinai"
       ],

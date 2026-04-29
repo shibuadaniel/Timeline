@@ -1,4 +1,4 @@
-import { writeFile, mkdir } from "node:fs/promises";
+import { writeFile, mkdir, rm } from "node:fs/promises";
 import path from "node:path";
 import { createHash } from "node:crypto";
 import { Client } from "@notionhq/client";
@@ -61,7 +61,7 @@ export function readIngestConfigFromEnv(): IngestConfig {
     notionApiKey,
     notionDatabaseId,
     sequenceMin: envNumber("PILOT_SEQUENCE_MIN", 100),
-    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 350),
+    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 400),
     chunkSize: Math.max(1, Math.floor(envNumber("SNAPSHOT_CHUNK_SIZE", 500))),
   };
 }
@@ -234,6 +234,88 @@ async function findSourceUrlAndImageAbove(
     return { sourceUrl: url, sourceImageUrl };
   }
   return { sourceUrl: null, sourceImageUrl: null };
+}
+
+function extensionFromImageContentType(
+  contentType: string | null,
+  fallbackUrl: string
+): string {
+  if (contentType) {
+    const base = contentType.split(";")[0].trim().toLowerCase();
+    const map: Record<string, string> = {
+      "image/jpeg": "jpg",
+      "image/jpg": "jpg",
+      "image/png": "png",
+      "image/gif": "gif",
+      "image/webp": "webp",
+      "image/svg+xml": "svg",
+      "image/bmp": "bmp",
+    };
+    if (map[base]) return map[base];
+  }
+  const pathPart = fallbackUrl.split("?")[0].toLowerCase();
+  const m = pathPart.match(/\.([a-z0-9]+)$/);
+  if (m) {
+    const e = m[1];
+    if (e === "jpeg") return "jpg";
+    if (["jpg", "png", "gif", "webp", "svg", "bmp"].includes(e)) return e;
+  }
+  return "jpg";
+}
+
+function safeImageBasename(id: string): string {
+  const s = id.replace(/[^a-zA-Z0-9-]/g, "");
+  return s || createHash("sha256").update(id).digest("hex").slice(0, 16);
+}
+
+const REMOTE_IMAGE_RE = /^https?:\/\//i;
+
+/**
+ * Notion "file" image URLs are short-lived presigned links. Copy bytes into
+ * public/data/images at ingest so GitHub Pages serves stable paths.
+ */
+export async function persistSourceImagesToPublic(
+  records: SceneDTO[],
+  publicDataDir = path.resolve(process.cwd(), "public/data")
+): Promise<void> {
+  const imagesDir = path.join(publicDataDir, "images");
+  await rm(imagesDir, { recursive: true, force: true });
+  await mkdir(imagesDir, { recursive: true });
+
+  const withRemote = records.filter(
+    (r) => r.sourceImageUrl && REMOTE_IMAGE_RE.test(r.sourceImageUrl.trim())
+  );
+  const batchSize = 12;
+  for (let i = 0; i < withRemote.length; i += batchSize) {
+    const batch = withRemote.slice(i, i + batchSize);
+    await Promise.all(
+      batch.map(async (record) => {
+        const url = record.sourceImageUrl!.trim();
+        try {
+          const res = await fetch(url, { redirect: "follow" });
+          if (!res.ok) {
+            record.sourceImageUrl = null;
+            return;
+          }
+          const ext = extensionFromImageContentType(
+            res.headers.get("content-type"),
+            url
+          );
+          const filename = `${safeImageBasename(record.id)}.${ext}`;
+          const dest = path.join(imagesDir, filename);
+          const buf = Buffer.from(await res.arrayBuffer());
+          if (buf.length === 0) {
+            record.sourceImageUrl = null;
+            return;
+          }
+          await writeFile(dest, buf);
+          record.sourceImageUrl = `data/images/${filename}`;
+        } catch {
+          record.sourceImageUrl = null;
+        }
+      })
+    );
+  }
 }
 
 export function buildSnapshot(records: SceneDTO[]): SnapshotV1 {
