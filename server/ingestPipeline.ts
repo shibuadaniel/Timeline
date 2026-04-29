@@ -61,7 +61,7 @@ export function readIngestConfigFromEnv(): IngestConfig {
     notionApiKey,
     notionDatabaseId,
     sequenceMin: envNumber("PILOT_SEQUENCE_MIN", 100),
-    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 150),
+    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 350),
     chunkSize: Math.max(1, Math.floor(envNumber("SNAPSHOT_CHUNK_SIZE", 500))),
   };
 }
