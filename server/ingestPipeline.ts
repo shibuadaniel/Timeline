@@ -73,7 +73,9 @@ export async function fetchScenesFromNotion(
     for (const page of response.results) {
       const scene = mapPageToScene(page);
       if (!scene) continue;
-      scene.sourceUrl = await findEmbeddedUrlInPage(notion, scene.id);
+      const extracted = await findSourceUrlAndImageAbove(notion, scene.id);
+      scene.sourceUrl = extracted.sourceUrl;
+      scene.sourceImageUrl = extracted.sourceImageUrl;
       rows.push(scene);
     }
 
@@ -130,10 +132,56 @@ function firstUrlFromBlock(block: { type?: string; [key: string]: unknown }): st
   return null;
 }
 
-async function findEmbeddedUrlInPage(
+type NotionBlockLite = { type?: string; [key: string]: unknown };
+
+function imageUrlFromBlock(block: NotionBlockLite): string | null {
+  if (block.type !== "image") return null;
+  const image = block.image as
+    | {
+        type?: string;
+        external?: { url?: string };
+        file?: { url?: string };
+      }
+    | undefined;
+  if (!image) return null;
+  if (image.type === "external") return image.external?.url ?? null;
+  if (image.type === "file") return image.file?.url ?? null;
+  return image.external?.url ?? image.file?.url ?? null;
+}
+
+async function firstImageUrlInBlockTree(
+  notion: Client,
+  block: NotionBlockLite
+): Promise<string | null> {
+  const direct = imageUrlFromBlock(block);
+  if (direct) return direct;
+
+  const b = block as { has_children?: boolean; id?: string };
+  if (!b.has_children || !b.id) return null;
+
+  let cursor: string | undefined;
+  do {
+    const res = await notion.blocks.children.list({
+      block_id: b.id,
+      start_cursor: cursor,
+      page_size: 100,
+    });
+    for (const child of res.results) {
+      const childLite = child as NotionBlockLite;
+      const nested = await firstImageUrlInBlockTree(notion, childLite);
+      if (nested) return nested;
+    }
+    cursor = res.has_more ? res.next_cursor ?? undefined : undefined;
+  } while (cursor);
+
+  return null;
+}
+
+async function listAllChildBlocks(
   notion: Client,
   pageId: string
-): Promise<string | null> {
+): Promise<NotionBlockLite[]> {
+  const blocks: NotionBlockLite[] = [];
   let cursor: string | undefined;
   do {
     const result = await notion.blocks.children.list({
@@ -141,16 +189,29 @@ async function findEmbeddedUrlInPage(
       start_cursor: cursor,
       page_size: 100,
     });
-
     for (const block of result.results) {
-      const url = firstUrlFromBlock(block as { type?: string; [key: string]: unknown });
-      if (url) return url;
+      blocks.push(block as NotionBlockLite);
     }
-
     cursor = result.has_more ? result.next_cursor ?? undefined : undefined;
   } while (cursor);
+  return blocks;
+}
 
-  return null;
+async function findSourceUrlAndImageAbove(
+  notion: Client,
+  pageId: string
+): Promise<{ sourceUrl: string | null; sourceImageUrl: string | null }> {
+  const blocks = await listAllChildBlocks(notion, pageId);
+  for (let i = 0; i < blocks.length; i++) {
+    const url = firstUrlFromBlock(blocks[i]);
+    if (!url) continue;
+    let sourceImageUrl: string | null = null;
+    if (i > 0) {
+      sourceImageUrl = await firstImageUrlInBlockTree(notion, blocks[i - 1]);
+    }
+    return { sourceUrl: url, sourceImageUrl };
+  }
+  return { sourceUrl: null, sourceImageUrl: null };
 }
 
 export function buildSnapshot(records: SceneDTO[]): SnapshotV1 {

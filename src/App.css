@@ -24,6 +24,13 @@
   margin-bottom: 1rem;
 }
 
+.toolbar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
 .toolbar label {
   font-size: 0.75rem;
   font-weight: 600;
@@ -40,6 +47,90 @@
   border-radius: 6px;
   border: 1px solid #cbd5e1;
   background: #fff;
+}
+
+.searchable-select {
+  position: relative;
+  min-width: 11rem;
+}
+
+.searchable-select-inner {
+  display: flex;
+  align-items: stretch;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background: #fff;
+  overflow: hidden;
+}
+
+.searchable-select-input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.35rem 0.5rem;
+  border: 0;
+  font-size: 0.9rem;
+  background: transparent;
+}
+
+.searchable-select-input:focus {
+  outline: none;
+}
+
+.searchable-select-inner:focus-within {
+  box-shadow: 0 0 0 2px rgb(59 130 246 / 25%);
+}
+
+.searchable-select-chevron {
+  border: 0;
+  border-left: 1px solid #e2e8f0;
+  background: #f8fafc;
+  padding: 0 0.45rem;
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #64748b;
+}
+
+.searchable-select-chevron:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.searchable-select-list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 4px);
+  z-index: 50;
+  margin: 0;
+  padding: 0.25rem 0;
+  list-style: none;
+  max-height: 240px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgb(15 23 42 / 12%);
+}
+
+.searchable-select-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.4rem 0.65rem;
+  border: 0;
+  background: transparent;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.searchable-select-option:hover {
+  background: #f1f5f9;
+}
+
+.searchable-select-empty {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.8rem;
 }
 
 .btn {
@@ -75,6 +166,12 @@
     grid-template-columns: 1fr 280px;
     align-items: start;
   }
+}
+
+.side-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .chart-card,
@@ -166,9 +263,29 @@
   cursor: pointer;
 }
 
+.click-popup--no-link {
+  cursor: default;
+}
+
+.popup-url-unavailable {
+  margin-top: 0.35rem;
+  font-style: italic;
+}
+
 .tooltip-title {
   font-weight: 600;
   margin-bottom: 0.35rem;
+}
+
+.popup-thumb {
+  display: block;
+  width: 100%;
+  max-height: 140px;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  background: #f1f5f9;
+  pointer-events: none;
 }
 
 .popup-tags {

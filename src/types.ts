@@ -2,6 +2,8 @@ export type SceneDTO = {
   id: string;
   url: string;
   sourceUrl: string | null;
+  /** Present after re-ingest; may be absent in older snapshots */
+  sourceImageUrl?: string | null;
   sceneDescription: string;
   yearRaw: string | null;
   sequence: number | null;

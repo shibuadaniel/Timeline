@@ -4,6 +4,7 @@ export type SceneDTO = {
   id: string;
   url: string;
   sourceUrl: string | null;
+  sourceImageUrl: string | null;
   sceneDescription: string;
   yearRaw: string | null;
   sequence: number | null;
@@ -89,6 +90,7 @@ export function mapPageToScene(page: unknown): SceneDTO | null {
     id: page.id,
     url: notionPageUrl(page.id),
     sourceUrl: null,
+    sourceImageUrl: null,
     sceneDescription,
     yearRaw,
     sequence: numberVal(

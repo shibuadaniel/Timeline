@@ -11,6 +11,7 @@ import {
   YAxis,
 } from "recharts";
 import "./App.css";
+import { SearchableSelect } from "./SearchableSelect";
 import { MiddleLineYearAxis } from "./MiddleLineYearAxis";
 import {
   buildLocationBuckets,
@@ -127,6 +128,13 @@ export default function App() {
     return { plottedRaw: ok, needsYear: bad };
   }, [scenes]);
 
+  const needsUrl = useMemo(() => {
+    if (!scenes) return [];
+    return scenes
+      .filter((s) => !s.sourceUrl?.trim())
+      .sort((a, b) => (a.sequence ?? 0) - (b.sequence ?? 0));
+  }, [scenes]);
+
   const { ordered, otherLabel } = useMemo(() => {
     const locs = plottedRaw.map((p) => p.primaryLocation).filter(Boolean);
     return buildLocationBuckets(locs, 12);
@@ -194,6 +202,7 @@ export default function App() {
         onStage: p.onStage,
         sequence: p.sequence,
         sourceUrl: p.sourceUrl,
+        sourceImageUrl: p.sourceImageUrl ?? null,
         url: p.url,
       };
     });
@@ -217,6 +226,7 @@ export default function App() {
   const selectedSceneParts = selectedScene
     ? splitSceneDescription(selectedScene.sceneDescription)
     : null;
+  const selectedHasSourceUrl = Boolean(selectedScene?.sourceUrl?.trim());
 
   useLayoutEffect(() => {
     if (!selectedScene || !popupPos || !chartCardRef.current || !popupRef.current) {
@@ -267,41 +277,38 @@ export default function App() {
       </p>
 
       <div className="toolbar">
-        <div>
-          <label htmlFor="loc">Location</label>
-          <select
-            id="loc"
-            value={locFilter}
-            onChange={(e) => setLocFilter(e.target.value)}
+        <SearchableSelect
+          id="loc"
+          label="Location"
+          value={locFilter}
+          options={locationOptions}
+          onChange={setLocFilter}
+          disabled={!scenes?.length}
+        />
+        <SearchableSelect
+          id="st"
+          label="On stage"
+          value={stageFilter}
+          options={stageOptions}
+          onChange={setStageFilter}
+          disabled={!scenes?.length}
+        />
+        <div className="toolbar-actions">
+          <button type="button" className="btn" onClick={load} disabled={loading}>
+            {loading ? "Loading…" : "Show"}
+          </button>
+          <button
+            type="button"
+            className="btn"
+            onClick={() => {
+              setLocFilter("all");
+              setStageFilter("all");
+            }}
             disabled={!scenes?.length}
           >
-            <option value="all">All</option>
-            {locationOptions.map((o) => (
-              <option key={o} value={o}>
-                {o}
-              </option>
-            ))}
-          </select>
+            Reset
+          </button>
         </div>
-        <div>
-          <label htmlFor="st">On stage</label>
-          <select
-            id="st"
-            value={stageFilter}
-            onChange={(e) => setStageFilter(e.target.value)}
-            disabled={!scenes?.length}
-          >
-            <option value="all">All</option>
-            {stageOptions.map((o) => (
-              <option key={o} value={o}>
-                {o}
-              </option>
-            ))}
-          </select>
-        </div>
-        <button type="button" className="btn" onClick={load} disabled={loading}>
-          {loading ? "Loading…" : "Reload snapshot"}
-        </button>
       </div>
 
       {error ? <div className="error">{error}</div> : null}
@@ -411,7 +418,7 @@ export default function App() {
           {selectedScene ? (
             <div
               ref={popupRef}
-              className="tooltip-box click-popup"
+              className={`tooltip-box click-popup${selectedHasSourceUrl ? "" : " click-popup--no-link"}`}
               style={
                 popupViewportPos
                   ? {
@@ -420,10 +427,21 @@ export default function App() {
                     }
                   : undefined
               }
-              onClick={() =>
-                window.open(selectedScene.sourceUrl || selectedScene.url, "_blank", "noopener")
-              }
+              onClick={() => {
+                const url = selectedScene.sourceUrl?.trim();
+                if (!url) return;
+                window.open(url, "_blank", "noopener");
+              }}
             >
+              {selectedScene.sourceImageUrl?.trim() ? (
+                <img
+                  className="popup-thumb"
+                  src={selectedScene.sourceImageUrl.trim()}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : null}
               <div className="popup-tags">
                 {(selectedSceneParts?.tags.length
                   ? selectedSceneParts.tags
@@ -463,6 +481,9 @@ export default function App() {
                   {selectedScene.onStage.length ? selectedScene.onStage.join(", ") : "—"}
                 </span>
               </div>
+              {selectedHasSourceUrl ? null : (
+                <div className="popup-url-unavailable muted">Not available</div>
+              )}
             </div>
           ) : null}
           {chartData.length > 0 ? (
@@ -486,27 +507,54 @@ export default function App() {
           ) : null}
         </div>
 
-        <div className="side-card">
-          <h2>Needs year ({needsYear.length})</h2>
-          {needsYear.length === 0 ? (
-            <p className="muted">All pilot rows have a parseable year.</p>
-          ) : (
-            <ul className="needs-list">
-              {needsYear.map((s) => (
-                <li key={s.id}>
-                  <div>
-                    <strong>{s.sceneDescription || "Untitled"}</strong>
-                    {s.sequence != null ? (
-                      <span className="muted"> · Seq {s.sequence}</span>
-                    ) : null}
-                  </div>
-                  <div className="muted">
-                    Year field: {s.yearRaw?.trim() ? s.yearRaw : "(empty)"}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          )}
+        <div className="side-stack">
+          <div className="side-card">
+            <h2>Needs year ({needsYear.length})</h2>
+            {needsYear.length === 0 ? (
+              <p className="muted">All pilot rows have a parseable year.</p>
+            ) : (
+              <ul className="needs-list">
+                {needsYear.map((s) => (
+                  <li key={s.id}>
+                    <div>
+                      <strong>{s.sceneDescription || "Untitled"}</strong>
+                      {s.sequence != null ? (
+                        <span className="muted"> · Seq {s.sequence}</span>
+                      ) : null}
+                    </div>
+                    <div className="muted">
+                      Year field: {s.yearRaw?.trim() ? s.yearRaw : "(empty)"}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          <div className="side-card">
+            <h2>Need URL ({needsUrl.length})</h2>
+            {needsUrl.length === 0 ? (
+              <p className="muted">Every row has an embedded source link.</p>
+            ) : (
+              <ul className="needs-list">
+                {needsUrl.map((s) => (
+                  <li key={s.id}>
+                    <div>
+                      <strong>{s.sceneDescription || "Untitled"}</strong>
+                      {s.sequence != null ? (
+                        <span className="muted"> · Seq {s.sequence}</span>
+                      ) : null}
+                    </div>
+                    <div className="muted">
+                      <a href={s.url} target="_blank" rel="noreferrer">
+                        Open in Notion
+                      </a>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
         </div>
       </div>
 
