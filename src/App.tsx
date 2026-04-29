@@ -68,6 +68,7 @@ export default function App() {
   const chartScrollRef = useRef<HTMLDivElement | null>(null);
   const [chartViewportWidth, setChartViewportWidth] = useState(0);
   const popupRef = useRef<HTMLDivElement | null>(null);
+  const [filtersExpanded, setFiltersExpanded] = useState(false);
 
   const load = useCallback(async () => {
     setLoading(true);
@@ -307,37 +308,65 @@ export default function App() {
         editing source rows in Notion.
       </p>
 
-      <div className="toolbar">
-        <LocationSelectField
-          label="Location"
-          value={locFilter}
-          options={locationOptions}
-          onChange={setLocFilter}
-          disabled={!scenes?.length}
-        />
-        <StageMultiselectField
-          label="On stage"
-          value={stageFilter}
-          options={stageOptions}
-          onChange={setStageFilter}
-          disabled={!scenes?.length}
-        />
-        <div className="toolbar-actions">
-          <Button variant="contained" onClick={() => void load()} disabled={loading}>
-            {loading ? "Loading…" : "Show"}
-          </Button>
-          <Button
-            variant="outlined"
-            onClick={() => {
-              setLocFilter("all");
-              setStageFilter([]);
-            }}
-            disabled={!scenes?.length}
+      <section className="filters-panel" aria-label="Filters">
+        <div
+          className={
+            filtersExpanded
+              ? "filters-panel-header"
+              : "filters-panel-header filters-panel-header--collapsed"
+          }
+        >
+          <h2 className="filters-panel-title">Filters</h2>
+          <button
+            type="button"
+            className="filters-panel-toggle"
+            onClick={() => setFiltersExpanded((v) => !v)}
+            aria-expanded={filtersExpanded}
+            aria-controls="filters-panel-body"
+            title={filtersExpanded ? "Collapse filters" : "Expand filters"}
           >
-            Reset
-          </Button>
+            <i className="fa-solid fa-sliders" aria-hidden />
+            <span className="visually-hidden">
+              {filtersExpanded ? "Collapse filters" : "Expand filters"}
+            </span>
+          </button>
         </div>
-      </div>
+        {filtersExpanded ? (
+          <div id="filters-panel-body" className="filters-panel-body">
+            <div className="toolbar">
+              <LocationSelectField
+                label="Location"
+                value={locFilter}
+                options={locationOptions}
+                onChange={setLocFilter}
+                disabled={!scenes?.length}
+              />
+              <StageMultiselectField
+                label="On stage"
+                value={stageFilter}
+                options={stageOptions}
+                onChange={setStageFilter}
+                disabled={!scenes?.length}
+              />
+              <div className="toolbar-actions">
+                <Button variant="contained" onClick={() => void load()} disabled={loading}>
+                  {loading ? "Loading…" : "Show"}
+                </Button>
+                <Button
+                  variant="outlined"
+                  onClick={() => {
+                    setLocFilter("all");
+                    setStageFilter([]);
+                  }}
+                  disabled={!scenes?.length}
+                >
+                  Reset
+                </Button>
+              </div>
+            </div>
+          </div>
+        ) : null}
+      </section>
 
       {error ? <div className="error">{error}</div> : null}
 
