@@ -277,15 +277,23 @@
   margin-bottom: 0.35rem;
 }
 
+/* Fixed-height slot for the image: full card width, clip overflow at bottom */
+.popup-thumb-viewport {
+  width: 100%;
+  height: clamp(120px, 28vh, 180px);
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f1f5f9;
+  pointer-events: none;
+}
+
 .popup-thumb {
   display: block;
   width: 100%;
-  max-height: 140px;
-  object-fit: contain;
-  border-radius: 6px;
-  margin-bottom: 0.5rem;
-  background: #f1f5f9;
-  pointer-events: none;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .popup-tags {

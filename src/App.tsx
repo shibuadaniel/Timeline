@@ -434,13 +434,15 @@ export default function App() {
               }}
             >
               {selectedScene.sourceImageUrl?.trim() ? (
-                <img
-                  className="popup-thumb"
-                  src={selectedScene.sourceImageUrl.trim()}
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
+                <div className="popup-thumb-viewport" aria-hidden="true">
+                  <img
+                    className="popup-thumb"
+                    src={selectedScene.sourceImageUrl.trim()}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
               ) : null}
               <div className="popup-tags">
                 {(selectedSceneParts?.tags.length
