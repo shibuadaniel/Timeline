@@ -303,9 +303,9 @@ export default function App() {
   return (
     <div className="app">
       <h1>Bible events timeline</h1>
-      <p className="sub">
-        Public timeline reads from a pre-ingested snapshot. Re-run ingest after
-        editing source rows in Notion.
+      <p className="disclaimer" role="note">
+        This is only an experiment; the dates might not be accurate. If you
+        received this URL, please do not share it.
       </p>
 
       <section className="filters-panel" aria-label="Filters">

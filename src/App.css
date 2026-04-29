@@ -13,9 +13,10 @@
   margin: 0 0 0.35rem;
 }
 
-.sub {
-  color: #475569;
-  font-size: 0.9rem;
+.disclaimer {
+  color: #64748b;
+  font-size: 0.85rem;
+  line-height: 1.45;
   margin: 0 0 1.25rem;
 }
 
