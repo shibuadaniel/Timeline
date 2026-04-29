@@ -1,7 +1,9 @@
 {
-  "version": "v1",
+  "version": "v1-chunk",
   "generatedAt": "2026-04-29T11:26:50.590Z",
   "source": "notion",
+  "chunkIndex": 0,
+  "chunkCount": 1,
   "recordCount": 248,
   "records": [
     {

@@ -124,6 +124,11 @@
   align-items: center;
 }
 
+.load-progress {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+}
+
 .error {
   background: #fef2f2;
   border: 1px solid #fecaca;
@@ -177,6 +182,7 @@
   min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
+  padding: 0.25rem 0 0.75rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-gutter: stable;
   overscroll-behavior-x: contain;
@@ -271,11 +277,21 @@
   object-position: top center;
 }
 
+.popup-top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
 .popup-tags {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 0.35rem;
-  margin-bottom: 0.35rem;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .popup-tag {
@@ -297,6 +313,16 @@
   width: 0.95rem;
   margin-top: 0.15rem;
   color: #475569;
+}
+
+.popup-line--year {
+  flex-shrink: 0;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.popup-line--year i {
+  margin-top: 0;
 }
 
 .muted {

@@ -19,6 +19,26 @@ export type SnapshotV1 = {
   records: SceneDTO[];
 };
 
+export type SnapshotChunkV1 = {
+  version: "v1-chunk";
+  generatedAt: string;
+  source: "notion";
+  chunkIndex: number;
+  chunkCount: number;
+  recordCount: number;
+  records: SceneDTO[];
+};
+
+export type DataManifestV1 = {
+  version: SnapshotV1["version"];
+  generatedAt: string;
+  latest: string;
+  recordCount: number;
+  chunkSize?: number;
+  chunkCount?: number;
+  chunks?: string[];
+};
+
 export type YearParse =
   | {
       kind: "ok";

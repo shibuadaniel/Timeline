@@ -10,6 +10,10 @@ import {
   YAxis,
 } from "recharts";
 import Button from "@mui/material/Button";
+import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
 import "./App.css";
 import { LocationSelectField } from "./LocationSelectField";
 import { StageMultiselectField } from "./StageMultiselectField";
@@ -18,10 +22,24 @@ import { makeTimelineAlternatingBands } from "./TimelineAlternatingBands";
 import { makeTimelineSpineDots } from "./TimelineSpineDots";
 import { yearStepTicks } from "./lib/yearAxisTicks";
 import { parseYear } from "./lib/parseYear";
-import type { PlottedScene, SceneDTO, SnapshotV1 } from "./types";
+import type {
+  DataManifestV1,
+  PlottedScene,
+  SceneDTO,
+  SnapshotChunkV1,
+  SnapshotV1,
+} from "./types";
 
 /** Single fill for all plotted events (spine + scatter). */
 const EVENT_DOT_FILL = "#81C784";
+/** Event markers on the center timeline spine (exclude year marker dots). */
+const SPINE_EVENT_DOT_FILL = "#f9a8d4";
+/** Keep this fixed: vertical spacing step between stacked events in a year bucket. */
+const EVENT_ROW_STEP = 38;
+/** Minimum viewport height, then expand based on max records sharing one year. */
+const MIN_CHART_HEIGHT = 600;
+const EXTRA_HEIGHT_PER_OVERLAP = 18;
+const HORIZONTAL_UNIT_OPTIONS = [20, 50, 70, 100, 200] as const;
 
 const FLAG_ABOUT_STYLE = { opacity: 0.55 };
 
@@ -69,12 +87,102 @@ export default function App() {
   const [chartViewportWidth, setChartViewportWidth] = useState(0);
   const popupRef = useRef<HTMLDivElement | null>(null);
   const [filtersExpanded, setFiltersExpanded] = useState(false);
+  const [horizontalUnitYears, setHorizontalUnitYears] = useState<number>(70);
+  const loadRunRef = useRef(0);
+  const [loadProgress, setLoadProgress] = useState<{
+    loaded: number;
+    total: number;
+    active: boolean;
+  } | null>(null);
 
   const load = useCallback(async () => {
+    const runId = ++loadRunRef.current;
     setLoading(true);
     setError(null);
+    setLoadProgress(null);
     try {
-      const snapshotUrl = `${import.meta.env.BASE_URL}data/latest.json`;
+      const base = `${import.meta.env.BASE_URL}data/`;
+      const manifestUrl = `${base}manifest.json`;
+      const manifestRes = await fetch(manifestUrl, { cache: "no-store" });
+      const manifest = (await manifestRes.json()) as DataManifestV1 & {
+        error?: string;
+      };
+
+      const canUseChunks =
+        manifestRes.ok &&
+        Array.isArray(manifest.chunks) &&
+        manifest.chunks.length > 0;
+
+      if (canUseChunks) {
+        const total = Math.max(0, manifest.recordCount ?? 0);
+        const firstChunkUrl = `${base}${manifest.chunks![0]}`;
+        const firstChunkRes = await fetch(firstChunkUrl, { cache: "no-store" });
+        const firstChunk = (await firstChunkRes.json()) as SnapshotChunkV1 & {
+          error?: string;
+        };
+        if (!firstChunkRes.ok) {
+          throw new Error(firstChunk.error ?? firstChunkRes.statusText);
+        }
+        if (runId !== loadRunRef.current) return;
+
+        const firstRecords = firstChunk.records ?? [];
+        setScenes(firstRecords);
+        setLoadProgress({
+          loaded: firstRecords.length,
+          total: total || firstRecords.length,
+          active: manifest.chunks!.length > 1,
+        });
+        setLoading(false);
+
+        if (manifest.chunks!.length > 1) {
+          const restRecords: SceneDTO[] = [];
+          for (const chunkPath of manifest.chunks!.slice(1)) {
+            const r = await fetch(`${base}${chunkPath}`, { cache: "no-store" });
+            const payload = (await r.json()) as SnapshotChunkV1 & {
+              error?: string;
+            };
+            if (!r.ok) {
+              throw new Error(payload.error ?? r.statusText);
+            }
+            restRecords.push(...(payload.records ?? []));
+            if (runId !== loadRunRef.current) return;
+            setScenes((prev) => (prev ? [...prev, ...(payload.records ?? [])] : payload.records ?? []));
+            setLoadProgress((prev) =>
+              prev
+                ? {
+                    loaded: prev.loaded + (payload.records?.length ?? 0),
+                    total: prev.total,
+                    active: true,
+                  }
+                : null
+            );
+          }
+          if (runId !== loadRunRef.current) return;
+          setLoadProgress((prev) =>
+            prev
+              ? {
+                  loaded: prev.loaded,
+                  total: prev.total,
+                  active: false,
+                }
+              : null
+          );
+          if (restRecords.length === 0) {
+            setLoadProgress((prev) =>
+              prev
+                ? {
+                    loaded: prev.loaded,
+                    total: prev.total,
+                    active: false,
+                  }
+                : null
+            );
+          }
+        }
+        return;
+      }
+
+      const snapshotUrl = `${base}latest.json`;
       const r = await fetch(snapshotUrl, { cache: "no-store" });
       const data = (await r.json()) as SnapshotV1 & { error?: string };
       if (!r.ok) {
@@ -82,12 +190,23 @@ export default function App() {
         setScenes(null);
         return;
       }
-      setScenes(data.records ?? []);
+      if (runId !== loadRunRef.current) return;
+      const records = data.records ?? [];
+      setScenes(records);
+      setLoadProgress({
+        loaded: records.length,
+        total: records.length,
+        active: false,
+      });
     } catch (e) {
+      if (runId !== loadRunRef.current) return;
       setError(e instanceof Error ? e.message : String(e));
       setScenes(null);
+      setLoadProgress(null);
     } finally {
-      setLoading(false);
+      if (runId === loadRunRef.current) {
+        setLoading(false);
+      }
     }
   }, []);
 
@@ -169,7 +288,6 @@ export default function App() {
   }, [plottedRaw, locFilter, stageFilter]);
 
   const chartData = useMemo(() => {
-    const rowStep = 24;
     const orderedPlotted = [...plotted].sort((a, b) => {
       const sa = a.sequence ?? 0;
       const sb = b.sequence ?? 0;
@@ -182,7 +300,7 @@ export default function App() {
       yearBuckets.set(p.parse.axisYear, jitterN + 1);
       const tier = Math.floor(jitterN / 2) + 1;
       const sign = jitterN % 2 === 0 ? 1 : -1;
-      const jitterY = sign * tier * rowStep;
+      const jitterY = sign * tier * EVENT_ROW_STEP;
       return {
         id: p.id,
         axisYear: p.parse.axisYear,
@@ -210,10 +328,10 @@ export default function App() {
     return { min: dataMin - pad, max: dataMax + pad, span };
   }, [chartData]);
 
-  /** Spine and labels: every 70 years across the padded domain. */
+  /** Spine and labels: configurable year step across the padded domain. */
   const xAxisYearTicks = useMemo(
-    () => yearStepTicks(yearDomain.min, yearDomain.max, 70),
-    [yearDomain.min, yearDomain.max]
+    () => yearStepTicks(yearDomain.min, yearDomain.max, horizontalUnitYears),
+    [yearDomain.min, yearDomain.max, horizontalUnitYears]
   );
 
   /** Distinct years in the current (filtered) chart data — one spine marker per year. */
@@ -224,7 +342,7 @@ export default function App() {
   }, [chartData]);
 
   const SpineDotsLayer = useMemo(
-    () => makeTimelineSpineDots(spineAxisYears, EVENT_DOT_FILL),
+    () => makeTimelineSpineDots(spineAxisYears, SPINE_EVENT_DOT_FILL),
     [spineAxisYears]
   );
 
@@ -233,7 +351,25 @@ export default function App() {
     [xAxisYearTicks]
   );
 
-  const CHART_HEIGHT = 400;
+  const maxEventsInSingleYear = useMemo(() => {
+    if (chartData.length === 0) return 0;
+    const counts = new Map<number, number>();
+    let maxCount = 0;
+    for (const d of chartData) {
+      const next = (counts.get(d.axisYear) ?? 0) + 1;
+      counts.set(d.axisYear, next);
+      if (next > maxCount) maxCount = next;
+    }
+    return maxCount;
+  }, [chartData]);
+
+  const CHART_HEIGHT = useMemo(() => {
+    if (maxEventsInSingleYear <= 1) return MIN_CHART_HEIGHT;
+    return (
+      MIN_CHART_HEIGHT +
+      (maxEventsInSingleYear - 1) * EXTRA_HEIGHT_PER_OVERLAP
+    );
+  }, [maxEventsInSingleYear]);
   const PIXELS_PER_YEAR = 8;
   const chartPixelWidth = useMemo(() => {
     const vw = chartViewportWidth || 640;
@@ -354,6 +490,27 @@ export default function App() {
                 onChange={setStageFilter}
                 disabled={!scenes?.length}
               />
+              <FormControl size="small" sx={{ minWidth: 160 }}>
+                <InputLabel id="horizontal-units-label">Horizontal units</InputLabel>
+                <Select
+                  labelId="horizontal-units-label"
+                  id="horizontal-units"
+                  value={String(horizontalUnitYears)}
+                  label="Horizontal units"
+                  onChange={(e) => {
+                    const next = Number(e.target.value);
+                    if (Number.isFinite(next) && next > 0) {
+                      setHorizontalUnitYears(next);
+                    }
+                  }}
+                >
+                  {HORIZONTAL_UNIT_OPTIONS.map((n) => (
+                    <MenuItem key={n} value={String(n)}>
+                      {n} years
+                    </MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
               <div className="toolbar-actions">
                 <Button variant="contained" onClick={() => void load()} disabled={loading}>
                   {loading ? "Loading…" : "Show"}
@@ -375,6 +532,13 @@ export default function App() {
       </section>
 
       {error ? <div className="error">{error}</div> : null}
+      {loadProgress ? (
+        <p className="load-progress muted" aria-live="polite">
+          Loaded {loadProgress.loaded.toLocaleString()} /{" "}
+          {loadProgress.total.toLocaleString()} records
+          {loadProgress.active ? "..." : "."}
+        </p>
+      ) : null}
 
       <div className="layout">
         <div className="chart-card" ref={chartCardRef}>
@@ -518,30 +682,32 @@ export default function App() {
                   />
                 </div>
               ) : null}
-              <div className="popup-tags">
-                {(selectedSceneParts?.tags.length
-                  ? selectedSceneParts.tags
-                  : [selectedScene.sceneDescription]
-                ).map((tag) => (
-                  <span key={tag} className="popup-tag">
-                    {tag}
-                  </span>
-                ))}
+              <div className="popup-top-row">
+                <div className="popup-line popup-line--year">
+                  <i className="fa-solid fa-calendar" aria-hidden="true" />{" "}
+                  <span>{selectedScene.yearRaw}</span>
+                  {flagSuffix(selectedScene.flags) ? (
+                    <span
+                      className="flags"
+                      style={selectedScene.flags.about ? FLAG_ABOUT_STYLE : undefined}
+                    >
+                      {flagSuffix(selectedScene.flags)}
+                    </span>
+                  ) : null}
+                </div>
+                <div className="popup-tags">
+                  {(selectedSceneParts?.tags.length
+                    ? selectedSceneParts.tags
+                    : [selectedScene.sceneDescription]
+                  ).map((tag) => (
+                    <span key={tag} className="popup-tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
               <div className="tooltip-title">
                 {selectedSceneParts?.title || selectedScene.sceneDescription}
-              </div>
-              <div className="popup-line">
-                <i className="fa-solid fa-calendar" aria-hidden="true" />{" "}
-                <span>{selectedScene.yearRaw}</span>
-                {flagSuffix(selectedScene.flags) ? (
-                  <span
-                    className="flags"
-                    style={selectedScene.flags.about ? FLAG_ABOUT_STYLE : undefined}
-                  >
-                    {flagSuffix(selectedScene.flags)}
-                  </span>
-                ) : null}
               </div>
               <div className="popup-line">
                 <i className="fa-solid fa-location-dot" aria-hidden="true" />{" "}

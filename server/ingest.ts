@@ -10,10 +10,10 @@ async function main() {
   const config = readIngestConfigFromEnv();
   const records = await fetchScenesFromNotion(config);
   const snapshot = buildSnapshot(records);
-  const artifacts = await writeSnapshotArtifacts(snapshot);
+  const artifacts = await writeSnapshotArtifacts(snapshot, undefined, config.chunkSize);
 
   console.log(
-    `Ingested ${snapshot.recordCount} records. Wrote:\n- ${artifacts.latestPath}\n- ${artifacts.immutablePath}\n- ${artifacts.manifestPath}`
+    `Ingested ${snapshot.recordCount} records. Wrote:\n- ${artifacts.latestPath}\n- ${artifacts.immutablePath}\n- ${artifacts.manifestPath}\n- ${artifacts.chunkPaths.length} chunk file(s)`
   );
 }
 

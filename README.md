@@ -29,6 +29,7 @@ This writes:
 - `public/data/latest.json` (stable pointer for the app)
 - `public/data/manifest.json` (metadata + immutable filename pointer)
 - `public/data/snapshot.<hash>.json` (immutable artifact)
+- `public/data/chunks/snapshot.<hash>.part.<nnn>.json` (chunked records for progressive client loading)
 
 ## Run
 
@@ -38,7 +39,7 @@ Starts the **API** (port 3001) and **Vite** (port 5173) together for local devel
 npm run dev
 ```
 
-Open `http://localhost:5173` (or the port Vite prints if 5173 is busy). The UI loads from `/data/latest.json`.
+Open `http://localhost:5173` (or the port Vite prints if 5173 is busy). The UI prefers `/data/manifest.json` + chunk files for progressive loading, and falls back to `/data/latest.json` for compatibility.
 
 ### Port already in use (`EADDRINUSE`)
 

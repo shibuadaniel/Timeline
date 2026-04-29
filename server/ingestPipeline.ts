@@ -13,11 +13,32 @@ export type SnapshotV1 = {
   records: SceneDTO[];
 };
 
+export type SnapshotChunkV1 = {
+  version: "v1-chunk";
+  generatedAt: string;
+  source: "notion";
+  chunkIndex: number;
+  chunkCount: number;
+  recordCount: number;
+  records: SceneDTO[];
+};
+
+export type DataManifestV1 = {
+  version: SnapshotV1["version"];
+  generatedAt: string;
+  latest: string;
+  recordCount: number;
+  chunkSize: number;
+  chunkCount: number;
+  chunks: string[];
+};
+
 type IngestConfig = {
   notionApiKey: string;
   notionDatabaseId: string;
   sequenceMin: number;
   sequenceMax: number;
+  chunkSize: number;
 };
 
 function envNumber(name: string, fallback: number): number {
@@ -41,6 +62,7 @@ export function readIngestConfigFromEnv(): IngestConfig {
     notionDatabaseId,
     sequenceMin: envNumber("PILOT_SEQUENCE_MIN", 100),
     sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 150),
+    chunkSize: Math.max(1, Math.floor(envNumber("SNAPSHOT_CHUNK_SIZE", 500))),
   };
 }
 
@@ -226,8 +248,14 @@ export function buildSnapshot(records: SceneDTO[]): SnapshotV1 {
 
 export async function writeSnapshotArtifacts(
   snapshot: SnapshotV1,
-  outDir = path.resolve(process.cwd(), "public/data")
-): Promise<{ latestPath: string; immutablePath: string; manifestPath: string }> {
+  outDir = path.resolve(process.cwd(), "public/data"),
+  chunkSize = Math.max(1, Math.floor(envNumber("SNAPSHOT_CHUNK_SIZE", 500)))
+): Promise<{
+  latestPath: string;
+  immutablePath: string;
+  manifestPath: string;
+  chunkPaths: string[];
+}> {
   await mkdir(outDir, { recursive: true });
   const json = JSON.stringify(snapshot, null, 2);
   const hash = createHash("sha256").update(json).digest("hex").slice(0, 12);
@@ -236,23 +264,50 @@ export async function writeSnapshotArtifacts(
   const immutablePath = path.join(outDir, immutableName);
   const latestPath = path.join(outDir, "latest.json");
   const manifestPath = path.join(outDir, "manifest.json");
+  const chunksDir = path.join(outDir, "chunks");
+  await mkdir(chunksDir, { recursive: true });
 
   await writeFile(immutablePath, json, "utf8");
   await writeFile(latestPath, json, "utf8");
+
+  const chunkNames: string[] = [];
+  const chunkPaths: string[] = [];
+  const chunkCount = Math.max(1, Math.ceil(snapshot.records.length / chunkSize));
+  for (let i = 0; i < chunkCount; i++) {
+    const start = i * chunkSize;
+    const end = start + chunkSize;
+    const records = snapshot.records.slice(start, end);
+    const chunk: SnapshotChunkV1 = {
+      version: "v1-chunk",
+      generatedAt: snapshot.generatedAt,
+      source: snapshot.source,
+      chunkIndex: i,
+      chunkCount,
+      recordCount: records.length,
+      records,
+    };
+    const chunkName = `chunks/snapshot.${hash}.part.${String(i).padStart(3, "0")}.json`;
+    const chunkPath = path.join(outDir, chunkName);
+    chunkNames.push(chunkName);
+    chunkPaths.push(chunkPath);
+    await writeFile(chunkPath, JSON.stringify(chunk, null, 2), "utf8");
+  }
+
+  const manifest: DataManifestV1 = {
+    version: snapshot.version,
+    generatedAt: snapshot.generatedAt,
+    latest: immutableName,
+    recordCount: snapshot.recordCount,
+    chunkSize,
+    chunkCount,
+    chunks: chunkNames,
+  };
+
   await writeFile(
     manifestPath,
-    JSON.stringify(
-      {
-        version: snapshot.version,
-        generatedAt: snapshot.generatedAt,
-        latest: immutableName,
-        recordCount: snapshot.recordCount,
-      },
-      null,
-      2
-    ),
+    JSON.stringify(manifest, null, 2),
     "utf8"
   );
 
-  return { latestPath, immutablePath, manifestPath };
+  return { latestPath, immutablePath, manifestPath, chunkPaths };
 }

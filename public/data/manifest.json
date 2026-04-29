@@ -1,6 +1,11 @@
 {
   "version": "v1",
-  "generatedAt": "2026-04-29T00:21:16.596Z",
-  "latest": "snapshot.a9b9713034d6.json",
-  "recordCount": 51
+  "generatedAt": "2026-04-29T11:26:50.590Z",
+  "latest": "snapshot.0dd267b20ff6.json",
+  "recordCount": 248,
+  "chunkSize": 500,
+  "chunkCount": 1,
+  "chunks": [
+    "chunks/snapshot.0dd267b20ff6.part.000.json"
+  ]
 }

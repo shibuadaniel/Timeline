@@ -1,0 +1,2503 @@
+{
+  "version": "v1-chunk",
+  "generatedAt": "2026-04-29T11:18:40.977Z",
+  "source": "notion",
+  "chunkIndex": 0,
+  "chunkCount": 1,
+  "recordCount": 151,
+  "records": [
+    {
+      "id": "350cb257-e13c-81cd-b96d-c5aaa75243a1",
+      "url": "https://www.notion.so/350cb257e13c81cdb96dc5aaa75243a1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:1-1:21:7",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/8ede13b7-1c8b-4813-ba53-e14ea1463be1/B7B1758F-5C89-4289-BF68-8C6B7C6C9996.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X6GGOJBT%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111830Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIB3e%2F0rlrdSv9Feq9Ba6c03okgK6WXz0MxDbYUDH4voQAiAjiIKvu0PotDu4y99a6cXrX9LFMjh77kyEoIA8HuaXxyqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMMpkhSfmUkRPsDEAGKtwDU%2FAKx8DzydAqNydpCMX7qQzDcLqe17y2Nrc%2Fi5COf7RsKxR66FGvO%2BjhdONXRFxSPZLWFk7J%2FEx5u5kC%2FOsUawmRlXmxgocpgJiMgZ3meUO5RIezUHcQzb65R44oY8QenuccIZzANHfEez14zTd06sk6nmT0dgYUv5Ox9dhd2b8T4xmpjpWW5dtLc6Sj5%2FeUnuIMmbfWyAsc1Od1GBBgLzufVqM7IBRfPto4iyCxgzkne34DidLuZzwbfdoozCdntm6QhWaZOXjNuzUUYTsVBV%2BBH4uGC3MiDNsq1DHB0Cclt9V2xGiJSAAoD5jil3knfDgeM349FELaP9dBWt7TQZ%2F4ARSOO3Js%2BB%2BGrkl%2FA3lp%2BtEbzKL8n8%2BrdiPySF3qqMx8RLZPvsXmOVYA7oNKSBnstou359gFVl7B2D68rc2TPRQKY4trpuEkk2qOHliOylkpnDWUIYu7X9sjspIhLSk9KtAE3AEdHUd8rjDYbuqOuluPN%2FQ3vZ2rB0Xpkl6%2B%2B7KmWkieraap5wbf7qqzmJbT1i%2FuwLy6RsGJ%2FrzYpY7PlQc21S4mXlmhD9GotqyrZ9QjzX7NcVbiKrKEhc8oat%2FCMNZJJx4bQ6G2Cu9nWBYmy%2BhUa62Hswzb7TQwgbLHzwY6pgEBcxwGeO8tp0i3uhGWJ81hvMmP2ccugaFFOaaC4IQHq%2BL3HZPWoCxW4odVF6tK023CZ%2BFAREtPlJZbSd5A9kXpGWOm%2BsYM978chibrIF6elXBXSC1lfnUPzw7CRAmA0TWfMT790tkoPRpACsdlViRNCIN3OSs3Iadu4roujgni0uqeh1ZrfxLz1KxftYs195K81ZnIn8oMukZ1qweDHo6we%2BAlCAHN&X-Amz-Signature=96b96bd97b7ff54379785b3bcbaa56b3f7dd4d35376f80edfa2cf37d9f83485d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G21:1-7 Birth of Isaac",
+      "yearRaw": "1918 BCE",
+      "sequence": 100,
+      "locations": [
+        "Gerar"
+      ],
+      "onStage": [
+        "Abraham",
+        "Sarah",
+        "Isaac"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8152-867b-f5337101287a",
+      "url": "https://www.notion.so/350cb257e13c8152867bf5337101287a",
+      "sourceUrl": "https://app.notion.com/p/350cb257e13c81b9b6c8e087d00127c3",
+      "sourceImageUrl": null,
+      "sceneDescription": "G21:8-9 Ishmael mocks Isaac",
+      "yearRaw": "1913 BCE",
+      "sequence": 101,
+      "locations": [
+        "Gerar"
+      ],
+      "onStage": [
+        "Sarah",
+        "Isaac",
+        "Ishmael"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c9-8c26-cd94e6e0dba1",
+      "url": "https://www.notion.so/350cb257e13c81c98c26cd94e6e0dba1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:10-1:21:13",
+      "sourceImageUrl": null,
+      "sceneDescription": "G21:10-13 Sarah asking Abraham to drive out Hagar",
+      "yearRaw": "1913 BCE",
+      "sequence": 103,
+      "locations": [
+        "Gerar"
+      ],
+      "onStage": [
+        "Abraham",
+        "Sarah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81bd-9393-f741a02c2461",
+      "url": "https://www.notion.so/350cb257e13c81bd9393f741a02c2461",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:14-1:21:19",
+      "sourceImageUrl": null,
+      "sceneDescription": "G21:14-19 Hagar being driven out",
+      "yearRaw": "1913 BCE",
+      "sequence": 104,
+      "locations": [
+        "Gerar"
+      ],
+      "onStage": [
+        "Abraham",
+        "Sarah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-815c-843a-ff3678fce99a",
+      "url": "https://www.notion.so/350cb257e13c815c843aff3678fce99a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:20-1:21:21",
+      "sourceImageUrl": null,
+      "sceneDescription": "G21:20-21 Hagar and Ishmael settles down",
+      "yearRaw": "1913 BCE",
+      "sequence": 105,
+      "locations": [
+        "Wilderness of Paran"
+      ],
+      "onStage": [
+        "Hagar",
+        "Ishmael"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-815e-8598-f8c4f703dfc1",
+      "url": "https://www.notion.so/350cb257e13c815e8598f8c4f703dfc1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:22-1:22:32",
+      "sourceImageUrl": null,
+      "sceneDescription": "G21:22-32 Abraham’s covenant with Abimelech (King of Gerar)",
+      "yearRaw": "1913 BCE (About)",
+      "sequence": 106,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Abraham",
+        "Abimelech",
+        "Phicol"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e5-b417-e5acf0fbcfcc",
+      "url": "https://www.notion.so/350cb257e13c81e5b417e5acf0fbcfcc",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/21#study=discover&v=1:21:33-1:21:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "G21:33-34 Abraham plants a tamarisk tree at Beersheba",
+      "yearRaw": "1913 BCE (About)",
+      "sequence": 107,
+      "locations": [
+        "Tamarisk Tree at Beersheba"
+      ],
+      "onStage": [
+        "Abraham"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8172-a153-ce521b7b7780",
+      "url": "https://www.notion.so/350cb257e13c8172a153ce521b7b7780",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:1-1:22:8",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/47ecd2a9-e1d5-4aa4-85c8-2cae02cccb1d/DEDB1622-7E01-4697-89DA-4854D7288C63.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466UMN2PARF%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111816Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJIMEYCIQCqs7PoXLeiyRqAaQ%2FJR1%2BYd7dCxXPYjCuPjilehJsUWAIhAKtK96zETyABMz65s16fi0JvdlQkRqnuvbSmOts95pzsKogECPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzSdeLZgrl%2BfnhvPYsq3AN%2BStQV9peYAXSCYgJKy2%2B1q%2FQga%2Fia9HY5pTXn6ZEJ6GWx%2B7G0RbBNkplVD%2FeHnXvHGP7gQkNkJJRlcAuYLcg%2BHG2%2FHfJ5PSa9Zw2u4oJlQ56UOcvtbzo8kOhBcDAkdtUtpoqDNdCmvDjt%2B4nlEYlQt3NCkVHfSjY%2BiCmLl5EgqZiel1BNVrSp0kG2BLDNAmpq4zTrDv5i986rdyOsRTfswkH7%2BHhkS4%2FfAwBuEksl%2B7dz18IcfDyFtNKjdLMnzGqn18gbKXt%2FEwbvyr%2Fu5H%2BGZDqptHokaRkHQDXZRyUwLBkGprZY3tF14%2BpCT1nnQdgXBO90O7LuB3g8euFSumzqqvw9xz7Xg6C%2FRYYMOea6Dm4sJoxSX6X6rj7aUs3gO%2BIhtQ2gXJuWb%2F60bh64gcDcq75CFNzHCkWjOjMSmPOJam9rBw%2FL%2Fi79C9c8Oibj4IUOkGLXD5PKc%2BNz3SM7RAWKNoPu%2BoLBJm%2BMrK4ky8mFdLGDweBgwLz15JJosEcwIFjZWB8VcUK9%2FCHWuKoWRBj4NTpLPeT7v4PaDZtfO1zK6WP3hLb4Uhbedn2S%2FZBRZ%2FWm1GUVnf2itLyMnJTyaTpKbOXVlpgYb5lwsnu8luLSYkopM8uW8zymLXSQYjCwuMfPBjqkAayiWQUycPLyAVydQlXawSvmjTwasx6IEls%2Faate%2FoP5j4crHgRZxvfNdDowXSwx2zKtqxQcqnWYRsGmY3N3TSYAZiFBmCAEL%2FGwQIZInkTuZmy0l6FwkRX6k3q7aw8yRJBcvIsMmcFy4siroIOJvpcRdfFG0M%2FbU3y8ADGztoebQPh1kGDyPloPG6bPMmkSTHwv8G9RcE5DtLNx%2B19OER7naM5W&X-Amz-Signature=b80228673095afdc4f78594792f58c5945ebc34221d6734332eb3eadf5e02990&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G22:1-8 Jehovah puts Abraham to the test",
+      "yearRaw": "1893 BCE (About)",
+      "sequence": 108,
+      "locations": [
+        "Land of Moriah"
+      ],
+      "onStage": [
+        "Abraham",
+        "Isaac",
+        "Abraham’s Servants"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818b-ae4d-fffe37401ba1",
+      "url": "https://www.notion.so/350cb257e13c818bae4dfffe37401ba1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:9-1:22:13",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/a52f0666-b061-4a68-8389-c9c394aa1a89/FD8D8699-F37E-452D-9BD0-816D867949A3.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X4O4UAU2%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111820Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIGqfZ0kOZoooETvPoNHXtTlVM8Zd1som8lvCOqgVF5BAAiAb%2BTlccK99CVuz7pT1YoHbRf9yKgG0pM6n2AABrypX5iqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMQ%2BLFSujfTvmEMCPqKtwD8WoZrSf27DqIuYEuMkQPZRpmaYCC2ejNpyqMucAyG4KUxlvAjTJmwrTzK%2FekdqqxI7w0J6rZqF5kwWCgqqmIX%2Fquff%2BsiSL%2FCAilRKT6fpr%2BC%2ByUS%2BjNh7BDxyfeYwibeqggNzjgl0lG%2FsitklBbgPyWeSLbQtzcWdSKsvwr2k1vKnPU2hNjcSH4YaaYtBYV31nPG2deEq4gkgChFl9871uXWdB0CAwAHA%2ByuaoLums7mp4eLLaXWWCpkB%2BTJiBlgkX6qCQOsdDG1YeWREeJEBcCtdmmqK3cc6z3xNPAmSq3oVr8cbAVTNAveg32599nDNNPqt5cFsskok1iDf0xXX34pWzYS%2BYrnveaGU3SkGTi%2FAiwkHhfsmtgKLBsI6Z2jncL6vKiETlGbX9%2BJd5598m55xYNzUKn3XuYc9NfmvhH7Zlivhlw5IWKgJyk17EfA3JFXKqmY7oaiVmmx2RdqAB0mVS6Ab92FiWqDNnE3B%2FBWSZ%2F2J1WDkmdrYs3Oq8Ngtfj6kd9phCZle8zzNRRR2HVaRGjqfBSeJFiq10LvhNTC6JvygFtutGoDxqg%2BcELYw2oIee55Eh5P0eWg7N2ztUrtIwzu2YwRUVSI20IwnKbBgSLNgfAk4M9VIcw1rHHzwY6pgFyNyZwp2jJmophoQojdkFxdEEkWhdn5VF9DiM4142HIlMYQuSTm%2B4FV4LNx2rjJkMJJ1KMnR9JUMwW1wz4r2cM2V7lNgiF8OHEcEP8zly%2FoONUmE%2BtKo9X1T2AO%2F%2B%2Bp%2B4B%2FIFm9xoYfcfDg5pWFZwJX4Ui3CmQdjl5AqF7tTuIBn%2B5J67W4Yzfy4CBI%2F%2BJWxo3e0hf%2F8fSFQaVahTEI7F%2BFoRiNtYY&X-Amz-Signature=40473c800329ba10cdb890bbb207bd29fee0904fa50891635600c0e818450f8d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G22:9-13 Jehovah’s angel stops Abraham from sacrificing Isaac",
+      "yearRaw": "1893 BCE (About)",
+      "sequence": 109,
+      "locations": [
+        "Mount in Moriah"
+      ],
+      "onStage": [
+        "Abraham",
+        "Isaac"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8169-80c5-eeb326d21fc5",
+      "url": "https://www.notion.so/350cb257e13c816980c5eeb326d21fc5",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:15-1:22:19",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/bf009c31-f3a7-4626-8508-ba30233fd4b4/3E07DA57-0A14-42BC-A6AE-F904EECF0C5C.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466RDOD7GC7%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111815Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIB2DhUm6%2BWRskb9%2B9UMtHaxfKgtcarvBpEIKpV0kh8D3AiBBzuNhDXxNmkiyQWFjEUEtYcj3wzqtPDYmT9NGlAUx6iqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMqvEV9ejOVNI1Msp4KtwDLZIQna9ctlZwVFymOBLprX7GFQlg06Sq76AHQpfUMeC4GYQwDucF%2B5gsak%2BWuotgJm2FdNBLTUqvo3A9H8NW5DGzN0LFQ4MNlaHtUzG%2BYpxmSqBviSIsqJ1FaiLIfYiPXnNTh7N45NKrGm9QItALUvl8cfcPhpVMFHiEZpPCSPT3mJXLSBphFEVb%2FfNKqjiSCazTBBuNzxe4AxiaGmJXNnwUW5aPpZPAmtS0qASLT7gH5DHd5B%2FFqm5zai1fHjHshuXpn2CVY1GtHiOLoWXlYwx4pX18Ru%2FBgyF1Q4IzC%2B1yonh9urJ82r5SfHT7SQYZ1xZOwaJRA7KwoBKpOaBlD8WwQxERMtJ1fUVa727yyMf3cBVuZwNkt1NdeW2MGshcDni4r%2BovJ1pr7ZiX%2BDPgnVD3sRnoPxC7OZbx2W10rMgrgYtZTwZ87D884vQFREGXaOb6enSLScTFATgQr2EM6mnL1U%2BNdziQTNkXVS80r5lY7dI1KpQlTvyVBLIkZSEH6WgAhI2XFW41t3ve8gL%2BOK77GBbzW5dfmVrlyZzv0tYggCayGFIT98Q2JE8Bhfnd6MV1S8aIgwNaUE5Vr14aqbpAGDPrigRW2EWHFS6zfVICxpQVd0R2CREKXvEwnbPHzwY6pgGkav4nq%2BHZilcePUcZvzjzwpR%2B4bZFniDV5CpaTYIOZEW21Je%2BIuCraijZO0R6kCxUoAY6YXPSh5%2BxqWXZ5wJkj9MUD3yOw6DfXEda6YieVWsNcPyQaRzh9wm8RTAVk71qvW66qugNQjHLBuux5HEVt7zXnzXGrgtSc2KHRt%2FRqSgQnAlmoza%2FVlHeNrPsNgWZSpb1QABndOkfAJoZEo%2FrF1n15vyh&X-Amz-Signature=ff63c946f6dd724efe82eefef1ea0cced4a362e77558aa78a124656ab49c9ca2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G22:15-19 Jehovah blessing Abraham",
+      "yearRaw": "1893 BCE (About)",
+      "sequence": 110,
+      "locations": [
+        "Mount in Moriah"
+      ],
+      "onStage": [
+        "Abraham",
+        "Isaac",
+        "Jehovah",
+        "Jehovah’s Angel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8182-bc85-e80e22ec9981",
+      "url": "https://www.notion.so/350cb257e13c8182bc85e80e22ec9981",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/22#study=discover&v=1:22:20-1:22:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "G22:20-24 Rebekah’s family",
+      "yearRaw": "1893 BCE (After)",
+      "sequence": 111,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Abraham"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d4-931d-dc4c6619fba0",
+      "url": "https://www.notion.so/350cb257e13c81d4931ddc4c6619fba0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/23#study=discover&v=1:23:1-1:23:2",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/9ce33bda-c912-4a19-b508-3e99f52f9cd2/B5955783-FDDE-4CDB-9927-D51A6057E059.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YJJ4KOIG%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111832Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIFL5zkx0zkVRfiK11RCAbaQBh8O9zKqKmHip7wkVZXP3AiBW43bsnOm7XSphbFFJvduH6379gkEpOOH2I3XNauxc7yqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIM%2BBhXlFFL7JY1WWZ3KtwDB2OqzCOtiRy4WpWplYT%2FbeHc0kML0UYwu1%2F%2FEJaoQvmMs4oCAqRKNcSrhbUnlkgD38J9rDvjhQJJURq9moRu7CbNg5irZpchZdh1EdFMDswWe5AkVL%2Fy9Nq3kZLrVN6%2Bcc6EHazKTYLeA8jg9ASybz7O%2Fo7IWWaHCv15VQsx3CyiG6HlmdsNnMub%2ByQsGZdvO3cjMkJkmCNuJ2XzCg6ai3dE71L025VAklPKNDRmw6mgYsOTuGVpcLQAiZ4nsyMzjRKner5LedsJ6ukxcijw7edYkrYbfj8fXdpxW3dqYQuFDItbCbARArLGalOHhT3hJb22br%2B0eaVHYcGDirynNIzViAtuFW2c5HwyfTnIoN6mm44AcvJHMSsExmR0SHn1%2FZBlyzAm%2BbJrSW5hsufR%2BnPEp14BgGBvuldgf57PoQOqAdXrfcruBoUYXEaUFvyF7QWVT3qDsl1kGwynZRNbrDLeZLRziMvwHGWPt3FB2Z5MxxGfqnhc87qFUFGnzhld1PUxTSvv1hqvmsS9TALu%2BIVQuiOexOL%2FX2jGOPfBwkYP2UnQtAe%2FWR21XVEODh5iNBi3q8Fe9bnpoIPJ3V7X8GpMJKhhp3bGVuSg3J9qH4J09%2FwQKTY2iWvPfhEwqLHHzwY6pgHOVRAukyirMaOEN8mqv%2FtqXhdFJroOzb1Byxy6TFyTw955%2Fyak8kGGQ8Hud4YHxWhvgzMaNc%2FZ2Xt%2F6kHDT%2FEtMlEAWxVv3vXJrzs9UC8a0nfwyg69iVgWqH74JSkiB%2Bt5QlFqB7mrw6fxrs8j6DVVPO0ISe%2Fgh6%2FJIWd%2BL%2Fa2yB5DPLHB1u3r20zKhr%2BTe7Q%2BpazBpIID5WWoZrCzstWleDyttYFg&X-Amz-Signature=0db62176bea5a47b65a5a4e0c876ffdb3939bd005b8b6031475a7461327676fd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G23:1-2 Abraham mourns the death of Sarah",
+      "yearRaw": "1881 BCE",
+      "sequence": 112,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Abraham",
+        "Sarah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81fa-9480-d065f5a263ca",
+      "url": "https://www.notion.so/350cb257e13c81fa9480d065f5a263ca",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/23#study=discover&v=1:23:3-1:23:20",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/bcdfc3bf-5041-47e3-8d00-844954a0e1e3/E386CDAE-5F25-45DD-B796-4D804320CF0C.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZABK6CYR%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111840Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQC5PogTef5G6W2Seu%2FygXDcp6GZVSR0zT9uZzdLt5eM9AIhAMz1JRudeYPqSiKT0e8XckTy0oMXE85ahQPgLY7MACmqKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1IgzEuQSaEzMnCWTIeNsq3AO2SdZSU62U5x9IHDS3ddLj9AdMr1W3QwpnvMhc7Su%2FQsAxWCVcs6egzkSL3sfWBSNYagxkbSzgposVhuTq6apF%2FeQ1wL%2Brg8pEa6IHLQa%2FD3A7aHg84wdUaX3CpLpnOuXHF5srnxr%2Fiya64YmPzZPs4v7ib41C1lji2YkoiemTpjdt3%2BImcdNMTc1KMh1dnkR1Xk%2FsRkr3UtCv9UWWGlI%2FJF7CBtouhDdi%2FWgU4tCpFVWN4ZHW2ttcKjIK8Ccv7qcFWmdoCJLa8bT51McFytglZ04YwN%2Bk5gIwch5TKUAMpPKeAv%2BqFWDVMNJ9Wsfh7Zyb6ak2VstZCM3me%2FcG3EEYxV1Gtr4loWBo86xEE2Pn0PZwTe9galqGlcfmtbYZkgQmOvFX3ahrEVPohsYjfzVkjr79ZqUdNvt99kDx%2FZBUygPEQRbyTq8bqZoijG2o8cqO%2ByzeZORErdO0u9SNU9nh57QEr3TjWIt3Mhlj%2B887apluX29DLyneCx%2FLw9lhXBSuPgsR18fUzEg%2BhklWHDtgGp6YHQmoVYstZ2iN%2FJMWnhweKJ3HNmI%2FIUzYV8Nqa6V2JKbMDeaEsxVz3ZzV4OXfledgYJrUaF5c9hFytRsElcJ8yJjUe9kriEVPRDCxs8fPBjqkAWb6GFVrATSFy%2BedBaHZu%2FTOc0V%2Bddre%2BZNLSRXIzQVJJ66Rggq64hdRpJMSrtqhbwRiVFry2zqAl0ZmjYh9aVdOz2kcjxy4QCiZT8l7qnzOJ%2FPkBaQUyxA6NMcJlIbAwsFizS8RCVzx8WQfPsux1Gns%2BItcRcFZY5OtYmHEeJ%2F3P6cWH6F03yBKS45x44l97gT0Xba0sdvvz2SKXXOUpAarWLTU&X-Amz-Signature=5a0021a4367209a14691f12c97e010797b9bd781d77c67604aa5889481ef662c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G23:3–20 Abraham buys the cave at Machpelah to bury Sarah",
+      "yearRaw": "1881 BCE",
+      "sequence": 113,
+      "locations": [
+        "Cave at Machpelah"
+      ],
+      "onStage": [
+        "Abraham",
+        "Sons of Heth",
+        "Ehpron the Hittite  "
+      ]
+    },
+    {
+      "id": "350cb257-e13c-815e-b64c-e09af844df20",
+      "url": "https://www.notion.so/350cb257e13c815eb64ce09af844df20",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:1-1:24:14",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/ab5b114f-0a33-451a-877b-cfc1f1e8fe64/944CD23F-8724-475E-8058-19B59DC99E97.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466TRSTUNLP%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111814Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIBv6fIRTCZnF04HdiONhwf9oDbNVSAPdkuwBUw9qUhriAiB7kP918ASAqBXbPT1cQKoDYIri3hW2Psdk2VhN0VEKxiqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMHmJHeucq7njHXXv4KtwDLfmD3MnmdM4E5JLymOVaJxz4nQLWgxvKfim1kY5c2TdxGRZfci3DrqihkWijWU6ontpPyxSiJHFGokZz9A%2FHACmWBps9qI0BizOqtqn6IUYRo1pOQ%2FNliquCBdIpmttuC6LU5XLwQckrAmRJ%2Fnnzz590gSgOxEJN3hhn%2Fr77ZJ92JBxlNNIwW5VPu475N%2BVybLdLtiGHyPsmsz%2FrQ8cZ0togNEGBnYyMi9Qrs8q4UEIZyJY7fr0%2FfsR9w9DYeXCCrAvwDvQqXbMzBOXlB1Ilc%2Bto9BB36R8VF8foz4ygvRM7DYASES4b1pXTZ0%2FisI8%2FFL95z44VunT4esXCgAQSLbp0AEviDfA%2FJCEcpwlL7hBKV3mpjsSlGpeqmoDk%2BNeu8waueM0Qs9Isqce0t4Xp%2B4F%2BRC3ZZpyaqmOGfpDoQG0nRFK7T7Qzk4kOizd48Mdnv45a3tTQ0xOPSqHa8%2BoNmVJ2qNY%2F0GU1lK2bKZk2JXW8Ej8pRtGY0phQgzxQUBNiJ4jbUjSBg%2F%2BKus3pX4DnZcYS9b30hQEUIip%2BEp2EzEnhYZhBBWSy7v9JUJy%2FY9ubxK6dvfXeH1f4jje4X%2BpnnCOV%2BpczdmWjgmOZWi2zqVkL2DOfyDTJJ%2FO5j4cwv7HHzwY6pgEE2%2FUUthVA5DNYaD10w3Bx8gzeWE3FRiMElkCJaehHBWKl6ie1RjqhcDyQBaHRc6CsNmyGkEFkoKVoL%2F6kEMCotGHWzmXQiRuTsuZdt4k58BpX%2B0YFkQ2ZVBQiOvO0aToeg82nn1AD0XqlEjx5TADycCI7y%2BrwEpc1VneP3TVLB7kqkF1jjo7bzJhTndlhKozG%2FoI2w6KfUKcKpRoRAYDI%2BG0aNyG5&X-Amz-Signature=0049bed0fb30948aeebba4eb9d04084958c7acba74a209e780e36148424ddbe8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G24:1-11 Abraham instructs his servant and sends him to Mesopotamia",
+      "yearRaw": "1881 BCE (After)",
+      "sequence": 114,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Eliezer",
+        "Abraham"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8136-988e-d3c2086bef63",
+      "url": "https://www.notion.so/350cb257e13c8136988ed3c2086bef63",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:12-1:24:14",
+      "sourceImageUrl": null,
+      "sceneDescription": "G24:12-14 Eliezer’s prayer to Jehovah",
+      "yearRaw": "1878 BCE (After)",
+      "sequence": 115,
+      "locations": [
+        "Mesopotamia (well outside the city)"
+      ],
+      "onStage": [
+        "Eliezer"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8191-a3cb-da8ae8b46166",
+      "url": "https://www.notion.so/350cb257e13c8191a3cbda8ae8b46166",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:15-1:24:27",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/52988a93-0b8e-413b-b9e0-3c6775405b67/FDEC5B45-7229-4E59-AA22-B88EF1CD2DA4.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466YYKQKSW2%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111822Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIBUvifqE9VL3sVPluNN9fyNFmF%2FHwGPlvBsG1%2BxxsMJLAiAJeHsH3b8pcCwt9BZY6uGfd6TCxUv4DrQZFh%2B9F0v6PyqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMXm0jjMbxTYJg2lNyKtwDatvpUouF6qXyGDYWEhBZAu%2FKlfbNdIDl7qHzt9y3UiXjdrMqXVHVfx0MuieO1J0mRsG0s5aZJzaOYCZWxuLIUml%2Bs50y1NM%2FsSVRi7AYRruEjNlTkcCRI2PBcfznhZuXKkxzt4%2BLK7D3PDsMZkse6g2Z%2BNbWQpZJ2zexSNmSdFcq3DElH3iJ%2Bk4UuGGQyv4xxTIumaCKCwiQeouKFuPofk3wFW0jKhGs8TDxJMsscS3WIPvZlY9XnXMHLKz4jaQmQJ9Yj4xH9Xe8Vt5vnIRhvThwQ%2Fl1Zhro%2FGvCvINvUCwnL%2BgGEYIVrl4fuiRtUTpQw1S%2FaxQ0pdA8RuZ8UtDmNn%2BM8LXsI7L5lcz0zOFqxDUfBtj%2BuDKCLyhVyOC4Ye3Ku4wmp2yMBQ6CAEcJ%2FBR5u3j%2BmJALKoAsQzbHpyqzTDASBhOfpiSqAptONX8GGHAarbOkUWoAjPpnDPRBgEtN9o56BHs22h%2FpRS8KIYa%2B8VWNglZ2lPMCAiNgDpUoOcDHzvF6qXIfdWRoNNHHE869scYiOBap3znacx%2B5w8N1yFEZFaS8JyS1PN9Zv1pp5xFA4ic2%2BP34YMjg0awPc%2BDGeyvcOh8eZcBNTzjduCJw3n%2B5mWBsSXPDGSjKX%2FMwwLHHzwY6pgGLbpC2D8djqLiks4wxl8vJ%2BMLmL3e8hoPs3uHkAhgmSO5KGhAAFfh3Ohl0r%2BToPHeGqoboVVecG3Oqn8IebHP9%2Bm3Y%2BKMlHgeIjMtfYfy%2FAjgOGP6M77bGqrI%2FbbxU6opHahgUoiCJ2AZbRtsoxV9pKZdLOXsEAReRt%2FSKfAYZfMTFVVDZkb%2B1UL0P1bYI%2FFIuiyrFCXuyIqo9cC0%2FU3ChIVPecQQE&X-Amz-Signature=5c30228c80fd9b7944342e8b1dce32af027c682809c7fb8923561eaabbf8c573&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G24:15-27 Abraham’s servant meets Rebekah and her family",
+      "yearRaw": "1878 BCE (Before)",
+      "sequence": 116,
+      "locations": [
+        "Mesopotamia (well outside the city)"
+      ],
+      "onStage": [
+        "Abraham’s Servant (Eliezer)"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8183-93dd-e96464b673df",
+      "url": "https://www.notion.so/350cb257e13c818393dde96464b673df",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:28-1:24:33",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/12ddbc2a-62c3-48b0-a4e8-4308914846a2/A4613E25-5FF5-4EB5-81E2-66BC1BF38C92.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466XPNYB4WM%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111819Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIEfImG5xA9GaZUVM%2Fg%2BcIeKfSRedp0obN99ubMBlKjDsAiEA8TCByxKnMvVwMfs%2FbzSBjA9xJ52%2BikScJ9DNyeNZCXYqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJnEY7ne%2FpmLIB15ByrcAzEn553WXI1ZJBCVN4uImqspFh8iV63WzcGWS%2BnpbVvR10xqRokfpHpbWM4N8ZTbg7ipZaPvaEFYzSkgJTURivu2LadWE%2Bw4fQ8SG0xsCMalCCeUrHEdpUG%2Fqlu8UyV9DycbH0OhKMG6g6O9ELKU%2BcUny9maJjEYD7Bhx9jUhwXipr%2FT%2FslBJYb7Sj4hoWjO6GknenhlHtZyUyV4w22QOHF%2F5J4NEdaA2ys5RjMLcBH5gUdMO3AmembPPblmLwz2hexjaFRhNx%2Bt%2Fz6xbdCLiM1slWIB3LPVlwR7SQdhi%2FneBmEArotVssBazMPsGAnCxv4BErHIlWFiU6RoUwi5FgQEO7meKpEbZrskWUjP9MNvQZKONOlyyubV1ODi7v3ZRJktj559E2eeSEB3h5athdUC1%2BoUonwvqHPLwNmpUZkK64Nr9W35Yr7T2JINPuu1fkgZLV2%2FMSVu3CvQNyZ5eHeAcLeJ6VZLeI3ix4DIAO3a2lBxS92sAqJTTIIBFqPxKbrm0FalUTVsBkiJE1ujKZ6iogBkkILyVFnON4AqplnlqqGgFKIYAvs6EX%2B8wMgNpirBT%2FH3kW3AtQE%2FsHTKSAPqyEoq%2BeKki2H5Vfylo3ragK3Yy5ahx54fkiq4MN6xx88GOqUBBACfNoTvxlavjADMbaRLKnOzvNLd44yvxolQyyi9smZOMEA75cQ1C2vpHWE7UDufjC18QuIWKdbKaJGfeRy9d4t4c6DIb52lR%2BOT69rM5FLTSU6Pu0m38F9JYdbuGmhDXduVmo6dd10lNbOnQf0W%2Bzc0iGzprUpaxgC2PpJhq0J6yS%2BziEh%2B9uLc08LspOOJz%2FsFyJK8YtNdFgIsr7a64CmfLUys&X-Amz-Signature=422680469de3f248be30b3ace5d8037fe5a7061247c01d13186b293c9e8082f9&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G24:28-33 Rebekah relates meeting the stranger at the well to her family",
+      "yearRaw": "1878 BCE (Before)",
+      "sequence": 117,
+      "locations": [
+        "Mesopotamia"
+      ],
+      "onStage": [
+        "Abraham’s Servant (Eliezer)",
+        "Rebekah",
+        "Laban",
+        "Rebekah’s Family",
+        "Bethuel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-819d-90f0-f52686bf1182",
+      "url": "https://www.notion.so/350cb257e13c819d90f0f52686bf1182",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:34-1:24:58",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/490cfb8d-07ec-4a75-a5be-eb84746d24d6/1F7F8104-6BAF-437F-9FA4-6AC7F2BB8E4B.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46636WZBD7V%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111823Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIDVSHO%2FewGcAQkvxoL788BJLOzqZK3d0me9Yi6kD0odgAiBF9Ss0aXUH3JsPtjcuLMe2xZ9tzuDjO6jhEMCOUSNkMiqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMnzH%2FdY3EEm5kyV20KtwDrnJE2QapJdHdR%2B6GclhKWhqZbUTF9cPYgvqIyg1X1jPEInh2skLQ5CuUqdnR4TQO8XC3QffusWH5TtQH5ypEI4Sh%2BiTcGMHpVHqlU957FSwvu%2FPbUHc7wXuCYwCPFEgF1MwlLyb543SogaKqqvC0hOcVDUviTzrXjbzw2Xtggc%2FScVrxsxzV2amxrFMRv8rTcJvm1yPuf30or13MBgJo23fIseBRiv73tYQzrjpaxHYJsvwnZmYhBaxKlj%2BFYaSkZ87VcqW%2BuUbOl%2FZp%2BTcfLlk7zwtdnG1LSw5z47WDi0QquoAL3lbhLXEcc54FtXzpGwmRczG%2BmbKBcdT36VfQeSVaEqxVnq85nEIUfCNlDZssd8OKrYLiEXzPZHosbE06dxO6gXss5EegDUKqDZpwr%2BiB2uqan%2F40U%2FpFtLSWF0DMXDOyY4cTs0wcgDeJM15Auy7LhNi5qdpImz509vrDoC0aha2AvsqO7T%2Bksns%2Bqa1AKZAtj6jg6DZ9DCaOwsH0I3HHeYthX67w3jY6YyvxOxfc%2BOOrO8QA1vmbabeECRPPyOC%2BmoI9gkn4PJ43mDnRysEZp6X8W8MSI9ZKrJirbIGKKVV5WhyRG6oAqbmJ9fc8G%2B6AEeg63cduImUw9rLHzwY6pgE2p6s6z5nhVgugL9ZMpTSGWOu6gmVglzK5PkhkJRAbHyqXVmOtuPvOzwP2NWAdyh2LrS8QPhkZhE7AHlKxOFzmOoZn%2B28uKvjVd0%2BK56Ghpv99RFx6c1AHVaEFqdLKx8HzsKCbtLvdFqUPNHt%2FRoIeRWjeqZ%2Bp9ub37jDtTaoyayX%2F38HYo%2FgSPcdpty74thdO1bNdVW3CD%2Bl4plT3IJMeqDOV5H5O&X-Amz-Signature=ea5f879e20826d229648fa4d4e0848e97e0873a592c45717165e8bab17a2b9bb&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G24:34-61 Abraham’s servant returning with Rebekah from Mesopotamia ",
+      "yearRaw": "1878 BCE (Before)",
+      "sequence": 118,
+      "locations": [
+        "Mesopotamia"
+      ],
+      "onStage": [
+        "Eliezer",
+        "Laban",
+        "Bethuel",
+        "Rebekah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8184-9a0e-c90c675bbf54",
+      "url": "https://www.notion.so/350cb257e13c81849a0ec90c675bbf54",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/24#study=discover&v=1:24:62-1:24:67",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/3a58150a-f850-4093-9eca-5d54b035a735/D647E15C-8E58-49EF-88CF-4BB3A784FD22.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4662AQT3BKY%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111819Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQCqbdbkJIhtIArmI5r5U5GeWCx0Jc0HGOWk0j7QGKxysQIgP0wW5LOoXfGmnS%2Fx%2BI3gYZ1CY5RsXb5Wq1nYqce%2BWvsqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDFScgqRe9hExvKHRACrcAzm4T%2FJBeZifQpvl7mq88Mt%2BkVSERLM7oH36ENDC20iJEJ%2FzDFwlIat9nsRlJhN3wbTDoik457ewvca4O0L309F76YU4iYd0%2B%2Ffq3bf%2F2QZ4yroCrZMuxg978pXdr4gxsYY0D8Wejq8v3BZd2S4oUHMvRBPcqfqL3LRgyWjkeKIr9WPIoxELTVY4nMWjmfPm1pP8xlMJ3BzI5XIVn6Kbd3JIYg9RoTVm8OcMzkdZ153erx2i2TfPKxp5PbGJCd8N8KsVPNJ8Og8UnKAYTc2JRaPKGsEsIq75djQWvEYy9QmcvHh8NAOGiwMCMnF9tiCee6EmfTCjXJmWEAg9KlydR%2Fb75SnRM3zRHcO1WT8mQfsNgNjF3zOhwy7zV7mMbCjcrqm3peROTn89RHKCEU%2BzCSfO6IdoRgW5WDTS6kQHpOs%2F8Jo2aEsvJTSAtixFMzwQ5R%2BS%2F0lEyudyrXjz6qhRpXQStAy1RinNMk0F9OY3Exowe8oEduOm6glqFLTwAJg%2B%2F6MH8XqgGRTEFu2ySmptwAtP9jItbgLXZ%2FP1%2BB%2FUjWvQEPEG0GyHazdA4QDkED5kSanYL8Sovp63q52vrQpoi%2Bmn7iuFbQ0TLkZ%2FCt7CgY76ZDlBnkcpt1erDUUhMLKzx88GOqUB6PgsW6tibvDT9DZirakS3FewO7W13PVulvCTrM9ip276SbgHFezW5IhE9hupuLrnNbqgyemtbJGXZ6RLiDZyDYDRHlCEsG57tCb0%2BgLFT5Fc0Th0F8d4T3Uf1%2BVic8n3lYUY3cWBfdzBcWrgvxQt%2FCAyY2HTboIgoh70E6KjsWH01ZcpMdtt%2FzZ5Sok1N03VLtALyP3abitddUK8Mk4qrGjI9mdR&X-Amz-Signature=82eb99134fbcbf34f217b464a7d8c1e500fc18ecb689aaa9cba51063793a7eac&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G24:62-67 Isaac meets Rebekah",
+      "yearRaw": "1878 BCE",
+      "sequence": 119,
+      "locations": [
+        "Beerlahairoi"
+      ],
+      "onStage": [
+        "Abraham’s Servant (Eliezer)",
+        "Isaac",
+        "Rebekah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-813f-a652-cb208951e8ca",
+      "url": "https://www.notion.so/350cb257e13c813fa652cb208951e8ca",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:1-1:25:6",
+      "sourceImageUrl": null,
+      "sceneDescription": "G25:1-6 Abraham takes Keturah as wife ",
+      "yearRaw": "1878 BCE (About)",
+      "sequence": 120,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Abraham",
+        "Keturah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e8-aa03-f6d3c8405d28",
+      "url": "https://www.notion.so/350cb257e13c81e8aa03f6d3c8405d28",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:7-1:25:11",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/82dc28d5-e568-4119-9002-122902a1a864/75E081E9-5D3B-47D8-AD51-48AA3ADD24A7.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4663E7RGPN2%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111836Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIFCbW59FXypoB6kkU1zl%2Fe023PzBujMOYcKkWGsbMAdiAiAmUPnOkQ9ZImc0Lxvj636WJsi8NdV8qMZg8%2BiSqkw1SSqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMzSG%2F2YO4oWNXkQ%2BWKtwDGLhOYDo05HrYAK%2FN23ltkx%2BvKyrCk9J%2FRPehTHUnNJk%2FJhMU6lGOoTvSnRDfIDJiajDX7x%2Bii7HdERrbVdfps1QMS90jAEXd%2BNt9afK%2FK7po1cDwz%2FBWsNlbkSpi%2FCYqGgWUUUCWL0uKYZI3i8kRDgO4RZU10hx5ok2km6snreb833Yd52KbQGAI%2BHgveoROaOpQeC4bOBFNkdetYy9oz4vqhPbeLDzs%2Fgsg%2FHdKAjc9xs%2BJxoISfvz%2Fwo0S9Lb9zwhs4m7PAXoc71IvQyw%2BXacIqriAGVqiFNQOOm3z3zUFGwZR21QzMtMpd%2FuAbtPN6HLH%2FqNo565q%2FP9HhouvbN40HNNVeqNwigod%2Bu8d%2BVDO%2FRJZH6qRNrLzLJ46LNzP%2Fso9g9OFV8WEi3KJjvatobaN4jORqcL5rjqyKv%2FlqVbnpwZqLRQ0LQil1H%2Fka0s3e6DuTj4zsAuGD6ZqJB%2Bc2jKDZzunEhO8OXsA%2Fj2SRMmNDrtaqhBZAUJ41OuZT8qXkvR5A5nZVTTHJuXJBtRr9kTZG5NHro7UI7voZ13ERWDZJl36XP%2FGTRIcsv3lhD1so2oG%2BnCcygKI2CaomaoWpxbvRbrdayVif5nkizvVGx47d77FxCopV2zvNg0wzrLHzwY6pgHU2s89Ar7zFzVIm0uuPZC7Cza7ogly9vSthISsaJLY5p8J57p69cneS8dGl%2FCsYBnUgmowAeR2ObepNve455mGwQ1Spl7pBsmqIiEE%2F9N2092R0MLPq%2FEvaEWhJ8OX2in304cZqSzXso5jJRc%2FOqlL8MfpYGkjDX8jJN%2FYnqknoK9CW9WYC5KvUuTlTlFHoIKd8%2BPSqCQmkcnXmq%2BI4%2BiywBJAbeWO&X-Amz-Signature=dd8b77d5fa3c198704c8bf722e1ab0f0216ade46e3529d961a9f5b04c6bae9a0&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G25:7-11 Death of Abraham",
+      "yearRaw": "1844 BCE",
+      "sequence": 121,
+      "locations": [
+        "Cave at Machpelah"
+      ],
+      "onStage": [
+        "Ishmael",
+        "Isaac",
+        "Rebekah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e6-9472-d9335e3bc93c",
+      "url": "https://www.notion.so/350cb257e13c81e69472d9335e3bc93c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:12-1:25:16",
+      "sourceImageUrl": null,
+      "sceneDescription": "G25:12-16 History of Ishmael after the death of Abraham",
+      "yearRaw": "1844 BCE (After)",
+      "sequence": 122,
+      "locations": [
+        "Havilah near Shur"
+      ],
+      "onStage": [
+        "Ishmael"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8194-8167-ece7605502b5",
+      "url": "https://www.notion.so/350cb257e13c81948167ece7605502b5",
+      "sourceUrl": null,
+      "sourceImageUrl": null,
+      "sceneDescription": "G25:17-18 Death of Ishmael",
+      "yearRaw": "1796 BCE",
+      "sequence": 123,
+      "locations": [
+        "Havilah near Shur"
+      ],
+      "onStage": [
+        "Ishmael"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-811d-a94e-fb961f371e6f",
+      "url": "https://www.notion.so/350cb257e13c811da94efb961f371e6f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:19-1:25:26",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/edb3cb9c-97ab-4642-9d81-d6c7b2c6d1e3/FB19EA0A-F965-4757-A59B-65796CE5FCC0.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466375IJLAQ%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111803Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDlwVXZ5Ziz%2F%2BISZP%2BHRuCvJI2lC8AMs%2BI6fL71Duk92wIgYC%2FlLoBf7JMO0sOaT%2BeEK1pKpyv%2FQ0c6bvGIwokgxZMqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDP5cOxigw1g7jpWaZircA9PGgpXJDu0X0Y1O4OW6u9p%2FkuvTYbojWBuAZYmrSIhUSbjeTAOboY1IjUkNLagohQvp8eAFmavDjJMEBLfiKPaWBfi7DYHZJlA%2FdM1FpcAT6Uj3SGN4E6vGOlaleoa1fd7pO3zdaicp7MpheOx7hrk9fxDywEEyNc%2Bsf1godVAI2P4aiLAfTdlBVwMI6WY2wPlc0sLwtDlMN7swUFtxfMozBm68w1dRUAG4CrfPiHOXe7yAsccd4HjFuSUNyKriI0Wl1pcftijwgo6mdgDCU4fFV0hhKbElr80DJn4QvJ8f3Lsuyfh8K8OPO1W5vw5kSabV%2F5irxetavuwdYUt2%2FKbM3KsvZ9S6kDHoP7Z%2FmZDU9MSKlgX%2FEg%2F42d79VSwCM4JqUkIufAWZz6dOO67aQfeloVVJtUv8%2FdWcsoHmt7a%2FwBWRd%2FBgKhqfoH1CB5wzEahEt5FtT1vGLUgKmRtQql0jT3qXo3SlBVjS19bHu4chhdlAaZToMdArHJ%2BzEUouJIViGJsUXI0IUe%2FNOMh7p7n1R5qpSmIk0DfCpKGKxiF5PvHzvsAbrXMTPO%2BVWn6kMoFd9yeDJoeoW1DJCl3TiZy%2BogGOxQVbz9Qmah9uq3hYGagUl1IEieiPvATTMIayx88GOqUBUl1SWgrouGV4uotWsvzrhp4X6IjKTM8G%2BpIpYgqF8uV%2FS%2FniRY9d7SPNS4pfA%2Bd44AtjRd8bw4CURmwY8EkRkRTbA7NjTVrMQhdJ4hO1sqWXPDUEzkGcQ9PG5wO6bpz5n8IYa0aKLGbGrlMb5zBYznZ8gF0%2FetSY9JNgvY1JKEREGfoEspZ5MurmmzMXCn0BZTu0jzV1JcFrjnfMRsZkefyavr87&X-Amz-Signature=9841dfb7e29e6a484e73bf5910578cabb617f3e5f1593b9930260b039240a011&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G25:19-26 Twin sons were born to Isaac and Rebekah",
+      "yearRaw": "1858 BCE",
+      "sequence": 123,
+      "locations": [
+        "Beerlahairoi"
+      ],
+      "onStage": [
+        "Isaac",
+        "Rebekah",
+        "Jacob",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8146-b580-c38f2d49c462",
+      "url": "https://www.notion.so/350cb257e13c8146b580c38f2d49c462",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/25#study=discover&v=1:25:27-1:25:34",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/0db3d2f9-204b-4357-8fd1-415558de7c17/114C0C5E-D98A-4EF6-896D-5904AE9B3538.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466X6KQCKCX%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111810Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJIMEYCIQC%2Frfv1XIFnFelhEauoFtKdKyi5X4drWE287F%2FOSPQzMgIhAK9QC0VltKWvA4rsysQESWk8S1EUkeqUULidt61nRagzKogECPP%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjM3NDIzMTgzODA1Igy%2BoLuypp5QmQO08hMq3ANuH9xlr3IsOjFsWXpWvoaLT9xMR7rUFqK2SDrm6P%2FVxePl5JPEvg6uEFTZzDpLBLHMFkE57L669RgEgDNForhkGpb%2Fnzqvwa2KDU%2FKjvtMWUbxeMHr2nJYdC1C1lIHBNBG8O4GKMA%2B265cjIzuc106mt0h8xX0MMgbaBdESzC1OFe7PvRBR1S52ihCXsD2E1BomABO4I6aKJeoTiGE1WXSWUqE0zqUIZWJrb%2BSfKyX2ggbqinvwzX9VrIH81VsoMmybUuES4eR%2Bpe10nx5QjgIa56FVHZ7vGrX9fAyUM%2B935kkq0%2BCoqsspdzmJZGbMlLPRBginLlFO0GRQwR6J73IMu4Qkd0Yp2rt%2FRJZUMmIrfHjEM8uyvIFOnCPonTsU2e6eiyelr9zUeyUl%2F1Sff5OR5V%2Fit9QmGe8Ml34N3eJuv2PHiYwZhYhYJlY7z%2BFOQZB4teiU%2BO49a3NaFie8Ha29ke12drGbdM3gM148Ig16ZQtnHP%2BDrb%2Fdjqe0ImqeJS7ZmwUxErInFHg9qga7AAzJzytdDUF6rjJjBqc8lsSHFLAZPqrqtRYKJQtm42rsl2jSQNhRy%2FRyF0T8uIZwZevZPeCmPJBOfM2WW1G07N%2FPcnqwUjQajQ3J6l%2B2jC%2BtMfPBjqkAVu%2FSzleRhpdj1QGjtzxOTC8aI%2FgNpjbBm7L2xs%2FD%2BLuhdIzspr6MoPZlap4aDst%2FmkEgS%2FKb7vGdkFVsCqRk7tnxOqTB3re0cugmCNdwttTpwzux%2BN9YmKL%2FrHocFJhO1bGEALcBdw2Ve1HyAASmJk3oIvGRomcW3J4T29cnCTWi%2B6dhvo4Tg2%2FRob6zbKgGK6oXrN07UHxB4CN9zqcHRvWGYyB&X-Amz-Signature=2ed7dddce4dbd86cf1f216afe93a846b58a03c0c86f3145c4b729c7ff3472f19&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G25:27-34 Esau sells his birthright to Jacob",
+      "yearRaw": "1844 BCE (About)",
+      "sequence": 124,
+      "locations": [
+        "Beerlahairoi"
+      ],
+      "onStage": [
+        "Jacob",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81de-9266-c1d5b400c329",
+      "url": "https://www.notion.so/350cb257e13c81de9266c1d5b400c329",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/26#study=discover&v=1:26:1-1:26:11",
+      "sourceImageUrl": null,
+      "sceneDescription": "G26:1-11 During the famine Isaac goes to Abimelech, in Gerar",
+      "yearRaw": "1844 BCE (After)",
+      "sequence": 125,
+      "locations": [
+        "Gerar"
+      ],
+      "onStage": [
+        "Isaac",
+        "Abimelech"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-814e-ab0d-d0c272bc450c",
+      "url": "https://www.notion.so/350cb257e13c814eab0dd0c272bc450c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/26#study=discover&v=1:26:12-1:26:22",
+      "sourceImageUrl": null,
+      "sceneDescription": "G26:12-22 Isaac in Gerar; Jehovah blessing him abundantly",
+      "yearRaw": "1818 BCE (Before)",
+      "sequence": 126,
+      "locations": [
+        "Valley of Gerar"
+      ],
+      "onStage": [
+        "Isaac",
+        "Rebekah",
+        "Jacob",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81de-8145-facc9219715c",
+      "url": "https://www.notion.so/350cb257e13c81de8145facc9219715c",
+      "sourceUrl": null,
+      "sourceImageUrl": null,
+      "sceneDescription": "G26:23-25 Jehovah appearing to Isaac in Beersheba",
+      "yearRaw": "1818 BCE (After)",
+      "sequence": 127,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Isaac",
+        "Jehovah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-817c-8f99-f2e966a6b480",
+      "url": "https://www.notion.so/350cb257e13c817c8f99f2e966a6b480",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/26#study=discover&v=1:26:26-1:26:33",
+      "sourceImageUrl": null,
+      "sceneDescription": "G26:26-33 Abimelech establishes a covenant with Isaac",
+      "yearRaw": "1818 BCE (After)",
+      "sequence": 128,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Abimelech",
+        "Ahuzzath",
+        "Phicol",
+        "Isaac"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8138-8c96-ee4660ce262f",
+      "url": "https://www.notion.so/350cb257e13c81388c96ee4660ce262f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/26#study=discover&v=1:26:34-1:26:35",
+      "sourceImageUrl": null,
+      "sceneDescription": "G26:34-35 Esau takes two Hittite wives ",
+      "yearRaw": "1818 BCE (After)",
+      "sequence": 129,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Esau",
+        "Judith",
+        "Basemath"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ca-8e0c-d9cc750f0e7e",
+      "url": "https://www.notion.so/350cb257e13c81ca8e0cd9cc750f0e7e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:1-1:27:27",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/58aab67a-03ae-447b-b209-e24c8c97f76d/76304928-1D75-4B04-B2D0-178D7117E7B1.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667JG7J2SP%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111830Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIFdB4rIXx3rpVHN%2Fh%2Bj3X4boYQ8MeBAjAf3gvN89%2BXqvAiBWEQ4z5BxxDVVUIm75zFrM0fIdYKorhKtbOhvzZqYM4CqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMMltf%2BmAeD872GJWUKtwDa93Ah5xSWLcgoNi3EC6EBJ3IJm1nImluTGQyO5hNAf%2FxstQTEME55o33Fxt3GdiDIk%2BZpRlpfB%2FvGKOkFP%2FVwckGohyRK3XqhWkJ9P9zHD4Kwd2yTSQ251%2FNR9zDlPxEtbio5lkcSr2OQ%2FxCGJaAgUsmvvTKLx7rZGeUWqO2f%2FI%2BhnbGFbtyId%2FNmdTtnsoIazYqjQ2NmT75Tvh0vO%2BcOg5eXVIN0CZNa15nGrIIsYHGrN%2Bs5D5PchjpG1GPdeU9Q%2BIPCmnkzCPiR2%2FOLcfdZlLVWwO0tCLcg3%2FjeY8tCzZfAACHgbyZEJ4UU8z1WLDis1EE%2FtWoXVwhTRfWyxgdW6n3b7tJK6GCz8AUjhB8%2BcwtybvYZzaVrt66bSG8iPMtgd%2BRRMswI7HqiK5j4kF%2FJ31QZ1PdhubbIaKN7MKNUGuizKYodT55r%2BxBNenAazlpiOZ9IjJPtuWyLGWIjLLI5%2BHE8W7Vw872%2BJMKFSWx5xEpkrQ5XzxFznqpz3G0D2DFZ3239ycr4IFHrGDfYq7BYGvRAL2nctB0XwAB2TJgxEFt0ClLhxkC7JHLbTYEGoON0psX5b5GWbsph%2B9uh2OZKDLqjmdODMUNfnCiiHxPWGPai1YuSdGF7xqRQPYwjLTHzwY6pgHIy0cdUL8ZPy6kRTApUIMuESVuh3r8cAHIDLSEAmYEviqURHTXsXWfAmHxyB5u5SswVFlTuSqU6mR2nndnmqMkVgt9rSF5jFi6Msrc9%2BGG9LfFFVNLr45QTyDeRzESdUAAPwWu85SxvWzjtw2d49ksqWvtVXwZ5aftXcpZ2lfquaUHeiyU0lqp6iAWg7VZukQX9euTd2HFS1zE%2BexSMZm1q294SxpC&X-Amz-Signature=66db173d8e245868e315ab02ad3891309433a3bc357ced46ddaa415fae36f4d5&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G27:1-27 Rebekah sends Jacob to receive blessings from Isaac",
+      "yearRaw": "1781 BCE (Before)",
+      "sequence": 130,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Rebekah",
+        "Isaac",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8105-af4b-c6a37bea86da",
+      "url": "https://www.notion.so/350cb257e13c8105af4bc6a37bea86da",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:28-1:27:29",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/ab2c0647-3784-4d0d-ac2c-aa87be6072d8/598AFBCB-B8CC-477E-9BE7-0A7C8FA7BBF2.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466U7N3BASM%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111800Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQCFvlaSzYo668lUVJ1tneBVCCqTJ3v5ZtG39SEKS9AJzAIgLNdtofV9PbJU8f9q%2BAb8%2BZzSF2rSy7NL%2B5YOnY%2F1oU0qiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDHTFqMqrWyxVxobDJCrcAzNQESxZ1JB3NxxDYo8CjCta4SRDGpedNux0WI%2BgFGe8A4Nz%2BvrWwZgOTRRjTjRHZfcw3WC4Ji%2BMLd95nygdcKdw4aEz5Tq8VlnznRDgFtWikTc8Pd6ZLkj%2FCJnN5GJKaurGYzvS9ZAMZNfW%2BSjw8z6W%2BWO0hgHe2ybNIqtL7ZoPfh7vuPQ7fFfeUKujk6JB7UYVF3HLb6q8YR9cxHI5VtM4KI0qyoQoD3ZlB8Ntvka49XeEIxP4%2BylgOnbB3K%2FjqlDxwM9sqzRl%2BRUrPnxXcmfJTZJ0XHQJs6oDFKqeJlJq9OXLXybaYGtSLOOy1taRxhCFZTZ0t3sDpc5SdIJXQXxGdgjQ6VliNBqTc%2F6P%2ByBxmNB%2FpYDS9BlIFUF2xymS8CQS7uk7fkgLs1ZjqAHC3bCMQRrbhPAkyE1K3ku%2B5rnU9YiEZKLkYuTgQSR3ROJ3QnXkPrkwBQ4T1jaDGUptsWJKh9w0RcH4uyu%2F4IFMaUo2J2Ny9jIhAFTMllUGqB%2FuU4JDiO2WdSjGb9lSvalC%2FmNU7GryzZIyh7efMtt3kR1IVclCcuWr5T5KfNaUkpwegXdqsqd7YUYQFbQEej7yFoVcQ1cjAGunjXRNjuKxBMB%2FBDqagZzTv22OHN2gMKi0x88GOqUBJI1FdQscTODz5kmHtLwBBflUGGSkUFrWTEi5QqfqxKW7RtXC7nWZgvqGxksG3WssvBErzfI%2BWi7U%2Bm%2BIqOQCLjHkxHEGt5yQNuM8dJswGOcJW16FIyCgC7Ra8yppGNkbFlq6twLhJvZir1wVhEm5ygeVDlLU0uW7zEg%2BVCzogttaD%2BIbtiM%2B9MEzDKfm9yt1B%2BnEHT%2Fw6KrRcQu5ryP4mXslZvCJ&X-Amz-Signature=561d841a695e4593b5dde6da496722eda5e899d16942c034f50461d3131e731a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G27:28-29 Jacob gets the blessing from Isaac",
+      "yearRaw": "1781 BCE (Before)",
+      "sequence": 131,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Isaac",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8125-b19c-c4b5b30151c1",
+      "url": "https://www.notion.so/350cb257e13c8125b19cc4b5b30151c1",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:30-1:27:39",
+      "sourceImageUrl": null,
+      "sceneDescription": "G27:30-39 Esau prepares a dish for Isaac to receive his blessing",
+      "yearRaw": "1781 BCE (Before)",
+      "sequence": 132,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Isaac",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d8-89f7-e12eff4d3845",
+      "url": "https://www.notion.so/350cb257e13c81d889f7e12eff4d3845",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:39-1:27:40",
+      "sourceImageUrl": null,
+      "sceneDescription": "G27:39-40 Isaac blesses Esau",
+      "yearRaw": "1781 BCE (Before)",
+      "sequence": 133,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Isaac",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c7-9456-f5ad3bcd9381",
+      "url": "https://www.notion.so/350cb257e13c81c79456f5ad3bcd9381",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:41-1:27:45",
+      "sourceImageUrl": null,
+      "sceneDescription": "G27:41-45 Esau plots to murder his brother Jacob",
+      "yearRaw": "1781 BCE (Before)",
+      "sequence": 134,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Esau",
+        "Jacob",
+        "Rebekah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c9-95dd-ff8227ee7628",
+      "url": "https://www.notion.so/350cb257e13c81c995ddff8227ee7628",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/27#study=discover&v=1:27:46",
+      "sourceImageUrl": null,
+      "sceneDescription": "G27:46 Rebekah is disgusted with the wives of Esau",
+      "yearRaw": "1781 BCE (Before)",
+      "sequence": 135,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Rebekah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810b-b116-d7db98cd50b0",
+      "url": "https://www.notion.so/350cb257e13c810bb116d7db98cd50b0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/28#study=discover&v=1:28:1-1:28:5",
+      "sourceImageUrl": null,
+      "sceneDescription": "G28:1-5 Isaac blesses Jacob and sends him away to Laban",
+      "yearRaw": "1781 BCE",
+      "sequence": 136,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Isaac"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-816b-a996-d9d96f777898",
+      "url": "https://www.notion.so/350cb257e13c816ba996d9d96f777898",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/28#study=discover&v=1:28:6-1:28:9",
+      "sourceImageUrl": null,
+      "sceneDescription": "G28:6-9 Esau marries again to please Isaac, his father ",
+      "yearRaw": "1781 BCE (After)",
+      "sequence": 137,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Esau",
+        "Mahalath"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810a-87a4-ef484472d50f",
+      "url": "https://www.notion.so/350cb257e13c810a87a4ef484472d50f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/28#study=discover&v=1:28:10-1:28:22",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/490b404b-6e77-4efd-9717-deeab5c4f1d4/4B075071-010A-43B5-81D1-1E49546ED124.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB46622EPXZFP%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111801Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIEa1tU00J1paURA4eEkeItQli7DW1s1c2GPrm3XVrEGrAiBS3tHUIQwdeQj1%2BC1bWpwCwQQo4FftxRoRQVDHH11w%2FSqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMnNxrzW1zJsACK8BhKtwDq%2FYj%2BOImxPJqBe1Urg3fvxkkf3LK7DV9VFhVfQSR6V1LbEwH5qqgAiN6zMAmJFy6IAl9cgNReB803VPJ5GDlmFUW3VCk%2B3oHdHmMDGSD63BdTtk8RSxCjVOXXnkkTGsV%2FaUVLa3Fcyo2SjFqDOV9xTWY1MWrSaZVzUfiOXCXrAtfA92TLp3Vk9l8LjyG7IQPPXtd%2FIOKeidnpt%2FIL4Ad%2F2eTJJHNSCA0VCdyQLCYZU6NShC3vzSnhgcORYi602wFkIV%2F0eI%2BmF8qcS11iJINyKLsgKIsXMV5vQ%2F4kyUoLS3U8iztEEQVbZyA%2Fe%2B2gR%2BkruIGSrz0bbyVAH8RJY5o1BOUq%2FA2ihc5wvOvnLQXniz1HZblDh5%2B7POGFtMYWHrIpoYYeMtAe%2FDRuom5dmtd2tqn%2FvUscg0l3O4LudwawMqi%2FZ1vveqlrg%2FEtDbu8LEhk91dgnN0rcunGI%2Fk%2BD%2Fxqk%2FUkWXNDZZ3TvSq6XZX33dBZo3%2FoOUVC3J%2FG0%2BeAG%2FII0L%2Fr0f9ZzNcY3bvbQyBXnPjJh2G5o5Mmgq6WY3OBSQcJz9ewdHm66GtOrDr5R8Vkxt6ARmRjllw%2Fsha7GC%2BzU8sbfP02iulKfW%2FGWH78SlFTyy8WZyZ8QDUW%2FswpbTHzwY6pgHMs3o%2BffhG4WXi4nyu%2F8QF5Wsah4oON73VXyszDPVRa0aB2FSEcYQ7NgnMVlaYr%2BdrUIp3QwOmF0PgfCjZmeo5Ze1sP5eIkfgKQ5i46pydCkNuIQ84jDsdKnJYbgpiNe9xCxkbvCphW7Uen4cbfdBe3YDzbvOVMZUzXCxUQtZi4ImYhljLXWDHs94HFCpF940Ke046N9mNLgW%2FfdUFFjARSf6173Dm&X-Amz-Signature=6fb20ea79547aef085e23a89e9bf8848c2a3de96c15cdecda87071972d27faf7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G28:10-22 Jacob departs for Haran; Jacob’s dream",
+      "yearRaw": "1781 BCE",
+      "sequence": 138,
+      "locations": [
+        "Luz (Bethel)"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jehovah",
+        "Angels"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c7-a6bd-d42f58a1f7b7",
+      "url": "https://www.notion.so/350cb257e13c81c7a6bdd42f58a1f7b7",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/29#study=discover&v=1:29:1-1:29:11",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/8e03cde8-cd84-446c-b989-6141b494cf5f/D8108457-3E36-4830-8AC3-FDFD981C3769.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466QLQPNX4B%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111828Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIE2mR0W8vCeZqSwDOngu1REXp4RT3hvNxIxQvhTdLibdAiEAwi6OCcV6c0RxrOJDqOpweEqFljj4m6lsvU7AyPQKw50qiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDJVmH9vsEhQXiQHVvCrcAxGjnYiklHHyPttdaSWbUayAwu%2FWtPF4sFCZLK8bLxW1dRd6hfM6gZfQJ8AmBqSc%2F4lQGqArNKdwIBZxjTMD%2BYxXL5aFDl6o2GRYFimQayhwdkwbm4lfsMNC8AHI1nD%2FL3uhqjTKmD3zKqbUGd0YuJT3uEwcSpZKwjXiDXTko8UaKxY3I7BWmv7vFP%2FEiGDbN7s0ZGbMrS6Z9EZEh6Rq0GTmMsfrXzHQ5ygGR2D9miyDWKl1E7j0JSZsMCoFmwLp%2BoMhRRhoaq4B0J6YnpCcSzyz39I%2Frx%2BN4nLkfsIJbzKJnmaGxNAc1Sm33rs0gDFzOpmwSU%2F6qyrGg9Pye6aRqqgndkHFHWxSvsIbePBxnqob3ZDRbDitjjalio8jLRvliYeKkVm8t%2B5fcBzt4dnR2qcs%2BkW1M6tc9xGWhT%2BqcynP1%2FQjnIKxU22u%2FGU782zXByLASC6pW7P4iGIrEky5iVP6xsr1WCjkR2x0XJb6voFnFd0kJoEcRzkS927dUMCYEVpBAXyExclqtskLOV5qEkDc2n6fQDNEiisbFvvNOub3MVyihA4EX2IjMD32ekQT9b6WofTCdTRowiXHQo%2Fc5CVYzMOBr0LvTiSRD3695cGHPATbQyEziOyxak3RMPexx88GOqUBCv%2FcQ97HbyBZzKbUVy6Prypm06E3mpjCUcWMG1HdunfB6Dg%2FN8QxwiKQq1Wi3wWPEUOHS1VCqB%2FIsz%2B1NosiHjYFBdtM70bshCPvWjdBBhqao3IYVaWRUiLv%2FZKkwrpN5%2FPZt%2FUkYOReTJ3Nq1UKme%2FS189Uz51aP0EdERyezpsCMqVojy%2FFRhP%2FJDh1boAXLqNtge%2FaUNl7JYQ1ySfZtSvOi3vn&X-Amz-Signature=f34fe7c0187ba9ba31b887c7a9a8f75deae5bc3c3e56a9d9c249a379efc844c3&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G29:1-12 Jacob meets Rachel at the well",
+      "yearRaw": "1781 BCE (After)",
+      "sequence": 139,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Rachel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d3-89b2-f72c16ae73a8",
+      "url": "https://www.notion.so/350cb257e13c81d389b2f72c16ae73a8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/29#study=discover&v=1:29:13-1:29:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "G29:13-24 Laban tricks Jacob in to marrying Leah",
+      "yearRaw": "1774 BCE",
+      "sequence": 140,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Laban",
+        "Leah",
+        "Rachel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8177-85b8-c1948dc75112",
+      "url": "https://www.notion.so/350cb257e13c817785b8c1948dc75112",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/29#study=discover&v=1:29:25-1:29:29",
+      "sourceImageUrl": null,
+      "sceneDescription": "G29:25-29 Jacob marries Rachel",
+      "yearRaw": "1774 BCE",
+      "sequence": 141,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Laban",
+        "Leah",
+        "Rachel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8127-8df2-d8abc9c42f62",
+      "url": "https://www.notion.so/350cb257e13c81278df2d8abc9c42f62",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/29#study=discover&v=1:29:30-1:29:35",
+      "sourceImageUrl": null,
+      "sceneDescription": "G29:30-35 Four sons are born to Jacob through Leah",
+      "yearRaw": "1774 BCE (After)",
+      "sequence": 142,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Leah",
+        "Reuben",
+        "Simeon",
+        "Levi",
+        "Judah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-815b-98ef-f5a9820f3a08",
+      "url": "https://www.notion.so/350cb257e13c815b98eff5a9820f3a08",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/30#study=discover&v=1:30:1-1:30:8",
+      "sourceImageUrl": null,
+      "sceneDescription": "G30:1-8 Rachel gives Bilhah as wife to Jacob",
+      "yearRaw": "1774 BCE (After)",
+      "sequence": 143,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Rachel",
+        "Bilhah",
+        "Jacob",
+        "Dan",
+        "Naphatali"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8173-936d-ec04a761ea0e",
+      "url": "https://www.notion.so/350cb257e13c8173936dec04a761ea0e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/30#study=discover&v=1:30:9-1:30:13",
+      "sourceImageUrl": null,
+      "sceneDescription": "G30:9-13 Leah gives Zilpah as wife to Jacob",
+      "yearRaw": "1774 BCE (After)",
+      "sequence": 144,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Leah",
+        "Zilpah",
+        "Jacob",
+        "Gad",
+        "Asher"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-815e-a9cf-d815528aea4a",
+      "url": "https://www.notion.so/350cb257e13c815ea9cfd815528aea4a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/30#study=discover&v=1:30:14-1:30:21",
+      "sourceImageUrl": null,
+      "sceneDescription": "G30:14-21 Leah gives her son’s mandrakes to Rachel in exchange for Jacob",
+      "yearRaw": "1774 BCE (After)",
+      "sequence": 145,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Leah",
+        "Rachel",
+        "Jacob",
+        "Issachar",
+        "Zebulun",
+        "Dinah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-811c-8c4c-f2150c665e7c",
+      "url": "https://www.notion.so/350cb257e13c811c8c4cf2150c665e7c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/30#study=discover&v=1:30:22-1:30:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "G30:22-25 Rachel has a son",
+      "yearRaw": "1767 BCE",
+      "sequence": 146,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Rebekah",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818c-902e-e9a65fb76eb3",
+      "url": "https://www.notion.so/350cb257e13c818c902ee9a65fb76eb3",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/30#study=discover&v=1:30:25-1:30:43",
+      "sourceImageUrl": null,
+      "sceneDescription": "G30:25-43 Jacob stays with Laban for another 6 years for the flocks",
+      "yearRaw": "1767 BCE (After)",
+      "sequence": 147,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Laban"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ea-9c22-ca28fd8ea268",
+      "url": "https://www.notion.so/350cb257e13c81ea9c22ca28fd8ea268",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/31#study=discover&v=1:31:1-1:31:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "G31:1-3 Jehovah instructs Jacob to return",
+      "yearRaw": "1761 BCE",
+      "sequence": 148,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f3-ad09-e762bb5e11b2",
+      "url": "https://www.notion.so/350cb257e13c81f3ad09e762bb5e11b2",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/31#study=discover&v=1:31:4-1:31:16",
+      "sourceImageUrl": null,
+      "sceneDescription": "G31:4-16 Jacob sent messages to  Leah and Rachel to meet him at the field",
+      "yearRaw": "1761 BCE",
+      "sequence": 149,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Jacob",
+        "Leah",
+        "Rachel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b3-921b-c8eba411932e",
+      "url": "https://www.notion.so/350cb257e13c81b3921bc8eba411932e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/31#study=discover&v=1:31:17-1:31:21",
+      "sourceImageUrl": null,
+      "sceneDescription": "G31:17-21 Jacob runs away from Laban",
+      "yearRaw": "1761 BCE",
+      "sequence": 150,
+      "locations": [
+        "Haran"
+      ],
+      "onStage": [
+        "Rachel",
+        "Jacob",
+        "Leah",
+        "Jacob’s 11 sons & Dinah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81de-a275-dbf39d9f4faa",
+      "url": "https://www.notion.so/350cb257e13c81dea275dbf39d9f4faa",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/31#study=discover&v=1:31:22-1:31:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "G31:22-24 Jehovah appears to Laban ",
+      "yearRaw": "1761 BCE",
+      "sequence": 151,
+      "locations": [
+        "Mountainous region of Gilead"
+      ],
+      "onStage": [
+        "Laban",
+        "Jehovah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d0-b4e3-eebf99668387",
+      "url": "https://www.notion.so/350cb257e13c81d0b4e3eebf99668387",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/31#study=discover&v=1:31:25-1:31:42",
+      "sourceImageUrl": null,
+      "sceneDescription": "G31:25-42 Laban catches up with Jacob ",
+      "yearRaw": "1761 BCE",
+      "sequence": 152,
+      "locations": [
+        "Mountainous region of Gilead"
+      ],
+      "onStage": [
+        "Jacob",
+        "Laban",
+        "Leah",
+        "Rachel",
+        "Zilpah",
+        "Bilhah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8128-b032-d151dc55c87e",
+      "url": "https://www.notion.so/350cb257e13c8128b032d151dc55c87e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/31#study=discover&v=1:31:43-1:31:55",
+      "sourceImageUrl": null,
+      "sceneDescription": "G31:43-55 Jacob and Laban establish a covenant ",
+      "yearRaw": "1761 BCE",
+      "sequence": 153,
+      "locations": [
+        "Mountainous region of Gilead",
+        "Jagarsahadutha (Aramaic meaning witness pile)",
+        "Galeed (Hebrew meaning witness pile)"
+      ],
+      "onStage": [
+        "Laban",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8106-97c5-d272d26a138d",
+      "url": "https://www.notion.so/350cb257e13c810697c5d272d26a138d",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:1-1:32:2",
+      "sourceImageUrl": null,
+      "sceneDescription": "G32:1-2 Angels of God meet up with Jacob ",
+      "yearRaw": "1761 BCE",
+      "sequence": 154,
+      "locations": [
+        "Mahanaim"
+      ],
+      "onStage": [
+        "Angels",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8164-b402-e4a6d5ca322b",
+      "url": "https://www.notion.so/350cb257e13c8164b402e4a6d5ca322b",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:3-1:32:6",
+      "sourceImageUrl": null,
+      "sceneDescription": "G32:3-6 Jacob sends messengers to Esau",
+      "yearRaw": "1761 BCE",
+      "sequence": 155,
+      "locations": [
+        "Mahanaim"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s Messengers",
+        "Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818a-9627-e9428b60bd23",
+      "url": "https://www.notion.so/350cb257e13c818a9627e9428b60bd23",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:7-1:32:8",
+      "sourceImageUrl": null,
+      "sceneDescription": "G32:7-8 Jacob divides the camp in to two",
+      "yearRaw": "1761 BCE",
+      "sequence": 156,
+      "locations": [
+        "Mahanaim"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s Messengers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f3-bb4d-ca525e2eeb55",
+      "url": "https://www.notion.so/350cb257e13c81f3bb4dca525e2eeb55",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:9-1:32:12",
+      "sourceImageUrl": null,
+      "sceneDescription": "G32:9-12 Jacob prays to Jehovah to save him from the hand of Esau",
+      "yearRaw": "1761 BCE",
+      "sequence": 157,
+      "locations": [
+        "Mahanaim"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jehovah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8137-bcdf-c1f98f130d1f",
+      "url": "https://www.notion.so/350cb257e13c8137bcdfc1f98f130d1f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:13-1:32:23",
+      "sourceImageUrl": null,
+      "sceneDescription": "G32:13-21 Jacob sends gifts from his possessions to Esau ",
+      "yearRaw": "1761 BCE",
+      "sequence": 158,
+      "locations": [
+        "Ford of Jabbok"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s Messengers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8140-af25-ccde90d03d15",
+      "url": "https://www.notion.so/350cb257e13c8140af25ccde90d03d15",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:22-1:32:23",
+      "sourceImageUrl": null,
+      "sceneDescription": "G32:22-23 Jacob takes his family and crosses Jordan at the ford of Jabbok",
+      "yearRaw": "1761 BCE",
+      "sequence": 159,
+      "locations": [
+        "Ford of Jabbok"
+      ],
+      "onStage": [
+        "Jacob",
+        "Leah",
+        "Rachel",
+        "Jacob’s 11 sons & Dinah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8174-b6ba-d9252acf358e",
+      "url": "https://www.notion.so/350cb257e13c8174b6bad9252acf358e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/32#study=discover&v=1:32:24-1:32:32",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/a4fb1961-81a3-4d9d-8030-58ab90c0ef5d/498CFEB8-A544-49D7-9632-2B2E8AA2AF5E.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VFBFJWEN%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111817Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQCqfdSnREQbHJubFLY9KH0rmtmbwv5b%2FyRgYV75Yn6DuQIgMbE9vdb7wA%2FvMhEHeuHiadOPzHZTzz4fu1wRhSHKbB8qiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDGlny%2FW35AnEc0AUeircAwGCHZjPDYKVRr0sOd7Edp1y6%2BrB1PBrZw%2BTOLp2JEncs105Scu7VlBEihWhHnDUYbbBXNExdiVFa63V7g1YbVVyZA5N6eiyAd5fDOrNAaxaCo5mfQGAtvA09ydowhRmVM6ouxIgHDBUPTVz4VkYV38%2BCCs0HiHIdWzG53mcwZtiBBfbMNc9KGGTiUy3btlZFfuAJRsQDL9E0Iko%2F1M8arcb0n9UNlcJt7DbHWMu1YfOYrIBzCJ1P8Rl%2Bv3Jg%2BTWrrDFjwQcyB74q55XQc13x4nTgUDoik1XktrVVitsR14AOeP5qoB87u84oT1njpizSi4EkkXb4wFxmWdlKsRfKEnDLqbZd2dRSlD1TdKvh%2BVxQ%2BfGYmDnLTLPbrcOji9Ck8sxAHIJjk8LfyfFz8T8bDa1wBHzv9UI%2BUOoUBmRUdQ3wDCvdos4JbjngjAil%2Byc0NdLCJxZh14AYpvrje5YOfVgvVeWAqcpcR%2FRfakJD8o1TSyEJ27t67Ji1vNnVLCRuncUMf9ZDfWXu1PJrGwQCSXbCmIm0MNdVsh2%2FmeSsSWySxe2%2FmWMP22c5qn%2BTlASUYDQU6TT90RG3LR0%2Brqj%2F%2FnRc19SSku1uAux6%2BFmoD6%2BvFo3ktb0wwDp658MMIGyx88GOqUBUf%2F6Wtub6ELuVA3Ukl6dgGEC6%2BizkWHjh%2BEkVldwRrNO60H2QvcH0InkrtSF3z5d%2Bs0Ienz2JSjdaxYNfDDY7nvJ0bXP%2FLxate2o5kF%2B99H7CrIxCshS3Q6VWen3L%2BiSBw%2Fam%2FQvBuHjnvo1b4APfanrqX97KQjv8UoCBtteOoAaPBKQ4ffZk9poPbQz9hRZE%2FANng%2Bs3Ksaqj4oZvLwKI4vNIo3&X-Amz-Signature=061d2cd58dfa8891496d868fc14e2dec9b483118a1700c000dfcf1a6635deb49&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G32:24-32 Jacob wrestles with an angel",
+      "yearRaw": "1761 BCE",
+      "sequence": 160,
+      "locations": [
+        "Peniel"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jehovah’s Angel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81fc-a39a-c5b2803d3df6",
+      "url": "https://www.notion.so/350cb257e13c81fca39ac5b2803d3df6",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/33#study=discover&v=1:33:1-1:33:11",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/75fede14-4396-407c-8a17-246a77fe2855/C8A78047-F5D5-46E4-9379-AE6DBCDBAFAD.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466VEY3G6RF%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111840Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIDTklCuQfX3mwk%2FSX5LeiLchzC4oYALowwW8gzOyywR4AiA9dcth1dRj8ucAz0jls1zVLM5wSL6xwS4FvDpneWcjqyqIBAjz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMqH7hOHdW9w5ngVxIKtwDpNGGrNtswex7AXYU7cYH%2Bg8ZsIWmYd6ejS6wn2kco97XSbV8%2FmbCrD5Pkr3xdiMtZMYflf8IcX%2BeKH6M1mP1xEZSfOHLMmozskpFWEcDX4vEK53LPkYtYQTYisCmPoP9TK0zINcHcDBRX0Pb%2F7WUIXwTh%2FNAVzE%2FeGXm3okXBlXWzFVjwzsTnZOfq2YV%2Fh%2B36KJOeVymtaSr85MyFfDAAfqbgBPtVrlAwxZ%2FvcdZIaDxywmwSixCPrnrHf4euXfeF9v6QM4cMA6iD%2FZO2UuLwWr3lVx%2FUegltbUyhHqw4y7bXXqV0Pke4DFXqo3oT8nZgohAtzaat%2FLWVMcePL4B%2B2OHzlAgz%2FGbIFom2q27Yuw5LzA6inBMDcgpx5Tbol5nPDsSoJoJJYzmeiJH4eQPTY9EnsCDywdD1eFt6ZNQ203kXF9Zf72DCdU0dNCJeEi%2Bdzb%2BhBJ7SD9Z4U1NhOUdJIECJCFFrJJGVbjEdnv38b2ghgiWWNu90NRyjC7yVcN4zQPiPRVf7Zlv%2B1bC3Rh5EiSkQp%2BKvff8B7I%2BAuZILUcvD1Oahh%2BE7rF1j31UA8%2FFBdsCeBpbyzBmy%2F%2FTZZgieXtSeLLNRO8%2BBW38SJJPv%2FeOemaUKMMWAWMfoKYw3LLHzwY6pgEXP96UeFLvzeFYSiThXhto3JItMeEI%2Fk2enw0koERYXRIS4hiw7jaHSQ8rXXtiLCyMvuhBCgc2GvGXVbXU4FQSBWOxkpxT68yQ17hllW1B2lGndfNx1AjwnLGh7N7C9ISbxiW1CMZzkCsJwU6QVn0G75Q28ige2vtVml4qP%2BAGFtLvqQ8ZnrVy8zAqcGTTC3W5uLDT%2BD5VVaiKBKhtS4bFD0Q0syCc&X-Amz-Signature=b61630a392c569481b9e2a69e091c161fb96e6accb33cbf068c2b9239eaba3d8&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G33:1-11 Esau meets Jacob and his family",
+      "yearRaw": "1761 BCE",
+      "sequence": 161,
+      "locations": [
+        "Peniel"
+      ],
+      "onStage": [
+        "Jacob",
+        "Esau",
+        "Bilhah",
+        "Zilpah",
+        "Leah",
+        "Rachel",
+        "Jacob’s 11 sons & Dinah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81a9-8f72-dbb7d62b961a",
+      "url": "https://www.notion.so/350cb257e13c81a98f72dbb7d62b961a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/33#study=discover&v=1:33:12-1:33:17",
+      "sourceImageUrl": null,
+      "sceneDescription": "G33:12-17 Jacob builds a house in Succoth",
+      "yearRaw": "1761 BCE (Afetr)",
+      "sequence": 162,
+      "locations": [
+        "Succoth"
+      ],
+      "onStage": [
+        "Jacob’s Family"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ac-9cc9-c22ada2bd418",
+      "url": "https://www.notion.so/350cb257e13c81ac9cc9c22ada2bd418",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/33#study=discover&v=1:33:18-1:33:20",
+      "sourceImageUrl": null,
+      "sceneDescription": "G33:18-20 Jacob moves to Shechem",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 163,
+      "locations": [
+        "Shechem"
+      ],
+      "onStage": [
+        "Jacob",
+        "Sons of Hamor"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e5-8a56-eac38fc9a998",
+      "url": "https://www.notion.so/350cb257e13c81e58a56eac38fc9a998",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/34#study=discover&v=1:34:1-1:34:12",
+      "sourceImageUrl": null,
+      "sceneDescription": "G34:1-12 Dinah is violated by Shechem",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 164,
+      "locations": [
+        "Shechem"
+      ],
+      "onStage": [
+        "Dinah",
+        "Shechem",
+        "Hamor",
+        "Jacob",
+        "Jacob’s 11 sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810f-8ac9-c75ef44cdb96",
+      "url": "https://www.notion.so/350cb257e13c810f8ac9c75ef44cdb96",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/34#study=discover&v=1:34:13-1:34:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "G34:13-24 Jacob’s sons tricks Hamor, Shechem and the men of the city",
+      "yearRaw": "1761 BCE (Afetr)",
+      "sequence": 165,
+      "locations": [
+        "Shechem"
+      ],
+      "onStage": [
+        "Jacob’s 11 sons",
+        "Hamor",
+        "Shechem",
+        "Men of Shechem"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8146-b2b6-f30c2cbdc9bf",
+      "url": "https://www.notion.so/350cb257e13c8146b2b6f30c2cbdc9bf",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/34#study=discover&v=1:34:25-1:34:29",
+      "sourceImageUrl": null,
+      "sceneDescription": "G34:25-29 Simeon and Levi kill every man in the city of Shechem ",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 166,
+      "locations": [
+        "Shechem"
+      ],
+      "onStage": [
+        "Simeon",
+        "Levi",
+        "Men of Shechem"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8122-be95-db6bd5ceb7e7",
+      "url": "https://www.notion.so/350cb257e13c8122be95db6bd5ceb7e7",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/34#study=discover&v=1:34:30-1:34:31",
+      "sourceImageUrl": null,
+      "sceneDescription": "G34:30-31 Jacob fears backlash for killing the men of Shechem",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 167,
+      "locations": [
+        "Shechem"
+      ],
+      "onStage": [
+        "Jacob",
+        "Simeon",
+        "Levi"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f2-b9ee-c4f0bf2e7ca8",
+      "url": "https://www.notion.so/350cb257e13c81f2b9eec4f0bf2e7ca8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:1-1:35:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:1-4 Jehovah instructs Jacob to dwell in Bethel",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 168,
+      "locations": [
+        "Shechem"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-819a-a507-d76136420842",
+      "url": "https://www.notion.so/350cb257e13c819aa507d76136420842",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:5-1:35:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:5-7 Jacob builds an altar in Bethel",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 169,
+      "locations": [
+        "El-bethel"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s Family"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f5-8405-ebf95e4f2011",
+      "url": "https://www.notion.so/350cb257e13c81f58405ebf95e4f2011",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:8",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:8 Deborah, Rebekah’s nurse dies",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 170,
+      "locations": [
+        "Luz (Bethel)"
+      ],
+      "onStage": [
+        "Deborah",
+        "Rebekah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d2-8b0b-fb6f17d095dc",
+      "url": "https://www.notion.so/350cb257e13c81d28b0bfb6f17d095dc",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:9-1:35:13",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:9-13 Jehovah appears to Jacob",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 171,
+      "locations": [
+        "El-bethel"
+      ],
+      "onStage": [
+        "Jehovah",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8196-a8c7-d358b59241ad",
+      "url": "https://www.notion.so/350cb257e13c8196a8c7d358b59241ad",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:16-1:35:19",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:16-20 Rachel dies giving birth to her second son",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 172,
+      "locations": [
+        "Between Bethel and Ephrath"
+      ],
+      "onStage": [
+        "Rachel",
+        "Jacob",
+        "Benjamin"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8138-9af3-fab58a8427f3",
+      "url": "https://www.notion.so/350cb257e13c81389af3fab58a8427f3",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:21-1:35:22",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:21-22 Reuben lies down with Bilhah, Jacob’s concubine",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 173,
+      "locations": [
+        "Near Tower of Eder"
+      ],
+      "onStage": [
+        "Reuben",
+        "Bilhah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-816b-b9ce-cc2bad88211a",
+      "url": "https://www.notion.so/350cb257e13c816bb9cecc2bad88211a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:23-27",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:22b-26 Listing of all 12 sons of Jacob",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 174,
+      "locations": [
+        "Near Tower of Eder"
+      ],
+      "onStage": []
+    },
+    {
+      "id": "350cb257-e13c-81ef-ad6f-f4e952acb8e2",
+      "url": "https://www.notion.so/350cb257e13c81efad6ff4e952acb8e2",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:27",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:27 Jacob returns to his father at Mamre",
+      "yearRaw": "1761 BCE (After)",
+      "sequence": 175,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Jacob",
+        "Isaac"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8157-b788-cf85621f3a60",
+      "url": "https://www.notion.so/350cb257e13c8157b788cf85621f3a60",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/35#study=discover&v=1:35:28-1:35:29",
+      "sourceImageUrl": null,
+      "sceneDescription": "G35:28-29 Death of Isaac",
+      "yearRaw": "1739 BCE",
+      "sequence": 176,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Isaac"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81aa-9474-ddf8a73561bc",
+      "url": "https://www.notion.so/350cb257e13c81aa9474ddf8a73561bc",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/36#study=discover&v=1:36:1-1:36:5",
+      "sourceImageUrl": null,
+      "sceneDescription": "G36:1-5 History of Esau",
+      "yearRaw": "1739 BCE (After)",
+      "sequence": 177,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Esau",
+        "Adah",
+        "Oholibamah",
+        "Basemath"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-817f-b225-c09ec969d913",
+      "url": "https://www.notion.so/350cb257e13c817fb225c09ec969d913",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/36#study=discover&v=1:36:6-1:36:8",
+      "sourceImageUrl": null,
+      "sceneDescription": "G36:6-8 Esau leaves Canaan ",
+      "yearRaw": "1739 BCE (After)",
+      "sequence": 178,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Esau",
+        "Esau’s Family"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e4-bde9-f450d19c5f3a",
+      "url": "https://www.notion.so/350cb257e13c81e4bde9f450d19c5f3a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/36#study=discover&v=1:36:9-1:36:19",
+      "sourceImageUrl": null,
+      "sceneDescription": "G36:9-19 History of Esau, the father of Edom",
+      "yearRaw": "1739 BCE (After)",
+      "sequence": 179,
+      "locations": [
+        "Mountainous region of Seir"
+      ],
+      "onStage": [
+        "Esau’s Family"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81a5-9352-f0480d5fd478",
+      "url": "https://www.notion.so/350cb257e13c81a59352f0480d5fd478",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/36#study=discover&v=1:36:20-1:36:30",
+      "sourceImageUrl": null,
+      "sceneDescription": "G36:20-30 The sons of Seir the Horite",
+      "yearRaw": "1739 BCE (After)",
+      "sequence": 180,
+      "locations": [
+        "Mountainous region of Seir"
+      ],
+      "onStage": [
+        "Sons of Seir"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810c-871a-d494b2f199d5",
+      "url": "https://www.notion.so/350cb257e13c810c871ad494b2f199d5",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/36#s=26&study=discover&v=1:36:31-1:36:39",
+      "sourceImageUrl": null,
+      "sceneDescription": "G36:31-39 The Kings of Edom ",
+      "yearRaw": "1739 BCE (After)",
+      "sequence": 181,
+      "locations": [
+        "Mountainous region of Seir"
+      ],
+      "onStage": [
+        "Kings of Edom"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f0-aa87-c620c0da504f",
+      "url": "https://www.notion.so/350cb257e13c81f0aa87c620c0da504f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/36#s=26&study=discover&v=1:36:40-1:36:43",
+      "sourceImageUrl": null,
+      "sceneDescription": "G36:40-43 Sheikhs of Esau",
+      "yearRaw": "1739 BCE (After)",
+      "sequence": 182,
+      "locations": [
+        "Mountainous region of Seir"
+      ],
+      "onStage": [
+        "Sheikhs of Esau"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e8-b844-e37cb7b50652",
+      "url": "https://www.notion.so/350cb257e13c81e8b844e37cb7b50652",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:1-1:37:4",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/395e3f1c-039f-4295-9e15-cc241007d03a/DC0B0701-521E-49EA-8343-F1BAB480B60B.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466WATCKZJR%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111836Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIAP8uAZzxY1enN5ZDzGXbM25qXdw22sQTBc92B4SVddKAiEAvoMyPJiJC6WOemTvXIcCyQ7ygLUknrTLqRxz15R8y5MqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDCKhHfD9iqORJHwMhSrcA7v7zXSM9RHdED72jP1VhVKC2BY%2B9TSQQ%2BsgdqMW%2Fezxpvogkrnu3ahUO9k3We8Kslz8%2FBlB84unbdkD7K3PM30hIpNVNjB6VtXCUWjCV3M0t37DvOC9vsKmTxtkDGQIUh2R4yoXV%2FQNlGdejGSlcz%2F5%2Fej9%2F50JCzvoKk4tW7tsJVSCCuPk9s0XtUenQPDERhLkmx5COzLmQ3rzAox3WsfC7ybXYN1mUIn8wNpFw%2BNXKapdWtIe7BMot12udWBDNsthmiF6FblQGTQ5R1OMlNBEx78yBozWHiKKIh47QwVXykiMJg%2BnNmAkEiIUrtjGDtOftFaO4AWSiP8Tsn11vGccLA2nwiJnt4SPTOelttBmp76BywdmfN10%2Fk2HIx7bkSIndYfvrmo5ZUqIeoo1%2FZ0oLe8rVRq5fPhzWS00xlznGJdHHc1Moew6VoWbiXudG%2B48ey06lK2eAxEi2ZgJV1u9X5imrca2L%2FHsCBGmKSj64bdJ1srnz2Dbp8lh%2F%2F8oeeHDJQ%2BGU%2BdU7u%2F7nenKO4Jl5ef69Eliiy%2F9wSE48nwldc33Bd36MyFI3SgU7eYJccPRLlLNy9WuLDE%2FSS8cAh%2Fee4IELvYYt3gSPxjlQ8UKMsKpFSbC8xgUFCtWMMC0x88GOqUBd1wfm4gXPooDuCDdWiDxRea8MTW0hm48uFJVqwSKEjFpCsuGSuDrZlskOmWTqim4fN4WDv1bQh94TyACrEr%2BsBkElA7C%2FlSnGpHeUFXWls4WcJrW0E2ySB0bFcN1iOCVDYzbWcvDeQQVAGor8Y9kA846qMD%2FDqC16znRe%2Fy0JsM7P1Lko5KLS%2Bny7hXD%2F6192mrH3zrAv9EHn3oHDg0Yf7ufs6qP&X-Amz-Signature=874a3a1c2eff9726dad81de3d4a8002a5efd684759d1ad79b44db2eec235786a&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G37:1-4 Jacob loved Joseph more than all his brothers",
+      "yearRaw": "1750 BCE",
+      "sequence": 183,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Jacob’s Family",
+        "Joseph",
+        "Jacob"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81bb-8ec9-fb5d0ab6bd53",
+      "url": "https://www.notion.so/350cb257e13c81bb8ec9fb5d0ab6bd53",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:5-1:37:11",
+      "sourceImageUrl": null,
+      "sceneDescription": "G37:5-11 Jospeh’s dreams",
+      "yearRaw": "1750 BCE",
+      "sequence": 184,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Jacob",
+        "Joseph",
+        "Jacob’s Family"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-819d-8b7b-ca55cad58f5b",
+      "url": "https://www.notion.so/350cb257e13c819d8b7bca55cad58f5b",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:12-1:37:17",
+      "sourceImageUrl": null,
+      "sceneDescription": "G37:12-17 Israel sends Joseph to his brothers ",
+      "yearRaw": "1750 BCE",
+      "sequence": 185,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Israel",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c7-b3e9-d5777f5df31a",
+      "url": "https://www.notion.so/350cb257e13c81c7b3e9d5777f5df31a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:18-1:37:24",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/e2832044-b37c-4b61-a9d1-5c1b8650495f/2568D600-D211-4FCA-9BF9-314D1066D09D.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4667NG53SAN%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111828Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIC636vG%2B5OpFlOi6WX5GWp3J9hLgN9cnHhrvbKxHSf%2FaAiEA9SfIXeL0wzj2EftnEHkaOz9rDgWW25VIwCpOPfDwRzAqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDGvax5%2FSHpY9SpYNtircA30P9sZuFJE0xuWWLSYUHkJhswhiMBph%2FmzSdu0WLEITpYmOlB1t3XdrIUQiUXLi8flilmadaAIWaxiKKjOHX98FZLMnJ9e%2Fxw6bQzMVrlqDBDoLwZ0DDXPObzefg6%2FJaXxeHh50sgHJAUpg5%2BXJGJXJJEobnauTNuFp%2B45G0tiQcfEd4zQ5jtOlEdYMpcBY1hJ6dY%2FV9AQ3C1UAtfNzc20O3X0qve6jA1999WjkjjZZZH8tRTiI7l1M8BgwOv3vdArEwKKyW4Fzo0TLBFltP5cprm4XXgHD%2BVkvoiaWOY%2B1qGwiLT0kJg2w9DrY9gRdUz3qY9cyWXJSPsf0Ajqt5gIS3OGWbGoaxxL1HVyqpK1jT4gWArXh8beRa2DPvnhtRRaVmancvW0O1Q3gMgAVY8osgglm2WMeLb8%2F3GeMuTHu0yVvDKxxzVwdAKa60bn8M%2Fnwflq5stuqFSAetwAL7gMgVZnLIqnD46yvY7xtrJ4efZMOP18L6B8wCrSBLf3Hgqjc45y13sZdGZy%2FFwOg96shZgskSVMg5KFwlkMh%2BZ865SepBTv5VNbglvIN%2BrAaIifPF8mlNZKHG8mJQsE4AWgZ3vFqwijNlP627%2FNk31M4MbooNwqwAJ4F9whTMPmxx88GOqUBLcEv2VbnvmpsLMjQXDwJKK4ntVhxV9di7hVaZuPEKSvBhASXVfwR9kN%2FDZULW78zG1pu5iQyfnwtUwwxmZB6mruNaRmmmsb7%2Ft%2F%2BV52gFUDL%2BB9d7IMfZ3mTkCfwnoYLCuSlB8EoIvIrJNi1oDGNwbgVVOrQZkRtA9GVp8kGrLr1xQZhiWcA%2FXE7nwlEFa0bzUnnNDb4%2F9cjOAJ%2B%2BBmgHCFSMH7m&X-Amz-Signature=d8c01f1b6a5bb49ad79f5a41c30d7bbb33a0a56ca4be204cf7f35804883377ee&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G37:18-24 Joseph’s brothers plot to kill him ",
+      "yearRaw": "1750 BCE",
+      "sequence": 186,
+      "locations": [
+        "Dothan"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8175-9ace-fb0f6ba5909d",
+      "url": "https://www.notion.so/350cb257e13c81759acefb0f6ba5909d",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:25-1:37:28",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/5cc16395-d58d-4f40-abbe-05a5830790e1/F98E0D72-DBB9-4F53-8823-9507FD1BABE3.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466T6KMMDON%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111817Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDKhj%2BSMQzY%2Fq%2BGIlq98ERvn%2B5aMN%2FJ%2B7ltz8wLjQaMHAIgJc%2BSC5XJtrMdZMCpxUNk4YZgKUvS6WOHJjYp%2FRbJ1r4qiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDGzG5CkTJXbdzgAHxCrcAzLhaHghn2FlYiQ1Pmwm9%2BMfdbFurAXrYKBIedPi83hPsRCznU7Z7fu7lL8uMl8eW3mUAoetbk6Bvag%2BZuRZTqzNrupV%2BldKjD0AAPtTt3z1sjAgoV9x%2BO%2FGjX4deL2wqddmKxr88Z%2BjeYHcnO5W8RChyOHZMwr45g74PnuQggXDlsNJw2ZRqNLZsnD%2FSP2EZPLm245qqJEUQ7SOxTB7I63zIIXiQ084CIfSMvAUXHMyxhrppIEf4RjSkRVhdYiJZ8zk7tSAB%2B6q%2B%2BXRFnXcndg%2B7SA19juEOiyhwBMlp6uro%2ByTtX1it6BlzhgAOS1WcIu3H%2FucVHN%2BS2UkoqzaHAustU13kSp3z4tc96WoB5%2ByTJwBKtjdCyRj6BPFzypAf466Rv067PxCsuFeeASQ4pEey1PCiARfgQ6Cuu7b65MQfg4B5jLew49QxIqBnL8JjbdO0dxZ1sL9nnJMDYbTwp32w88KpaxxB1oGe1Ljk8XvcT5h4gQiauYIQA8mqxXjBh0QdZfPmIuRnZI30M0qkta6EwSMjhq5S0vpedvn7c%2BmiV6%2FqJSoo9bGeyu%2BY1p4Ug%2BBS4uCzpO4WV%2By%2B5MK1F%2BeQtaTBAzyr%2Bo%2FjMH7tet3tv6kNEMyYUv5NPc4MOKxx88GOqUBZcUT2faGOnzMkMMb0VeeGD9c6vv6SI589Sqd5AcYXkdRxNbYLw30yc8HdFaG0EBfpsfPRZhkiESBvYT5HWhz42g%2BKivH1RLbLbTwGetJlBet0PdUwfxVX4cbBNB0brD%2FBNRjBfFHpomnxRl3TEk%2FkwGBqWbjHWgud3j%2FE79bLbHokzG52pXpPoR5844d9Vo41NlI9VgCmR1kLOZ5vt%2Bx4cDluphv&X-Amz-Signature=150f49555a1acaf7f20421ce7e5f0e7e6eb4e38b8506f291893a0a8125ba7fe4&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G37:25-28 Joseph is sold to Ishmaelites (Midianite merchants) for 20 pieces of silver ",
+      "yearRaw": "1750 BCE",
+      "sequence": 187,
+      "locations": [
+        "Dothan"
+      ],
+      "onStage": [
+        "Judah",
+        "Jacob’s sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-814f-84d8-ff0e7a05695f",
+      "url": "https://www.notion.so/350cb257e13c814f84d8ff0e7a05695f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:29-1:37:30",
+      "sourceImageUrl": null,
+      "sceneDescription": "G37:29-30 Reuben rips his garment when he cannot find Joseph in the pit",
+      "yearRaw": "1750 BCE",
+      "sequence": 188,
+      "locations": [
+        "Dothan"
+      ],
+      "onStage": [
+        "Reuben"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8127-837a-e49772d9bebd",
+      "url": "https://www.notion.so/350cb257e13c8127837ae49772d9bebd",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/37#study=discover&v=1:37:31-1:37:35",
+      "sourceImageUrl": null,
+      "sceneDescription": "G37:31-35 Jacob mourns the death of his son after seeing the blood stained robe",
+      "yearRaw": "1750 BCE",
+      "sequence": 189,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s Family"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81c6-b649-f81c3206f278",
+      "url": "https://www.notion.so/350cb257e13c81c6b649f81c3206f278",
+      "sourceUrl": null,
+      "sourceImageUrl": null,
+      "sceneDescription": "G37:36 Midianites sell Joseph in Egypt to Potipher",
+      "yearRaw": "1750 BCE",
+      "sequence": 190,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Potiphar"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b0-9dc6-eed6a3617e5e",
+      "url": "https://www.notion.so/350cb257e13c81b09dc6eed6a3617e5e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/38#study=discover&v=1:38:1-1:38:5",
+      "sourceImageUrl": null,
+      "sceneDescription": "G38:1-5 Judah moves to Adullam and marries the daughter of Shua, a Canaanite woman",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 191,
+      "locations": [
+        "Adullam"
+      ],
+      "onStage": [
+        "Judah",
+        "Shua",
+        "Er",
+        "Onan",
+        "Shelah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8156-8883-e40b50549a4f",
+      "url": "https://www.notion.so/350cb257e13c81568883e40b50549a4f",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/38#study=discover&v=1:38:6-1:38:10",
+      "sourceImageUrl": null,
+      "sceneDescription": "G38:6-10 Jehovah puts two of Judah’s sons to death",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 192,
+      "locations": [
+        "Adullam"
+      ],
+      "onStage": [
+        "Tamar",
+        "Er",
+        "Onan"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e0-9c18-daecd105a0ce",
+      "url": "https://www.notion.so/350cb257e13c81e09c18daecd105a0ce",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/38#study=discover&v=1:38:11",
+      "sourceImageUrl": null,
+      "sceneDescription": "G38:11 Judah requests Tamar to stay at her father’s house",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 193,
+      "locations": [
+        "Adullam"
+      ],
+      "onStage": [
+        "Judah",
+        "Tamar",
+        "Shelah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8127-8d0c-e6e3ebf96013",
+      "url": "https://www.notion.so/350cb257e13c81278d0ce6e3ebf96013",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/38#study=discover&v=1:38:12-1:38:19",
+      "sourceImageUrl": null,
+      "sceneDescription": "G38:12-19 Tamar tricks Judah in to having relations with her, and keeps his belongings",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 194,
+      "locations": [
+        "Adullam"
+      ],
+      "onStage": [
+        "Tamar"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8133-b1ca-daa2a9a13c83",
+      "url": "https://www.notion.so/350cb257e13c8133b1cadaa2a9a13c83",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/38#study=discover&v=1:38:20-1:38:26",
+      "sourceImageUrl": null,
+      "sceneDescription": "G38:20-26 Tamar becomes pregnant, and Judah acknowledges his mistake",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 195,
+      "locations": [
+        "Adullam"
+      ],
+      "onStage": [
+        "Tamar",
+        "Judah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818e-89cf-dd7233a5564e",
+      "url": "https://www.notion.so/350cb257e13c818e89cfdd7233a5564e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/38#study=discover&v=1:38:27-1:38:30",
+      "sourceImageUrl": null,
+      "sceneDescription": "G38:27-30 Two sons are born to Judah through Tamar",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 196,
+      "locations": [
+        "Adullam"
+      ],
+      "onStage": [
+        "Tamar",
+        "Judah",
+        "Perez",
+        "Zerah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8191-8f98-db1efe615074",
+      "url": "https://www.notion.so/350cb257e13c81918f98db1efe615074",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/39#study=discover&v=1:39:1-1:39:6",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/c886b597-43e5-4446-9397-5d7f45b24177/3B0B13EE-ACAF-45CC-BFDD-58396D6FD0BA.jpeg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466Z6DGVCZA%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111821Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECsaCXVzLXdlc3QtMiJHMEUCIQDZCH6tqjJXwwxYOWWLc4eiKwYTAbljfmQoPbkjDfwthAIgTo%2FK2AXK8gfrr3ZmYi5DuC1WMFUSqPkXMEVfAfDW7LkqiAQI9P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDAXxNe8fPIgIkWO%2F4CrcAyjYwhEoBTEFeLLmcgra86TtX3kHFLO2wnRS6nAI8PNu2uMaYKT8Vk4EmBLSK5N1jYUrHk1X2yCgkXJD4P57H92L5%2BU%2BU%2FIu%2BFvyoYS%2BGe8O2nY0xcKkLnlP%2Flm34TPhNvQwEufe34KZ3Mgf8Fp996MxrpyK8ZVs2bt8GfHRHKQh%2FrJ6C2lOv7Ab4LoeN%2FqFRvXvKE9CwBi6wZVbz3UhfH1JT8fnXM2opgUh4QcJA2uYnXl7q7nDthuj%2FBsZifK6KhSzPnSv8h6%2BHZiG444Mr4U7xfr8W2cv7lomKRmcbAH1mB7YImQ3tsnadHdqPQiVQUbeihw04VciLwFqleVwWSTD9y5e0kXl%2BC0qlgbJyXsQ4HmxJHgmyDSVZzgplCPiMhGJZYmN3vxitKWHDR3mvMGZUnWGBoq382oBDjU%2FOcZamA10Syq7sxQX%2FmUXKkMy4L0pMPDRrNy85IYhqi%2BNfJJmwdhAbWx%2BSfjAKjMwYnUZGc1HTuYPc3DQG%2F4fMm93f5Vlt2mHhpm3nwLQEfWV44GkC0kGE2d4ACPKs6Y0YC2n%2FQTaB%2Bn2jB8i7b4RwZXTTQa%2B1T96qpsvQKQA%2BUbDLP5iQcQZYEmvwzH1j%2B67jFtTLBKZ7EPUZndj%2BVxwMM%2B7x88GOqUBg1j5YL24SXGr7f1zo7U7zvz%2FSHek%2B4E9B7Y3WqeU8qFvpH6KtGfvSKgxCKnZtDt74v19vxZcouf55GKS7fu8Wl0dVZoEH8f3kAS1UY7hm65jRJLA2%2BmrO3HLD0L7s9qC6Godm3F0sB5txZfxvcLmkSPyQltbUcHHN7wM7FXIJajPesB%2Bb3rheFmt0x2n0fsC8uPO%2FKzX4sfNAaG675fnuXWEoTa6&X-Amz-Signature=67096eea1d515c31f55bb73d7f78eb6cdc4056f7bc8a3c011b3e3fdd156da97b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G39:1-6 Egyptian court official named Potiphar buys Joseph",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 197,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Potiphar"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81da-affa-c5ff7b8bf400",
+      "url": "https://www.notion.so/350cb257e13c81daaffac5ff7b8bf400",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/39#study=discover&v=1:39:7-1:39:20",
+      "sourceImageUrl": "https://prod-files-secure.s3.us-west-2.amazonaws.com/5c87cf12-edb4-4315-8f2b-c3210640f5d7/aba035b1-cbcc-4ed9-9bdb-94f1d8cc77ad/4A0D3A27-388B-4BC7-9EEF-D8D72B36A471.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466U5M3TA5G%2F20260429%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260429T111833Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDS7rI%2FvXvKQQSr4OUEHye8UrDtEnMCGxcKIboxYB478AIgbP8j6OjERJsQt4%2FemkGA7%2F%2FKlye9lHpdpayM6gqGw6IqiAQI8%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDNzaKx7phjUU70LaRCrcA8TfM7iYc5h4RkDaFha1gm%2BLOrb2FlUeObZ47FvNF7TAqS3raON2OOOpzuCJsnY%2FRDzA0AMVzuYgueZJu3wqFBCs9gDMP4wGCPJkuXmX1anHb0mzACrX7eTBPC5zKWiGOE0Ddccn8q0FRANyh2GYB%2Bard9hRQrTJnoRqZs15Gh9d%2Fl6kAaBCQK4NafepbrmfPFIpffhBh7%2FXpmVioAsydClOg%2FIpbtEqSh4DDhGV%2BA%2BMvpcCVz65hU0WrQ8YQJu23wE6JRjJGYB02yE6guPYRcuAjcEEo433aKwo00cyJrt6V%2B7MddyMA7kd4QdEXMJLAHO3voPWq%2B%2Bk1JY1%2BgR91jHDLl02zMEsqnNWzb2yqiHIz79otC6pbgvxy0jTs%2Bf1ITFb%2BMsdOR4IPMgFv6QxIcdWwmEeK%2Fr5d7VH58ZP33pc%2BG%2BfQeb3osfSReNfV2QLXaPL1I7u4I6f1%2FipUqmdgnqIQSeqH0vB7LR4yYlyGcDS0aac5wrDS9tGDVkTDm%2FXVZ8cCo0E23zcyT0ZuGWETqyT7H3X32CYtwmIUchbcN8O0PyPI%2FSkQP1C7i0cM7XVbYpKu%2FTo33cltqAAEbIpd0AaSVmXofobc97QiYu2arat3QcFynumzary7VFcMMqzx88GOqUBsxQjA2r%2FX6S9YDRyPzDLbrgCuUCOD3HvUXMNg01YQjwYfPHcKAu%2FbwC%2F3CpOYAg4wRdcsGHch5iQKyoKQYtETvsA%2FrriL92%2FvGmgkayd2Ehlj9pnHUbUi4Tu8AOMovKLDDsqi34NFCjpQrRCVV3nMXU4HAnzvwgBSg%2BNASzeb6hpVf%2BN64hkSyUbEc%2FAK8w8NmXdmBtjsO3%2BTFxqrvi6UDhWz7R6&X-Amz-Signature=4527b3d4a8f17764d85f9b185df3d3286d35b79926414207c828f3e1336a9d10&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "sceneDescription": "G39:7-20 Joseph is false accused of trying to lie down with Potiphar’s wife and he is put in jail",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 198,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Potiphar’s wife",
+        "Potiphar",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b6-bd15-f1188406f02c",
+      "url": "https://www.notion.so/350cb257e13c81b6bd15f1188406f02c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/39#study=discover&v=1:39:21-1:39:23",
+      "sourceImageUrl": null,
+      "sceneDescription": "G39:21-23 Jehovah blesses Joseph; He was made in charge of all the prisoners",
+      "yearRaw": "1750 BCE (After)",
+      "sequence": 199,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8133-a938-d291d35df46c",
+      "url": "https://www.notion.so/350cb257e13c8133a938d291d35df46c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/40#study=discover&v=1:40:1-1:40:19",
+      "sourceImageUrl": null,
+      "sceneDescription": "G40:1-19 Joseph interprets two dreams",
+      "yearRaw": "1739 BCE",
+      "sequence": 200,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Chief Cupbearer",
+        "Chief Baker",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8158-925e-e7092f681643",
+      "url": "https://www.notion.so/350cb257e13c8158925ee7092f681643",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/40#study=discover&v=1:40:20-1:40:23",
+      "sourceImageUrl": null,
+      "sceneDescription": "G40:20-23 Joseph’s interpretation of the dreams come true",
+      "yearRaw": "1739 BCE",
+      "sequence": 201,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Chief Cupbearer",
+        "Chief Baker",
+        "Joseph",
+        "Pharaoh"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d9-91fc-d898575d122e",
+      "url": "https://www.notion.so/350cb257e13c81d991fcd898575d122e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:1-1:41:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:1-7 Pharaoh’s dreams",
+      "yearRaw": "1737 BCE",
+      "sequence": 202,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Pharaoh"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8159-a896-f81673b2c2bc",
+      "url": "https://www.notion.so/350cb257e13c8159a896f81673b2c2bc",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:8-1:41:13",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:8-13 Chief cupbearer mentions about Joseph to Pharaoh",
+      "yearRaw": "1737 BCE",
+      "sequence": 203,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Pharaoh",
+        "Wise men",
+        "Magic practicing priests",
+        "Chief Cupbearer"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8151-b738-c1d87414e474",
+      "url": "https://www.notion.so/350cb257e13c8151b738c1d87414e474",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:14-1:41:16",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:14-16 Joseph is called from the prison to interpret the dreams",
+      "yearRaw": "1737 BCE",
+      "sequence": 204,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Pharaoh",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8164-9f87-d394bdf7b2ee",
+      "url": "https://www.notion.so/350cb257e13c81649f87d394bdf7b2ee",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:17-1:41:24",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:17-24 Pharaoh relates his dreams to Joseph",
+      "yearRaw": "1737 BCE",
+      "sequence": 205,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Pharaoh",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8120-a552-e2fbc7a090e8",
+      "url": "https://www.notion.so/350cb257e13c8120a552e2fbc7a090e8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:25-1:41:36",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:25-36 Joseph interprets Pharaoh's dreams",
+      "yearRaw": "1737 BCE",
+      "sequence": 206,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Pharaoh"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810b-9d30-d34dd0ced9a7",
+      "url": "https://www.notion.so/350cb257e13c810b9d30d34dd0ced9a7",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:37-1:41:46",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:37-46a Joseph is given authority over the land of Egypt",
+      "yearRaw": "1737 BCE",
+      "sequence": 207,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Pharaoh",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-811e-ba55-c654d5bc75a9",
+      "url": "https://www.notion.so/350cb257e13c811eba55c654d5bc75a9",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:46-1:41:49",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:46b-49 Joseph stockpile grains during the 7 years of abundance ",
+      "yearRaw": "1737 BCE",
+      "sequence": 208,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-813b-8c16-da04a2f47746",
+      "url": "https://www.notion.so/350cb257e13c813b8c16da04a2f47746",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:50-1:41:52",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:50-52 Two sons are born to Joseph through Asenath",
+      "yearRaw": "1730 BCE (Before)",
+      "sequence": 209,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Asenath",
+        "Manasseh",
+        "Ephraim"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f6-a6a5-e94ebf603d36",
+      "url": "https://www.notion.so/350cb257e13c81f6a6a5e94ebf603d36",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/41#study=discover&v=1:41:53-1:41:57",
+      "sourceImageUrl": null,
+      "sceneDescription": "G41:53-57 All the land of Egypt suffers from a famine for 7 years, as foretold",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 210,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Pharaoh",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e2-b664-ee12ef1b186d",
+      "url": "https://www.notion.so/350cb257e13c81e2b664ee12ef1b186d",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/42#study=discover&v=1:42:1-1:42:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "G42:1-4 Jacob instructs his sons go down to Egypt and buy grain",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 211,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8116-836d-c301a5facd37",
+      "url": "https://www.notion.so/350cb257e13c8116836dc301a5facd37",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/42#study=discover&v=1:42:5-1:42:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "G42:5-7 Israel’s sons reach Egypt, to Joseph, to buy grains",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 212,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8199-9919-ef836b06e9f0",
+      "url": "https://www.notion.so/350cb257e13c81999919ef836b06e9f0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/42#study=discover&v=1:42:8-1:42:17",
+      "sourceImageUrl": null,
+      "sceneDescription": "G42:8-17 Joseph accuses his brothers of being spies",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 213,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-819b-976b-e21478821948",
+      "url": "https://www.notion.so/350cb257e13c819b976be21478821948",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/42#study=discover&v=1:42:18-1:42:25",
+      "sourceImageUrl": null,
+      "sceneDescription": "G42:18-25 Joseph demands one of Israel’s sons to stay back and return to Egypt with Benjamin",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 214,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Simeon",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e5-8440-c8f4e160ec5e",
+      "url": "https://www.notion.so/350cb257e13c81e58440c8f4e160ec5e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/42#study=discover&v=1:42:26-1:42:28",
+      "sourceImageUrl": null,
+      "sceneDescription": "G42:26-28 One of them find the money on the bag when he opens it",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 215,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-816f-beb2-f39fd91358bf",
+      "url": "https://www.notion.so/350cb257e13c816fbeb2f39fd91358bf",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/42#study=discover&v=1:42:29-1:42:38",
+      "sourceImageUrl": null,
+      "sceneDescription": "G42:29-38 Jacob refuses to send Benjamin to Egypt",
+      "yearRaw": "1730 BCE (After)",
+      "sequence": 216,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Jacob",
+        "Jacob’s sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8128-a7ea-c7e7ed738bd8",
+      "url": "https://www.notion.so/350cb257e13c8128a7eac7e7ed738bd8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/43#study=discover&v=1:43:1-1:43:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "G43:1-7 Israel urges his sons to go back to get more grains, but is reluctant to send Benjamin",
+      "yearRaw": "1728 BCE",
+      "sequence": 217,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8102-a1e9-c432f700fecf",
+      "url": "https://www.notion.so/350cb257e13c8102a1e9c432f700fecf",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/43#study=discover&v=1:43:8-1:43:14",
+      "sourceImageUrl": null,
+      "sceneDescription": "G43:8-14 Judah promises Israel to take responsibility for Benjamin’s safety",
+      "yearRaw": "1728 BCE",
+      "sequence": 218,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Judah",
+        "Israel",
+        "Benjamin"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818f-81a2-d6dd34cbc2c5",
+      "url": "https://www.notion.so/350cb257e13c818f81a2d6dd34cbc2c5",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/43#study=discover&v=1:43:15-1:43:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "G43:15-34 Joseph orders his servants to take his brothers home and prepare a meal for them",
+      "yearRaw": "1728 BCE",
+      "sequence": 219,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8183-a162-e1454403d753",
+      "url": "https://www.notion.so/350cb257e13c8183a162e1454403d753",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/44#study=discover&v=1:44:1-1:44:2",
+      "sourceImageUrl": null,
+      "sceneDescription": "G44:1-2 Joseph instructs his servant to leave his silver cup in Benjamin’s bag",
+      "yearRaw": "1728 BCE",
+      "sequence": 220,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Jospeh",
+        "Joseph’s Servants"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81dd-91d9-f9a7347c1f46",
+      "url": "https://www.notion.so/350cb257e13c81dd91d9f9a7347c1f46",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/44#study=discover&v=1:44:3-1:44:17",
+      "sourceImageUrl": null,
+      "sceneDescription": "G44:3-17 The silver cup is found in Benjamin’s bag and they all appear before Joseph",
+      "yearRaw": "1728 BCE",
+      "sequence": 221,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Jospeh",
+        "Joseph’s brothers",
+        "Joseph’s Servants"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f9-8b1e-e7c6260fcd41",
+      "url": "https://www.notion.so/350cb257e13c81f98b1ee7c6260fcd41",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/44#study=discover&v=1:44:18-1:44:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "G44:18-34 Judah expresses his plight to Joseph that he cannot return to his father without Benjamin",
+      "yearRaw": "1728 BCE",
+      "sequence": 222,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Judah",
+        "Joseph",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d3-9aed-f9f03f4b3f90",
+      "url": "https://www.notion.so/350cb257e13c81d39aedf9f03f4b3f90",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/45#study=discover&v=1:45:1-1:45:8",
+      "sourceImageUrl": null,
+      "sceneDescription": "G45:1-8 Joseph reveals that he is their brother whom they sold",
+      "yearRaw": "1728 BCE",
+      "sequence": 223,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-817f-9a80-cabd1378a7d9",
+      "url": "https://www.notion.so/350cb257e13c817f9a80cabd1378a7d9",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/45#study=discover&v=1:45:9-1:45:15",
+      "sourceImageUrl": null,
+      "sceneDescription": "G45:9-15 Joseph instructs his brothers to go back and bring his father and all his household to Egypt ",
+      "yearRaw": "1728 BCE",
+      "sequence": 224,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Jospeh",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-813c-98b7-c54080a9cf07",
+      "url": "https://www.notion.so/350cb257e13c813c98b7c54080a9cf07",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/45#study=discover&v=1:45:16-1:45:20",
+      "sourceImageUrl": null,
+      "sceneDescription": "G45:16-20 News reaches Pharaoh about Joseph’s family and he invites them all to Egypt ",
+      "yearRaw": "1728 BCE",
+      "sequence": 225,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Pharaoh",
+        "Joseph’s brothers"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-816d-ae21-f5decb64897c",
+      "url": "https://www.notion.so/350cb257e13c816dae21f5decb64897c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/45#study=discover&v=1:45:21-1:45:28",
+      "sourceImageUrl": null,
+      "sceneDescription": "G45:21-28 Joseph’s brothers come back to Canaan to their father and tells him Joseph is alive",
+      "yearRaw": "1728 BCE",
+      "sequence": 226,
+      "locations": [
+        "Mamre"
+      ],
+      "onStage": [
+        "Joseph’s brothers",
+        "Israel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8187-b827-db7e21f0c66e",
+      "url": "https://www.notion.so/350cb257e13c8187b827db7e21f0c66e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/46#study=discover&v=1:46:1-1:46:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "G46:1-4 Israel departs for Egypt, offers sacrifice to Jehovah in Beersheba ",
+      "yearRaw": "1728 BCE",
+      "sequence": 227,
+      "locations": [
+        "Beersheba"
+      ],
+      "onStage": [
+        "Israel",
+        "Jehovah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ea-8784-fd85e542c12c",
+      "url": "https://www.notion.so/350cb257e13c81ea8784fd85e542c12c",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/46#study=discover&v=1:46:5-1:46:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "G46:5-7 Israel departs Beersheba and comes in to Egypt",
+      "yearRaw": "1728 BCE",
+      "sequence": 228,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-818e-8280-ef517b77a9c0",
+      "url": "https://www.notion.so/350cb257e13c818e8280ef517b77a9c0",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/46#study=discover&v=1:46:8-1:46:27",
+      "sourceImageUrl": null,
+      "sceneDescription": "G46:8-27 Names of Israel’s sons who came in to Egypt ",
+      "yearRaw": "1728 BCE",
+      "sequence": 229,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81cb-853b-e6f1f2301583",
+      "url": "https://www.notion.so/350cb257e13c81cb853be6f1f2301583",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/46#study=discover&v=1:46:28-1:46:30",
+      "sourceImageUrl": null,
+      "sceneDescription": "G46:28-30 Joseph meets his father Israel in Goshen",
+      "yearRaw": "1728 BCE",
+      "sequence": 230,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Joseph",
+        "Judah"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8180-a982-eae06f7ce8bd",
+      "url": "https://www.notion.so/350cb257e13c8180a982eae06f7ce8bd",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/46#study=discover&v=1:46:31-1:46:34",
+      "sourceImageUrl": null,
+      "sceneDescription": "G46:31-47:10 Joseph presents his brothers and his father Israel to Pharaoh ",
+      "yearRaw": "1728 BCE",
+      "sequence": 231,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers",
+        "Israel",
+        "Pharaoh"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8145-8a7e-db31cabaf221",
+      "url": "https://www.notion.so/350cb257e13c81458a7edb31cabaf221",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/47#study=discover&v=1:47:11-1:47:12",
+      "sourceImageUrl": null,
+      "sceneDescription": "G47:11-12 Joseph settles his father and his household in Goshen ",
+      "yearRaw": "1728 BCE (After)",
+      "sequence": 232,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers",
+        "Israel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81e5-a2a2-d50c1019568a",
+      "url": "https://www.notion.so/350cb257e13c81e5a2a2d50c1019568a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/47#study=discover&v=1:47:13-1:47:26",
+      "sourceImageUrl": null,
+      "sceneDescription": "G47:13-26 Joseph takes the money, livestock, and land from the people of Egypt for Pharaoh",
+      "yearRaw": "1728 BCE (After)",
+      "sequence": 233,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph",
+        "People of Egypt",
+        "Pharaoh"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8154-98ce-e6c5bb1181de",
+      "url": "https://www.notion.so/350cb257e13c815498cee6c5bb1181de",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/47#study=discover&v=1:47:27-1:47:31",
+      "sourceImageUrl": null,
+      "sceneDescription": "G47:27-31 Israel is nearing end of his life ",
+      "yearRaw": "1711 BCE",
+      "sequence": 234,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Joseph"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f2-82ac-cbeb19c29f5e",
+      "url": "https://www.notion.so/350cb257e13c81f282accbeb19c29f5e",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/48#study=discover&v=1:48:1-1:48:22",
+      "sourceImageUrl": null,
+      "sceneDescription": "G48:1-22 Israel blesses Joseph ",
+      "yearRaw": "1711 BCE",
+      "sequence": 235,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Joseph",
+        "Manasseh",
+        "Ephraim",
+        "Israel"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8131-9714-d4de760656c3",
+      "url": "https://www.notion.so/350cb257e13c81319714d4de760656c3",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:1-1:49:2",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:1-2 Israel’s death bed prophecy ",
+      "yearRaw": "1711 BCE",
+      "sequence": 236,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81b0-bfc4-d338e27cbb47",
+      "url": "https://www.notion.so/350cb257e13c81b0bfc4d338e27cbb47",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:3-1:49:4",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:3-4 Israel’s death bed prophecy: Reuben",
+      "yearRaw": "1711 BCE",
+      "sequence": 237,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81f9-b98d-e797f91ebddf",
+      "url": "https://www.notion.so/350cb257e13c81f9b98de797f91ebddf",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:5-1:49:7",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:5-7 Israel’s death bed prophecy: Simeon and Levi",
+      "yearRaw": "1711 BCE",
+      "sequence": 238,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-814e-8581-cc56c353a5e8",
+      "url": "https://www.notion.so/350cb257e13c814e8581cc56c353a5e8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:8-1:49:12",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:8-12 Israel’s death bed prophecy: Judah",
+      "yearRaw": "1711 BCE",
+      "sequence": 239,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8157-a756-f979ff941602",
+      "url": "https://www.notion.so/350cb257e13c8157a756f979ff941602",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:13",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:13 Israel’s death bed prophecy: Zebulun",
+      "yearRaw": "1711 BCE",
+      "sequence": 240,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81fd-bef3-c77a4ed7ca88",
+      "url": "https://www.notion.so/350cb257e13c81fdbef3c77a4ed7ca88",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:14-1:49:15",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:14-15 Israel’s death bed prophecy: Issachar",
+      "yearRaw": "1711 BCE",
+      "sequence": 241,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8101-8e7c-e30e1e1d96d8",
+      "url": "https://www.notion.so/350cb257e13c81018e7ce30e1e1d96d8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:16-1:49:18",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:16-18 Israel’s death bed prophecy: Dan",
+      "yearRaw": "1711 BCE",
+      "sequence": 242,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8187-bf4c-ea99ccdd8b72",
+      "url": "https://www.notion.so/350cb257e13c8187bf4cea99ccdd8b72",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:19-1:49:21",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:19-21 Israel’s death bed prophecy: Gad, Asher, Naphtali",
+      "yearRaw": "1711 BCE",
+      "sequence": 243,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ce-a18f-f9e4ecc74f1a",
+      "url": "https://www.notion.so/350cb257e13c81cea18ff9e4ecc74f1a",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:22-1:49:26",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:22-26 Israel’s death bed prophecy: Joseph",
+      "yearRaw": "1711 BCE",
+      "sequence": 244,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8118-977c-f8983524a0ee",
+      "url": "https://www.notion.so/350cb257e13c8118977cf8983524a0ee",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:27",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:27 Israel’s death bed prophecy: Benjamin",
+      "yearRaw": "1711 BCE",
+      "sequence": 245,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81ac-a402-d191c09b8a75",
+      "url": "https://www.notion.so/350cb257e13c81aca402d191c09b8a75",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/49#study=discover&v=1:49:28-1:49:33",
+      "sourceImageUrl": null,
+      "sceneDescription": "G49:28-33 Death of Israel ",
+      "yearRaw": "1711 BCE",
+      "sequence": 246,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Israel",
+        "Israel's sons"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8157-9de1-fb0a22cc4326",
+      "url": "https://www.notion.so/350cb257e13c81579de1fb0a22cc4326",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/50#study=discover&v=1:50:1-1:50:3",
+      "sourceImageUrl": null,
+      "sceneDescription": "G50:1-3 Joseph commands to embalm his father ",
+      "yearRaw": "1711 BCE",
+      "sequence": 247,
+      "locations": [
+        "Goshen"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s Servants"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-81d4-aeac-f21f1393b6b2",
+      "url": "https://www.notion.so/350cb257e13c81d4aeacf21f1393b6b2",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/50#study=discover&v=1:50:4-1:50:6",
+      "sourceImageUrl": null,
+      "sceneDescription": "G50:4-6 Joseph asks Pharaoh to let him bury his father in Canaan ",
+      "yearRaw": "1711 BCE",
+      "sequence": 248,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Jospeh",
+        "Pharaoh"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-8191-9fa6-ff3a9193c7a8",
+      "url": "https://www.notion.so/350cb257e13c81919fa6ff3a9193c7a8",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/50#study=discover&v=1:50:7-1:50:14",
+      "sourceImageUrl": null,
+      "sceneDescription": "G50:7-14 Joseph and his brothers go up to Canaan to bury their father",
+      "yearRaw": "1711 BCE",
+      "sequence": 249,
+      "locations": [
+        "Threshing floor of Atad",
+        "Cave at Machpelah"
+      ],
+      "onStage": [
+        "Joseph",
+        "Joseph’s brothers",
+        "Joseph’s Servants"
+      ]
+    },
+    {
+      "id": "350cb257-e13c-810d-98d0-c0053a5505ec",
+      "url": "https://www.notion.so/350cb257e13c810d98d0c0053a5505ec",
+      "sourceUrl": "https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/1/50#study=discover&v=1:50:15-1:50:21",
+      "sourceImageUrl": null,
+      "sceneDescription": "G50:15-21 Fearing for their lives, Joseph’s brothers send him a message",
+      "yearRaw": "1711 BCE (After)",
+      "sequence": 250,
+      "locations": [
+        "Egypt"
+      ],
+      "onStage": [
+        "Joseph’s brothers",
+        "Joseph"
+      ]
+    }
+  ]
+}
