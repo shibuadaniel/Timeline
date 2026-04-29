@@ -39,7 +39,13 @@ function formatYearLabel(value: number): string {
   return String(value);
 }
 
-/** Year ticks + labels on the horizontal spine (y = 0 in data space). */
+/** Year scale: slate dot on the spine (y = 0), label tucked just above (minimal vertical footprint). */
+const TICK_DOT_R = 2.5;
+/** Gap from dot top to label (text uses dominantBaseline middle, ~half an 11px em). */
+const LABEL_GAP_PX = 3;
+const LABEL_TEXT_HALF_PX = 6;
+const TICK_DOT_FILL = "#64748b";
+
 export function MiddleLineYearAxis(
   props: Record<string, unknown> | undefined
 ): ReactNode {
@@ -60,6 +66,9 @@ export function MiddleLineYearAxis(
   const y0 = yAxis.scale(0);
   if (!Number.isFinite(y0)) return null;
 
+  const yText =
+    y0 - TICK_DOT_R - LABEL_GAP_PX - LABEL_TEXT_HALF_PX;
+
   return (
     <g className="middle-line-year-axis" pointerEvents="none" aria-hidden="true">
       {tickValues.map((tick) => {
@@ -68,17 +77,15 @@ export function MiddleLineYearAxis(
         const label = formatYearLabel(tick);
         return (
           <g key={`${tick}`}>
-            <line
-              x1={x}
-              y1={y0 - 5}
-              x2={x}
-              y2={y0 + 5}
-              stroke="#94a3b8"
-              strokeWidth={1}
+            <circle
+              cx={x}
+              cy={y0}
+              r={TICK_DOT_R}
+              fill={TICK_DOT_FILL}
             />
             <text
               x={x}
-              y={y0}
+              y={yText}
               textAnchor="middle"
               dominantBaseline="middle"
               fill="#475569"

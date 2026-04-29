@@ -3,23 +3,25 @@ import {
   CartesianGrid,
   Customized,
   ReferenceLine,
-  ResponsiveContainer,
   Scatter,
   ScatterChart,
   Tooltip,
   XAxis,
   YAxis,
 } from "recharts";
+import Button from "@mui/material/Button";
 import "./App.css";
-import { SearchableSelect } from "./SearchableSelect";
+import { LocationSelectField } from "./LocationSelectField";
+import { StageMultiselectField } from "./StageMultiselectField";
 import { MiddleLineYearAxis } from "./MiddleLineYearAxis";
-import {
-  buildLocationBuckets,
-  PALETTE,
-  primaryLocationColor,
-} from "./lib/colors";
+import { makeTimelineAlternatingBands } from "./TimelineAlternatingBands";
+import { makeTimelineSpineDots } from "./TimelineSpineDots";
+import { yearStepTicks } from "./lib/yearAxisTicks";
 import { parseYear } from "./lib/parseYear";
 import type { PlottedScene, SceneDTO, SnapshotV1 } from "./types";
+
+/** Single fill for all plotted events (spine + scatter). */
+const EVENT_DOT_FILL = "#81C784";
 
 const FLAG_ABOUT_STYLE = { opacity: 0.55 };
 
@@ -57,11 +59,14 @@ export default function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [locFilter, setLocFilter] = useState<string>("all");
-  const [stageFilter, setStageFilter] = useState<string>("all");
+  /** Empty = all stages; otherwise event must match at least one selected value. */
+  const [stageFilter, setStageFilter] = useState<string[]>([]);
   const [selectedSceneId, setSelectedSceneId] = useState<string | null>(null);
   const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
   const [popupViewportPos, setPopupViewportPos] = useState<{ left: number; top: number } | null>(null);
   const chartCardRef = useRef<HTMLDivElement | null>(null);
+  const chartScrollRef = useRef<HTMLDivElement | null>(null);
+  const [chartViewportWidth, setChartViewportWidth] = useState(0);
   const popupRef = useRef<HTMLDivElement | null>(null);
 
   const load = useCallback(async () => {
@@ -117,11 +122,9 @@ export default function App() {
         bad.push(scene);
         continue;
       }
-      const primary = scene.locations[0] ?? "";
       ok.push({
         ...scene,
         parse: p,
-        primaryLocation: primary,
       });
     }
     bad.sort((a, b) => (a.sequence ?? 0) - (b.sequence ?? 0));
@@ -134,11 +137,6 @@ export default function App() {
       .filter((s) => !s.sourceUrl?.trim())
       .sort((a, b) => (a.sequence ?? 0) - (b.sequence ?? 0));
   }, [scenes]);
-
-  const { ordered, otherLabel } = useMemo(() => {
-    const locs = plottedRaw.map((p) => p.primaryLocation).filter(Boolean);
-    return buildLocationBuckets(locs, 12);
-  }, [plottedRaw]);
 
   const locationOptions = useMemo(() => {
     const set = new Set<string>();
@@ -161,8 +159,9 @@ export default function App() {
       if (locFilter !== "all") {
         if (!p.locations.includes(locFilter)) return false;
       }
-      if (stageFilter !== "all") {
-        if (!p.onStage.includes(stageFilter)) return false;
+      if (stageFilter.length > 0) {
+        const hit = stageFilter.some((s) => p.onStage.includes(s));
+        if (!hit) return false;
       }
       return true;
     });
@@ -183,18 +182,10 @@ export default function App() {
       const tier = Math.floor(jitterN / 2) + 1;
       const sign = jitterN % 2 === 0 ? 1 : -1;
       const jitterY = sign * tier * rowStep;
-      const { fill, legendKey } = primaryLocationColor(
-        p.primaryLocation,
-        ordered,
-        otherLabel,
-        PALETTE
-      );
       return {
         id: p.id,
         axisYear: p.parse.axisYear,
         jitterY,
-        fill,
-        legendKey,
         sceneDescription: p.sceneDescription,
         yearRaw: p.yearRaw,
         flags: p.parse.flags,
@@ -206,18 +197,59 @@ export default function App() {
         url: p.url,
       };
     });
-  }, [plotted, ordered, otherLabel]);
+  }, [plotted]);
 
-  const legendItems = useMemo(() => {
-    const items = ordered.map((loc, i) => ({
-      key: loc,
-      color: PALETTE[i % PALETTE.length],
-    }));
-    if (plottedRaw.some((p) => p.primaryLocation && !ordered.includes(p.primaryLocation))) {
-      items.push({ key: otherLabel, color: "#94a3b8" });
-    }
-    return items;
-  }, [ordered, otherLabel, plottedRaw]);
+  const yearDomain = useMemo(() => {
+    if (!chartData.length) return { min: 0, max: 1, span: 1 };
+    const ys = chartData.map((d) => d.axisYear);
+    const dataMin = Math.min(...ys);
+    const dataMax = Math.max(...ys);
+    const span = Math.max(dataMax - dataMin, 1);
+    const pad = Math.max(15, Math.round(span * 0.08));
+    return { min: dataMin - pad, max: dataMax + pad, span };
+  }, [chartData]);
+
+  /** Spine and labels: every 70 years across the padded domain. */
+  const xAxisYearTicks = useMemo(
+    () => yearStepTicks(yearDomain.min, yearDomain.max, 70),
+    [yearDomain.min, yearDomain.max]
+  );
+
+  /** Distinct years in the current (filtered) chart data — one spine marker per year. */
+  const spineAxisYears = useMemo(() => {
+    const s = new Set<number>();
+    for (const d of chartData) s.add(d.axisYear);
+    return [...s].sort((a, b) => a - b);
+  }, [chartData]);
+
+  const SpineDotsLayer = useMemo(
+    () => makeTimelineSpineDots(spineAxisYears, EVENT_DOT_FILL),
+    [spineAxisYears]
+  );
+
+  const AlternatingBandsLayer = useMemo(
+    () => makeTimelineAlternatingBands(xAxisYearTicks),
+    [xAxisYearTicks]
+  );
+
+  const CHART_HEIGHT = 400;
+  const PIXELS_PER_YEAR = 8;
+  const chartPixelWidth = useMemo(() => {
+    const vw = chartViewportWidth || 640;
+    const minBySpan = yearDomain.span * PIXELS_PER_YEAR + 96;
+    return Math.max(vw, minBySpan);
+  }, [chartViewportWidth, yearDomain.span]);
+
+  useLayoutEffect(() => {
+    const el = chartScrollRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => {
+      setChartViewportWidth(el.clientWidth);
+    });
+    ro.observe(el);
+    setChartViewportWidth(el.clientWidth);
+    return () => ro.disconnect();
+  }, [chartData.length]);
 
   const hasShownAbout = chartData.some((d) => d.flags.about);
   const selectedScene = selectedSceneId
@@ -229,7 +261,7 @@ export default function App() {
   const selectedHasSourceUrl = Boolean(selectedScene?.sourceUrl?.trim());
 
   useLayoutEffect(() => {
-    if (!selectedScene || !popupPos || !chartCardRef.current || !popupRef.current) {
+    if (!selectedScene || !popupPos || !popupRef.current) {
       setPopupViewportPos(null);
       return;
     }
@@ -237,17 +269,16 @@ export default function App() {
     const compute = () => {
       const margin = 8;
       const offset = 10;
-      const cardRect = chartCardRef.current!.getBoundingClientRect();
       const popupRect = popupRef.current!.getBoundingClientRect();
 
-      let left = cardRect.left + popupPos.x + offset;
-      let top = cardRect.top + popupPos.y + offset;
+      let left = popupPos.x + offset;
+      let top = popupPos.y + offset;
 
       if (left + popupRect.width > window.innerWidth - margin) {
-        left = cardRect.left + popupPos.x - popupRect.width - offset;
+        left = popupPos.x - popupRect.width - offset;
       }
       if (top + popupRect.height > window.innerHeight - margin) {
-        top = cardRect.top + popupPos.y - popupRect.height - offset;
+        top = popupPos.y - popupRect.height - offset;
       }
 
       left = Math.max(margin, Math.min(left, window.innerWidth - popupRect.width - margin));
@@ -277,16 +308,14 @@ export default function App() {
       </p>
 
       <div className="toolbar">
-        <SearchableSelect
-          id="loc"
+        <LocationSelectField
           label="Location"
           value={locFilter}
           options={locationOptions}
           onChange={setLocFilter}
           disabled={!scenes?.length}
         />
-        <SearchableSelect
-          id="st"
+        <StageMultiselectField
           label="On stage"
           value={stageFilter}
           options={stageOptions}
@@ -294,20 +323,19 @@ export default function App() {
           disabled={!scenes?.length}
         />
         <div className="toolbar-actions">
-          <button type="button" className="btn" onClick={load} disabled={loading}>
+          <Button variant="contained" onClick={() => void load()} disabled={loading}>
             {loading ? "Loading…" : "Show"}
-          </button>
-          <button
-            type="button"
-            className="btn"
+          </Button>
+          <Button
+            variant="outlined"
             onClick={() => {
               setLocFilter("all");
-              setStageFilter("all");
+              setStageFilter([]);
             }}
             disabled={!scenes?.length}
           >
             Reset
-          </button>
+          </Button>
         </div>
       </div>
 
@@ -323,13 +351,24 @@ export default function App() {
                 : "No plotted scenes — adjust filters or fix years in Notion."}
             </p>
           ) : (
-            <ResponsiveContainer width="100%" height={400}>
-              <ScatterChart margin={{ top: 16, right: 12, left: 0, bottom: 8 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
+            <div className="chart-scroll" ref={chartScrollRef}>
+              <ScatterChart
+                width={chartPixelWidth}
+                height={CHART_HEIGHT}
+                margin={{ top: 28, right: 48, left: 56, bottom: 8 }}
+              >
+                <Customized component={AlternatingBandsLayer} />
+                <CartesianGrid
+                  strokeDasharray="3 3"
+                  stroke="#e2e8f0"
+                  horizontal={false}
+                />
                 <XAxis
                   type="number"
                   dataKey="axisYear"
                   name="Year"
+                  domain={[yearDomain.min, yearDomain.max]}
+                  ticks={xAxisYearTicks}
                   hide
                 />
                 <YAxis
@@ -344,6 +383,7 @@ export default function App() {
                   strokeWidth={1.5}
                 />
                 <Customized component={MiddleLineYearAxis} />
+                <Customized component={SpineDotsLayer} />
                 <ReferenceLine x={0} stroke="#94a3b8" strokeDasharray="4 4" />
                 <Tooltip
                   cursor={{ strokeDasharray: "3 3" }}
@@ -385,19 +425,18 @@ export default function App() {
                 />
                 <Scatter
                   data={chartData}
-                  onClick={(point) => {
+                  onClick={(point, _index, e) => {
                     if (!point?.id) return;
                     setSelectedSceneId(point.id);
-                    if (typeof point.cx === "number" && typeof point.cy === "number") {
+                    const me = e as unknown as MouseEvent | undefined;
+                    if (me && typeof me.clientX === "number") {
+                      setPopupPos({ x: me.clientX, y: me.clientY });
+                    } else if (typeof point.cx === "number" && typeof point.cy === "number") {
                       setPopupPos({ x: point.cx, y: point.cy });
                     }
                   }}
-                  shape={(props: {
-                    cx?: number;
-                    cy?: number;
-                    payload?: { fill: string };
-                  }) => {
-                    const { cx, cy, payload } = props;
+                  shape={(props: { cx?: number; cy?: number }) => {
+                    const { cx, cy } = props;
                     if (cx == null || cy == null) return null;
                     return (
                       <circle
@@ -405,7 +444,7 @@ export default function App() {
                         cx={cx}
                         cy={cy}
                         r={7}
-                        fill={payload?.fill ?? "#64748b"}
+                        fill={EVENT_DOT_FILL}
                         stroke="#fff"
                         strokeWidth={1}
                       />
@@ -413,7 +452,7 @@ export default function App() {
                   }}
                 />
               </ScatterChart>
-            </ResponsiveContainer>
+            </div>
           )}
           {selectedScene ? (
             <div
@@ -486,19 +525,6 @@ export default function App() {
               {selectedHasSourceUrl ? null : (
                 <div className="popup-url-unavailable muted">Not available</div>
               )}
-            </div>
-          ) : null}
-          {chartData.length > 0 ? (
-            <div className="legend" aria-label="Location colors">
-              {legendItems.map((item) => (
-                <span key={item.key}>
-                  <span
-                    className="swatch"
-                    style={{ background: item.color }}
-                  />
-                  {item.key}
-                </span>
-              ))}
             </div>
           ) : null}
           {hasShownAbout ? (

@@ -1,6 +1,6 @@
 # Bible Events Timeline
 
-Pilot **horizontal timeline** for Bible study scenes: **Sequence #** 100–120 from the **sandbox** Notion database. **Year** → X position; **Location** → color; **On stage** → tooltip + filters; **Needs year** queue for empty or unparseable years.
+Pilot **horizontal timeline** for Bible study scenes: **Sequence #** 100–150 from the **sandbox** Notion database. **Year** → X position; **Location** → color; **On stage** → tooltip + filters; **Needs year** queue for empty or unparseable years.
 
 See **[Project Brief](https://www.notion.so/350cb257e13c8186b4bfeb980aa6748e)** in Notion for full scope.
 

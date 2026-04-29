@@ -30,5 +30,4 @@ export type YearParse =
 
 export type PlottedScene = SceneDTO & {
   parse: Extract<YearParse, { kind: "ok" }>;
-  primaryLocation: string;
 };

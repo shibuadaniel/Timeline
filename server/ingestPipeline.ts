@@ -40,7 +40,7 @@ export function readIngestConfigFromEnv(): IngestConfig {
     notionApiKey,
     notionDatabaseId,
     sequenceMin: envNumber("PILOT_SEQUENCE_MIN", 100),
-    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 120),
+    sequenceMax: envNumber("PILOT_SEQUENCE_MAX", 150),
   };
 }
 
