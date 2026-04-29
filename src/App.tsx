@@ -686,14 +686,6 @@ export default function App() {
                 <div className="popup-line popup-line--year">
                   <i className="fa-solid fa-calendar" aria-hidden="true" />{" "}
                   <span>{selectedScene.yearRaw}</span>
-                  {flagSuffix(selectedScene.flags) ? (
-                    <span
-                      className="flags"
-                      style={selectedScene.flags.about ? FLAG_ABOUT_STYLE : undefined}
-                    >
-                      {flagSuffix(selectedScene.flags)}
-                    </span>
-                  ) : null}
                 </div>
                 <div className="popup-tags">
                   {(selectedSceneParts?.tags.length
