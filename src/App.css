@@ -14,10 +14,25 @@
 }
 
 .disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.disclaimer-icon {
+  flex-shrink: 0;
+  color: #f87171;
+  font-size: 1rem;
+  line-height: 1.45;
+  margin-top: 0.08rem;
+}
+
+.disclaimer-text {
+  margin: 0;
   color: #64748b;
   font-size: 0.85rem;
   line-height: 1.45;
-  margin: 0 0 1.25rem;
 }
 
 .filters-panel {

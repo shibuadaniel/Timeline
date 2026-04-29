@@ -303,10 +303,16 @@ export default function App() {
   return (
     <div className="app">
       <h1>Bible events timeline</h1>
-      <p className="disclaimer" role="note">
-        This is only an experiment; the dates might not be accurate. If you
-        received this URL, please do not share it.
-      </p>
+      <div className="disclaimer" role="note">
+        <i
+          className="fa-solid fa-circle-exclamation disclaimer-icon"
+          aria-hidden
+        />
+        <p className="disclaimer-text">
+          This is only an experiment. The dates might not be accurate. If you
+          received this URL, please do not share it.
+        </p>
+      </div>
 
       <section className="filters-panel" aria-label="Filters">
         <div
