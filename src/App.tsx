@@ -56,6 +56,16 @@ const KEY_EVENTS_ONLY_ENABLED = false;
 
 const FLAG_ABOUT_STYLE = { opacity: 0.55 };
 
+/** Stable object references — passing new literals each render makes Recharts redraw the whole chart. */
+const SCATTER_CHART_MARGIN = {
+  top: 28,
+  right: 48,
+  left: 56,
+  bottom: 8,
+} as const;
+const TOOLTIP_CURSOR_PROPS = { strokeDasharray: "3 3" } as const;
+const Y_AXIS_DOMAIN = ["dataMin - 28", "dataMax + 28"] as [string, string];
+
 type ChartScenePoint = {
   pointKind?: "scene";
   id: string;
@@ -91,6 +101,112 @@ type ChartOverflowPoint = {
 };
 
 type ChartPoint = ChartScenePoint | ChartOverflowPoint;
+
+type ScatterShapeProps = Record<string, unknown> & {
+  cx?: number;
+  cy?: number;
+  payload?: ChartPoint;
+};
+
+function TimelineScatterDotShape(props: ScatterShapeProps) {
+  const { cx, cy, payload } = props;
+  if (cx == null || cy == null) return null;
+  if (payload?.pointKind === "overflow") {
+    const extra = payload.overflowExtra;
+    const yLabel = formatAxisYearForLabel(payload.axisYear);
+    const label = `+${extra}`;
+    return (
+      <g
+        className="timeline-overflow-dot"
+        role="button"
+        tabIndex={0}
+        aria-label={`${extra} more events in ${yLabel}`}
+      >
+        <circle
+          cx={cx}
+          cy={cy}
+          r={OVERFLOW_DOT_R}
+          fill={OVERFLOW_DOT_FILL}
+          stroke="#fff"
+          strokeWidth={2}
+        />
+        <text
+          x={cx}
+          y={cy}
+          textAnchor="middle"
+          dominantBaseline="central"
+          fill={OVERFLOW_DOT_TEXT_FILL}
+          fontSize={12}
+          fontWeight={700}
+          style={{ pointerEvents: "none" }}
+        >
+          {label}
+        </text>
+      </g>
+    );
+  }
+  return (
+    <circle
+      className="timeline-dot"
+      cx={cx}
+      cy={cy}
+      r={EVENT_DOT_R}
+      fill={EVENT_DOT_FILL}
+      stroke="#fff"
+      strokeWidth={1}
+    />
+  );
+}
+
+function TimelineChartTooltipContent({
+  active,
+  payload,
+}: {
+  active?: boolean;
+  payload?: Array<{ payload?: ChartPoint }>;
+}) {
+  if (!active || !payload?.length) return null;
+  const d = payload[0]!.payload as ChartPoint;
+  if (d.pointKind === "overflow") {
+    const yLabel = formatAxisYearForLabel(d.axisYear);
+    return (
+      <div className="tooltip-box">
+        <div className="tooltip-title">
+          {d.overflowExtra} more in {yLabel}
+        </div>
+        <div className="muted">Click to open the list</div>
+      </div>
+    );
+  }
+  const flagStr = flagSuffix(d.flags);
+  return (
+    <div className="tooltip-box">
+      <div className="tooltip-title">{d.sceneDescription}</div>
+      <div>
+        <strong>Year:</strong> {d.yearRaw}
+        {flagStr ? (
+          <span
+            className="flags"
+            style={d.flags.about ? FLAG_ABOUT_STYLE : undefined}
+          >
+            {flagStr}
+          </span>
+        ) : null}
+      </div>
+      <div>
+        <strong>Location:</strong>{" "}
+        {d.locations.length ? d.locations.join(", ") : "—"}
+      </div>
+      <div>
+        <strong>On stage:</strong>{" "}
+        {d.onStage.length ? d.onStage.join(", ") : "—"}
+      </div>
+      {d.sequence != null ? (
+        <div className="muted">Sequence # {d.sequence}</div>
+      ) : null}
+    </div>
+  );
+}
 
 type OverflowNavState = {
   axisYear: number;
@@ -204,6 +320,8 @@ export default function App() {
   const [chartViewportWidth, setChartViewportWidth] = useState(0);
   const popupRef = useRef<HTMLDivElement | null>(null);
   const overflowTiePanelRef = useRef<HTMLDivElement | null>(null);
+  /** When true, next plot tap closes popups only (two-step: dismiss then pick). */
+  const plotPopupGateRef = useRef(false);
   const [overflowTiePanelPos, setOverflowTiePanelPos] = useState<{
     left: number;
     top: number;
@@ -336,6 +454,16 @@ export default function App() {
     void load();
   }, [load]);
 
+  const closeScenePopup = useCallback(() => {
+    setSelectedSceneId(null);
+    setOverflowNav(null);
+    setClusterSceneNav(null);
+    setOverflowTiePanel(null);
+    setOverflowTiePanelPos(null);
+    setPopupPos(null);
+    setPopupViewportPos(null);
+  }, []);
+
   useEffect(() => {
     const onDocumentPointerDown = (event: PointerEvent) => {
       const target = event.target;
@@ -343,22 +471,14 @@ export default function App() {
       if (target.closest(".click-popup")) return;
       if (target.closest(".timeline-dot")) return;
       if (target.closest(".timeline-overflow-dot")) return;
-      if (target.closest(".timeline-plot-hit-proxy")) return;
-      if (target.closest(".overflow-tie-panel")) return;
-      setSelectedSceneId(null);
-      setOverflowNav(null);
-      setClusterSceneNav(null);
-      setOverflowTiePanel(null);
-      setOverflowTiePanelPos(null);
-      setPopupPos(null);
-      setPopupViewportPos(null);
+      closeScenePopup();
     };
 
     document.addEventListener("pointerdown", onDocumentPointerDown);
     return () => {
       document.removeEventListener("pointerdown", onDocumentPointerDown);
     };
-  }, []);
+  }, [closeScenePopup]);
 
   const { plottedRaw, needsYear } = useMemo(() => {
     if (!scenes)
@@ -502,12 +622,24 @@ export default function App() {
     []
   );
 
+  plotPopupGateRef.current =
+    selectedSceneId != null || overflowTiePanel != null;
+
   const PlotClickProxy = useMemo(
     () =>
       makeTimelinePlotClickProxy(scatterData, {
-        onPick: (p, cx, cy) =>
-          applyChartPointSelection(p as ChartPoint, cx, cy),
+        onPick: (p, cx, cy) => {
+          if (plotPopupGateRef.current) {
+            closeScenePopup();
+            return;
+          }
+          applyChartPointSelection(p as ChartPoint, cx, cy);
+        },
         onDenseCandidates: (pts, cx, cy) => {
+          if (plotPopupGateRef.current) {
+            closeScenePopup();
+            return;
+          }
           const opts = pts as ChartPoint[];
           const hasOverflow = opts.some((p) => p.pointKind === "overflow");
           if (hasOverflow) {
@@ -534,7 +666,7 @@ export default function App() {
           setPopupPos({ x: cx, y: cy });
         },
       }),
-    [scatterData, applyChartPointSelection]
+    [scatterData, applyChartPointSelection, closeScenePopup]
   );
 
   const yearDomain = useMemo(() => {
@@ -546,6 +678,11 @@ export default function App() {
     const pad = Math.max(15, Math.round(span * 0.08));
     return { min: dataMin - pad, max: dataMax + pad, span };
   }, [chartData]);
+
+  const xAxisNumberDomain = useMemo(
+    (): [number, number] => [yearDomain.min, yearDomain.max],
+    [yearDomain.min, yearDomain.max]
+  );
 
   /** Spine and labels: configurable year step across the padded domain. */
   const xAxisYearTicks = useMemo(
@@ -683,15 +820,9 @@ export default function App() {
   useEffect(() => {
     if (!selectedSceneId) return;
     if (!plotted.some((p) => p.id === selectedSceneId)) {
-      setSelectedSceneId(null);
-      setOverflowNav(null);
-      setClusterSceneNav(null);
-      setOverflowTiePanel(null);
-      setOverflowTiePanelPos(null);
-      setPopupPos(null);
-      setPopupViewportPos(null);
+      closeScenePopup();
     }
-  }, [selectedSceneId, plotted]);
+  }, [selectedSceneId, plotted, closeScenePopup]);
 
   useEffect(() => {
     const overflowCarousel =
@@ -956,7 +1087,7 @@ export default function App() {
               <ScatterChart
                 width={chartPixelWidth}
                 height={CHART_HEIGHT}
-                margin={{ top: 28, right: 48, left: 56, bottom: 8 }}
+                margin={SCATTER_CHART_MARGIN}
               >
                 <Customized component={AlternatingBandsLayer} />
                 <CartesianGrid
@@ -968,7 +1099,7 @@ export default function App() {
                   type="number"
                   dataKey="axisYear"
                   name="Year"
-                  domain={[yearDomain.min, yearDomain.max]}
+                  domain={xAxisNumberDomain}
                   ticks={xAxisYearTicks}
                   hide
                 />
@@ -976,7 +1107,7 @@ export default function App() {
                   type="number"
                   dataKey="jitterY"
                   hide
-                  domain={["dataMin - 28", "dataMax + 28"]}
+                  domain={Y_AXIS_DOMAIN}
                 />
                 <ReferenceLine
                   y={0}
@@ -987,110 +1118,11 @@ export default function App() {
                 <Customized component={SpineDotsLayer} />
                 <ReferenceLine x={0} stroke="#94a3b8" strokeDasharray="4 4" />
                 <Tooltip
-                  cursor={{ strokeDasharray: "3 3" }}
+                  cursor={TOOLTIP_CURSOR_PROPS}
                   active={false}
-                  content={({ active, payload }) => {
-                    if (!active || !payload?.length) return null;
-                    const d = payload[0].payload as ChartPoint;
-                    if (d.pointKind === "overflow") {
-                      const yLabel = formatAxisYearForLabel(d.axisYear);
-                      return (
-                        <div className="tooltip-box">
-                          <div className="tooltip-title">
-                            {d.overflowExtra} more in {yLabel}
-                          </div>
-                          <div className="muted">Click to open the list</div>
-                        </div>
-                      );
-                    }
-                    const flagStr = flagSuffix(d.flags);
-                    return (
-                      <div className="tooltip-box">
-                        <div className="tooltip-title">{d.sceneDescription}</div>
-                        <div>
-                          <strong>Year:</strong> {d.yearRaw}
-                          {flagStr ? (
-                            <span
-                              className="flags"
-                              style={
-                                d.flags.about ? FLAG_ABOUT_STYLE : undefined
-                              }
-                            >
-                              {flagStr}
-                            </span>
-                          ) : null}
-                        </div>
-                        <div>
-                          <strong>Location:</strong>{" "}
-                          {d.locations.length ? d.locations.join(", ") : "—"}
-                        </div>
-                        <div>
-                          <strong>On stage:</strong>{" "}
-                          {d.onStage.length ? d.onStage.join(", ") : "—"}
-                        </div>
-                        {d.sequence != null ? (
-                          <div className="muted">Sequence # {d.sequence}</div>
-                        ) : null}
-                      </div>
-                    );
-                  }}
+                  content={TimelineChartTooltipContent}
                 />
-                <Scatter data={scatterData} shape={(
-                    props: Record<string, unknown> & {
-                      cx?: number;
-                      cy?: number;
-                      payload?: ChartPoint;
-                    }
-                  ) => {
-                    const { cx, cy, payload } = props;
-                    if (cx == null || cy == null) return null;
-                    if (payload?.pointKind === "overflow") {
-                      const extra = payload.overflowExtra;
-                      const yLabel = formatAxisYearForLabel(payload.axisYear);
-                      const label = `+${extra}`;
-                      return (
-                        <g
-                          className="timeline-overflow-dot"
-                          role="button"
-                          tabIndex={0}
-                          aria-label={`${extra} more events in ${yLabel}`}
-                        >
-                          <circle
-                            cx={cx}
-                            cy={cy}
-                            r={OVERFLOW_DOT_R}
-                            fill={OVERFLOW_DOT_FILL}
-                            stroke="#fff"
-                            strokeWidth={2}
-                          />
-                          <text
-                            x={cx}
-                            y={cy}
-                            textAnchor="middle"
-                            dominantBaseline="central"
-                            fill={OVERFLOW_DOT_TEXT_FILL}
-                            fontSize={12}
-                            fontWeight={700}
-                            style={{ pointerEvents: "none" }}
-                          >
-                            {label}
-                          </text>
-                        </g>
-                      );
-                    }
-                    return (
-                      <circle
-                        className="timeline-dot"
-                        cx={cx}
-                        cy={cy}
-                        r={EVENT_DOT_R}
-                        fill={EVENT_DOT_FILL}
-                        stroke="#fff"
-                        strokeWidth={1}
-                      />
-                    );
-                  }}
-                />
+                <Scatter data={scatterData} shape={TimelineScatterDotShape} />
                 <Customized component={PlotClickProxy} />
               </ScatterChart>
             </div>
@@ -1101,7 +1133,7 @@ export default function App() {
               role="dialog"
               aria-modal="true"
               aria-label="Scene details"
-              className={`tooltip-box click-popup${selectedHasSourceUrl ? "" : " click-popup--no-link"}${
+              className={`tooltip-box click-popup click-popup--no-link${
                 showPopupCarousel ? " click-popup--overflow" : ""
               }`}
               style={
@@ -1112,10 +1144,14 @@ export default function App() {
                     }
                   : undefined
               }
-              onClick={() => {
-                const url = selectedDisplay.sourceUrl?.trim();
-                if (!url) return;
-                window.open(url, "_blank", "noopener");
+              onPointerDown={(e) => {
+                const t = e.target;
+                if (!(t instanceof Element)) return;
+                if (t.closest(".popup-overflow-nav-btn")) return;
+                if (t.closest(".popup-overflow-nav-count")) return;
+                if (t.closest(".popup-source-open")) return;
+                e.stopPropagation();
+                closeScenePopup();
               }}
             >
               {selectedDisplay.sourceImageUrl?.trim() ? (
@@ -1166,7 +1202,19 @@ export default function App() {
                     : "—"}
                 </span>
               </div>
-              {selectedHasSourceUrl ? null : (
+              {selectedHasSourceUrl ? (
+                <div className="popup-line">
+                  <a
+                    className="popup-source-open"
+                    href={selectedDisplay.sourceUrl!.trim()}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden />{" "}
+                    Open source
+                  </a>
+                </div>
+              ) : (
                 <div className="popup-url-unavailable muted">Not available</div>
               )}
               {showPopupCarousel ? (
@@ -1292,6 +1340,13 @@ export default function App() {
                 }
               : undefined
           }
+          onPointerDown={(e) => {
+            const t = e.target;
+            if (!(t instanceof Element)) return;
+            if (t.closest(".overflow-tie-panel-item")) return;
+            e.stopPropagation();
+            closeScenePopup();
+          }}
         >
           <div className="overflow-tie-panel-hint muted">
             Multiple markers overlap — pick one

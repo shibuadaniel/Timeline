@@ -263,6 +263,17 @@
   cursor: default;
 }
 
+.popup-source-open {
+  cursor: pointer;
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.popup-source-open:hover {
+  text-decoration: underline;
+}
+
 /* Overflow carousel: first row is prev | count | next; rest of card is full-width below */
 .click-popup--overflow {
   display: flex;
