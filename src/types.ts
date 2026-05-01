@@ -9,6 +9,8 @@ export type SceneDTO = {
   sequence: number | null;
   locations: string[];
   onStage: string[];
+  /** Optional until present in ingested JSON / Notion “Key event” checkbox. */
+  keyEvent?: boolean;
 };
 
 export type SnapshotV1 = {

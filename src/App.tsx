@@ -11,15 +11,18 @@ import {
 } from "recharts";
 import Button from "@mui/material/Button";
 import FormControl from "@mui/material/FormControl";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
+import Switch from "@mui/material/Switch";
 import "./App.css";
 import { LocationSelectField } from "./LocationSelectField";
 import { StageMultiselectField } from "./StageMultiselectField";
 import { MiddleLineYearAxis } from "./MiddleLineYearAxis";
 import { makeTimelineAlternatingBands } from "./TimelineAlternatingBands";
 import { makeTimelineSpineDots } from "./TimelineSpineDots";
+import { makeTimelinePlotClickProxy } from "./TimelinePlotClickProxy";
 import { yearStepTicks } from "./lib/yearAxisTicks";
 import { parseYear } from "./lib/parseYear";
 import type {
@@ -30,18 +33,109 @@ import type {
   SnapshotV1,
 } from "./types";
 
+/** Max individual dots per calendar year; remainder roll into one +x marker. */
+const VISIBLE_EVENTS_PER_YEAR = 7;
 /** Single fill for all plotted events (spine + scatter). */
 const EVENT_DOT_FILL = "#81C784";
 /** Event markers on the center timeline spine (exclude year marker dots). */
 const SPINE_EVENT_DOT_FILL = "#f9a8d4";
 /** Keep this fixed: vertical spacing step between stacked events in a year bucket. */
 const EVENT_ROW_STEP = 38;
+/** Default event dot radius (px); overflow +x marker is larger and a different color. */
+const EVENT_DOT_R = 7;
+/** Distinct fill for the +N aggregate marker (not the same as event dots). */
+const OVERFLOW_DOT_FILL = "#0284c7";
+const OVERFLOW_DOT_TEXT_FILL = "#ffffff";
+const OVERFLOW_DOT_R = 16;
 /** Minimum viewport height, then expand based on max records sharing one year. */
 const MIN_CHART_HEIGHT = 600;
 const EXTRA_HEIGHT_PER_OVERLAP = 18;
-const HORIZONTAL_UNIT_OPTIONS = [20, 50, 70, 100, 200] as const;
+const HORIZONTAL_UNIT_OPTIONS = [10, 20, 50, 70, 100, 200] as const;
+/** Set true when `keyEvent` is populated in snapshots / Notion. */
+const KEY_EVENTS_ONLY_ENABLED = false;
 
 const FLAG_ABOUT_STYLE = { opacity: 0.55 };
+
+type ChartScenePoint = {
+  pointKind?: "scene";
+  id: string;
+  axisYear: number;
+  jitterY: number;
+  sceneDescription: string;
+  yearRaw: string | null;
+  flags: PlottedScene["parse"]["flags"];
+  locations: string[];
+  onStage: string[];
+  sequence: number | null;
+  sourceUrl: string | null;
+  sourceImageUrl: string | null;
+  url: string;
+};
+
+type ChartOverflowPoint = {
+  pointKind: "overflow";
+  id: string;
+  axisYear: number;
+  jitterY: number;
+  overflowIds: string[];
+  overflowExtra: number;
+  sceneDescription: string;
+  yearRaw: string | null;
+  flags: PlottedScene["parse"]["flags"];
+  locations: string[];
+  onStage: string[];
+  sequence: null;
+  sourceUrl: null;
+  sourceImageUrl: null;
+  url: string;
+};
+
+type ChartPoint = ChartScenePoint | ChartOverflowPoint;
+
+type OverflowNavState = {
+  axisYear: number;
+  ids: string[];
+  index: number;
+};
+
+function formatAxisYearForLabel(value: number): string {
+  if (value < 0) return `${Math.abs(value)} BCE`;
+  return String(value);
+}
+
+/** Sequence # ascending; missing sequence last; tie-break Scene Description. */
+function comparePlottedForChart(a: PlottedScene, b: PlottedScene): number {
+  const aMissing = a.sequence == null;
+  const bMissing = b.sequence == null;
+  if (aMissing !== bMissing) return aMissing ? 1 : -1;
+  if (!aMissing && !bMissing && a.sequence !== b.sequence) {
+    return (a.sequence as number) - (b.sequence as number);
+  }
+  return a.sceneDescription.localeCompare(b.sceneDescription, undefined, {
+    sensitivity: "base",
+  });
+}
+
+function compareSceneDtoOrder(a: SceneDTO, b: SceneDTO): number {
+  const aMissing = a.sequence == null;
+  const bMissing = b.sequence == null;
+  if (aMissing !== bMissing) return aMissing ? 1 : -1;
+  if (!aMissing && !bMissing && a.sequence !== b.sequence) {
+    return (a.sequence as number) - (b.sequence as number);
+  }
+  return a.sceneDescription.localeCompare(b.sceneDescription, undefined, {
+    sensitivity: "base",
+  });
+}
+
+function jitterYFromStackSlot(stackSlot: number): number {
+  const tier = Math.floor(stackSlot / 2) + 1;
+  const sign = stackSlot % 2 === 0 ? 1 : -1;
+  return sign * tier * EVENT_ROW_STEP;
+}
+
+/** Stack slot for +N: one step past the 7th dot on the positive (upward) arm — not slot 7, which is on the lower side. */
+const OVERFLOW_STACK_SLOT = VISIBLE_EVENTS_PER_YEAR + 1;
 
 /** Bundled snapshots use paths like data/images/…; older JSON may still have https URLs. */
 function resolveSceneImageSrc(url: string | null | undefined): string | null {
@@ -89,13 +183,31 @@ export default function App() {
   const [locFilter, setLocFilter] = useState<string>("all");
   /** Empty = all stages; otherwise event must match at least one selected value. */
   const [stageFilter, setStageFilter] = useState<string[]>([]);
+  const [keyEventsOnly, setKeyEventsOnly] = useState(false);
   const [selectedSceneId, setSelectedSceneId] = useState<string | null>(null);
+  const [overflowNav, setOverflowNav] = useState<OverflowNavState | null>(null);
+  /** Scene-only ambiguous tap: same popup chrome as overflow carousel (prev/next + counter). */
+  const [clusterSceneNav, setClusterSceneNav] = useState<{
+    ids: string[];
+    index: number;
+  } | null>(null);
+  /** Ambiguous tap that includes a +x marker: card-styled list (not the detail body). */
+  const [overflowTiePanel, setOverflowTiePanel] = useState<{
+    x: number;
+    y: number;
+    options: ChartPoint[];
+  } | null>(null);
   const [popupPos, setPopupPos] = useState<{ x: number; y: number } | null>(null);
   const [popupViewportPos, setPopupViewportPos] = useState<{ left: number; top: number } | null>(null);
   const chartCardRef = useRef<HTMLDivElement | null>(null);
   const chartScrollRef = useRef<HTMLDivElement | null>(null);
   const [chartViewportWidth, setChartViewportWidth] = useState(0);
   const popupRef = useRef<HTMLDivElement | null>(null);
+  const overflowTiePanelRef = useRef<HTMLDivElement | null>(null);
+  const [overflowTiePanelPos, setOverflowTiePanelPos] = useState<{
+    left: number;
+    top: number;
+  } | null>(null);
   const [filtersExpanded, setFiltersExpanded] = useState(false);
   const [horizontalUnitYears, setHorizontalUnitYears] = useState<number>(70);
   const loadRunRef = useRef(0);
@@ -230,7 +342,14 @@ export default function App() {
       if (!(target instanceof Element)) return;
       if (target.closest(".click-popup")) return;
       if (target.closest(".timeline-dot")) return;
+      if (target.closest(".timeline-overflow-dot")) return;
+      if (target.closest(".timeline-plot-hit-proxy")) return;
+      if (target.closest(".overflow-tie-panel")) return;
       setSelectedSceneId(null);
+      setOverflowNav(null);
+      setClusterSceneNav(null);
+      setOverflowTiePanel(null);
+      setOverflowTiePanelPos(null);
       setPopupPos(null);
       setPopupViewportPos(null);
     };
@@ -257,15 +376,13 @@ export default function App() {
         parse: p,
       });
     }
-    bad.sort((a, b) => (a.sequence ?? 0) - (b.sequence ?? 0));
+    bad.sort(compareSceneDtoOrder);
     return { plottedRaw: ok, needsYear: bad };
   }, [scenes]);
 
   const needsUrl = useMemo(() => {
     if (!scenes) return [];
-    return scenes
-      .filter((s) => !s.sourceUrl?.trim())
-      .sort((a, b) => (a.sequence ?? 0) - (b.sequence ?? 0));
+    return scenes.filter((s) => !s.sourceUrl?.trim()).sort(compareSceneDtoOrder);
   }, [scenes]);
 
   const locationOptions = useMemo(() => {
@@ -293,40 +410,132 @@ export default function App() {
         const hit = stageFilter.some((s) => p.onStage.includes(s));
         if (!hit) return false;
       }
+      if (KEY_EVENTS_ONLY_ENABLED && keyEventsOnly && !p.keyEvent) return false;
       return true;
     });
-  }, [plottedRaw, locFilter, stageFilter]);
+  }, [plottedRaw, locFilter, stageFilter, keyEventsOnly]);
 
-  const chartData = useMemo(() => {
-    const orderedPlotted = [...plotted].sort((a, b) => {
-      const sa = a.sequence ?? 0;
-      const sb = b.sequence ?? 0;
-      if (sa !== sb) return sa - sb;
-      return a.sceneDescription.localeCompare(b.sceneDescription);
-    });
-    const yearBuckets = new Map<number, number>();
-    return orderedPlotted.map((p) => {
-      const jitterN = yearBuckets.get(p.parse.axisYear) ?? 0;
-      yearBuckets.set(p.parse.axisYear, jitterN + 1);
-      const tier = Math.floor(jitterN / 2) + 1;
-      const sign = jitterN % 2 === 0 ? 1 : -1;
-      const jitterY = sign * tier * EVENT_ROW_STEP;
-      return {
-        id: p.id,
-        axisYear: p.parse.axisYear,
-        jitterY,
-        sceneDescription: p.sceneDescription,
-        yearRaw: p.yearRaw,
-        flags: p.parse.flags,
-        locations: p.locations,
-        onStage: p.onStage,
-        sequence: p.sequence,
-        sourceUrl: p.sourceUrl,
-        sourceImageUrl: p.sourceImageUrl ?? null,
-        url: p.url,
-      };
-    });
+  const chartData = useMemo((): ChartPoint[] => {
+    const byYear = new Map<number, PlottedScene[]>();
+    for (const p of plotted) {
+      const y = p.parse.axisYear;
+      const arr = byYear.get(y) ?? [];
+      arr.push(p);
+      byYear.set(y, arr);
+    }
+    const rows: ChartPoint[] = [];
+    const sortedYears = [...byYear.keys()].sort((a, b) => a - b);
+    for (const axisYear of sortedYears) {
+      const group = (byYear.get(axisYear) ?? [])
+        .slice()
+        .sort(comparePlottedForChart);
+      const visible = group.slice(0, VISIBLE_EVENTS_PER_YEAR);
+      const overflow = group.slice(VISIBLE_EVENTS_PER_YEAR);
+      let slot = 0;
+      for (const p of visible) {
+        rows.push({
+          pointKind: "scene",
+          id: p.id,
+          axisYear,
+          jitterY: jitterYFromStackSlot(slot),
+          sceneDescription: p.sceneDescription,
+          yearRaw: p.yearRaw,
+          flags: p.parse.flags,
+          locations: p.locations,
+          onStage: p.onStage,
+          sequence: p.sequence,
+          sourceUrl: p.sourceUrl,
+          sourceImageUrl: p.sourceImageUrl ?? null,
+          url: p.url,
+        });
+        slot++;
+      }
+      if (overflow.length > 0) {
+        const head = overflow[0]!;
+        rows.push({
+          pointKind: "overflow",
+          id: `overflow:${axisYear}`,
+          axisYear,
+          jitterY: jitterYFromStackSlot(OVERFLOW_STACK_SLOT),
+          overflowIds: overflow.map((x) => x.id),
+          overflowExtra: overflow.length,
+          sceneDescription: `+${overflow.length} more`,
+          yearRaw: head.yearRaw,
+          flags: head.parse.flags,
+          locations: [],
+          onStage: [],
+          sequence: null,
+          sourceUrl: null,
+          sourceImageUrl: null,
+          url: head.url,
+        });
+      }
+    }
+    return rows;
   }, [plotted]);
+
+  /** Paint order: earlier years drawn first (below); later years on top when X is tight. */
+  const scatterData = useMemo(
+    () =>
+      [...chartData].sort((a, b) => {
+        if (a.axisYear !== b.axisYear) return a.axisYear - b.axisYear;
+        return a.jitterY - b.jitterY;
+      }),
+    [chartData]
+  );
+
+  const applyChartPointSelection = useCallback(
+    (point: ChartPoint, clientX: number, clientY: number) => {
+      if (point.pointKind === "overflow") {
+        const ids = point.overflowIds ?? [];
+        if (!ids.length) return;
+        setOverflowNav({ axisYear: point.axisYear, ids, index: 0 });
+      } else {
+        setOverflowNav(null);
+        setSelectedSceneId(point.id);
+      }
+      setClusterSceneNav(null);
+      setOverflowTiePanel(null);
+      setOverflowTiePanelPos(null);
+      setPopupPos({ x: clientX, y: clientY });
+    },
+    []
+  );
+
+  const PlotClickProxy = useMemo(
+    () =>
+      makeTimelinePlotClickProxy(scatterData, {
+        onPick: (p, cx, cy) =>
+          applyChartPointSelection(p as ChartPoint, cx, cy),
+        onDenseCandidates: (pts, cx, cy) => {
+          const opts = pts as ChartPoint[];
+          const hasOverflow = opts.some((p) => p.pointKind === "overflow");
+          if (hasOverflow) {
+            setClusterSceneNav(null);
+            setOverflowNav(null);
+            setSelectedSceneId(null);
+            setPopupPos(null);
+            setPopupViewportPos(null);
+            setOverflowTiePanel({ x: cx, y: cy, options: opts });
+            return;
+          }
+          const seen = new Set<string>();
+          const ids: string[] = [];
+          for (const p of opts) {
+            if (seen.has(p.id)) continue;
+            seen.add(p.id);
+            ids.push(p.id);
+          }
+          if (!ids.length) return;
+          setOverflowTiePanel(null);
+          setOverflowTiePanelPos(null);
+          setOverflowNav(null);
+          setClusterSceneNav({ ids, index: 0 });
+          setPopupPos({ x: cx, y: cy });
+        },
+      }),
+    [scatterData, applyChartPointSelection]
+  );
 
   const yearDomain = useMemo(() => {
     if (!chartData.length) return { min: 0, max: 1, span: 1 };
@@ -361,25 +570,30 @@ export default function App() {
     [xAxisYearTicks]
   );
 
-  const maxEventsInSingleYear = useMemo(() => {
-    if (chartData.length === 0) return 0;
+  /** Stacked row slots per year after capping (≤7 scene rows + optional +x row). */
+  const maxStackSlotsPerYear = useMemo(() => {
+    if (!plotted.length) return 0;
     const counts = new Map<number, number>();
-    let maxCount = 0;
-    for (const d of chartData) {
-      const next = (counts.get(d.axisYear) ?? 0) + 1;
-      counts.set(d.axisYear, next);
-      if (next > maxCount) maxCount = next;
+    for (const p of plotted) {
+      const y = p.parse.axisYear;
+      counts.set(y, (counts.get(y) ?? 0) + 1);
     }
-    return maxCount;
-  }, [chartData]);
+    let maxSlots = 0;
+    for (const c of counts.values()) {
+      const slots =
+        Math.min(c, VISIBLE_EVENTS_PER_YEAR) + (c > VISIBLE_EVENTS_PER_YEAR ? 1 : 0);
+      if (slots > maxSlots) maxSlots = slots;
+    }
+    return maxSlots;
+  }, [plotted]);
 
   const CHART_HEIGHT = useMemo(() => {
-    if (maxEventsInSingleYear <= 1) return MIN_CHART_HEIGHT;
+    if (maxStackSlotsPerYear <= 1) return MIN_CHART_HEIGHT;
     return (
       MIN_CHART_HEIGHT +
-      (maxEventsInSingleYear - 1) * EXTRA_HEIGHT_PER_OVERLAP
+      (maxStackSlotsPerYear - 1) * EXTRA_HEIGHT_PER_OVERLAP
     );
-  }, [maxEventsInSingleYear]);
+  }, [maxStackSlotsPerYear]);
   const PIXELS_PER_YEAR = 8;
   const chartPixelWidth = useMemo(() => {
     const vw = chartViewportWidth || 640;
@@ -398,17 +612,120 @@ export default function App() {
     return () => ro.disconnect();
   }, [chartData.length]);
 
-  const hasShownAbout = chartData.some((d) => d.flags.about);
-  const selectedScene = selectedSceneId
-    ? chartData.find((d) => d.id === selectedSceneId) ?? null
+  const hasShownAbout = useMemo(
+    () => plotted.some((p) => p.parse.flags.about),
+    [plotted]
+  );
+
+  const selectedDisplay = useMemo(() => {
+    if (!selectedSceneId) return null;
+    const p = plotted.find((x) => x.id === selectedSceneId);
+    if (!p) return null;
+    return {
+      id: p.id,
+      yearRaw: p.yearRaw,
+      sceneDescription: p.sceneDescription,
+      flags: p.parse.flags,
+      locations: p.locations,
+      onStage: p.onStage,
+      sequence: p.sequence,
+      sourceUrl: p.sourceUrl,
+      sourceImageUrl: p.sourceImageUrl ?? null,
+      url: p.url,
+    };
+  }, [selectedSceneId, plotted]);
+
+  const selectedSceneParts = selectedDisplay
+    ? splitSceneDescription(selectedDisplay.sceneDescription)
     : null;
-  const selectedSceneParts = selectedScene
-    ? splitSceneDescription(selectedScene.sceneDescription)
-    : null;
-  const selectedHasSourceUrl = Boolean(selectedScene?.sourceUrl?.trim());
+  const selectedHasSourceUrl = Boolean(selectedDisplay?.sourceUrl?.trim());
+
+  const goOverflowPrev = useCallback(() => {
+    setOverflowNav((prev) => {
+      if (!prev || prev.index <= 0) return prev;
+      return { ...prev, index: prev.index - 1 };
+    });
+  }, []);
+
+  const goOverflowNext = useCallback(() => {
+    setOverflowNav((prev) => {
+      if (!prev || prev.index >= prev.ids.length - 1) return prev;
+      return { ...prev, index: prev.index + 1 };
+    });
+  }, []);
+
+  const goClusterScenePrev = useCallback(() => {
+    setClusterSceneNav((prev) => {
+      if (!prev || prev.index <= 0) return prev;
+      return { ...prev, index: prev.index - 1 };
+    });
+  }, []);
+
+  const goClusterSceneNext = useCallback(() => {
+    setClusterSceneNav((prev) => {
+      if (!prev || prev.index >= prev.ids.length - 1) return prev;
+      return { ...prev, index: prev.index + 1 };
+    });
+  }, []);
 
   useLayoutEffect(() => {
-    if (!selectedScene || !popupPos || !popupRef.current) {
+    if (overflowNav) {
+      const id = overflowNav.ids[overflowNav.index];
+      if (id) setSelectedSceneId(id);
+      return;
+    }
+    if (clusterSceneNav) {
+      const id = clusterSceneNav.ids[clusterSceneNav.index];
+      if (id) setSelectedSceneId(id);
+    }
+  }, [overflowNav, clusterSceneNav]);
+
+  useEffect(() => {
+    if (!selectedSceneId) return;
+    if (!plotted.some((p) => p.id === selectedSceneId)) {
+      setSelectedSceneId(null);
+      setOverflowNav(null);
+      setClusterSceneNav(null);
+      setOverflowTiePanel(null);
+      setOverflowTiePanelPos(null);
+      setPopupPos(null);
+      setPopupViewportPos(null);
+    }
+  }, [selectedSceneId, plotted]);
+
+  useEffect(() => {
+    const overflowCarousel =
+      selectedDisplay && overflowNav && overflowNav.ids.length > 1;
+    const clusterCarousel =
+      selectedDisplay &&
+      clusterSceneNav &&
+      clusterSceneNav.ids.length > 1;
+    if (!overflowCarousel && !clusterCarousel) return;
+    const onKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        if (overflowCarousel) goOverflowPrev();
+        else goClusterScenePrev();
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        if (overflowCarousel) goOverflowNext();
+        else goClusterSceneNext();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [
+    selectedDisplay,
+    overflowNav,
+    clusterSceneNav,
+    goOverflowPrev,
+    goOverflowNext,
+    goClusterScenePrev,
+    goClusterSceneNext,
+  ]);
+
+  useLayoutEffect(() => {
+    if (!selectedDisplay || !popupPos || !popupRef.current) {
       setPopupViewportPos(null);
       return;
     }
@@ -444,7 +761,65 @@ export default function App() {
       window.removeEventListener("resize", compute);
       window.removeEventListener("scroll", compute, true);
     };
-  }, [selectedScene, popupPos]);
+  }, [selectedDisplay, popupPos]);
+
+  useLayoutEffect(() => {
+    if (!overflowTiePanel || !overflowTiePanelRef.current) {
+      setOverflowTiePanelPos(null);
+      return;
+    }
+
+    const compute = () => {
+      const margin = 8;
+      const offset = 10;
+      const el = overflowTiePanelRef.current!;
+      const rect = el.getBoundingClientRect();
+      const anchor = { x: overflowTiePanel.x, y: overflowTiePanel.y };
+
+      let left = anchor.x + offset;
+      let top = anchor.y + offset;
+
+      if (left + rect.width > window.innerWidth - margin) {
+        left = anchor.x - rect.width - offset;
+      }
+      if (top + rect.height > window.innerHeight - margin) {
+        top = anchor.y - rect.height - offset;
+      }
+
+      left = Math.max(margin, Math.min(left, window.innerWidth - rect.width - margin));
+      top = Math.max(margin, Math.min(top, window.innerHeight - rect.height - margin));
+
+      setOverflowTiePanelPos((prev) => {
+        if (prev && prev.left === left && prev.top === top) return prev;
+        return { left, top };
+      });
+    };
+
+    compute();
+    window.addEventListener("resize", compute);
+    window.addEventListener("scroll", compute, true);
+    return () => {
+      window.removeEventListener("resize", compute);
+      window.removeEventListener("scroll", compute, true);
+    };
+  }, [overflowTiePanel]);
+
+  const showPopupCarousel =
+    (overflowNav && overflowNav.ids.length > 0) ||
+    (clusterSceneNav && clusterSceneNav.ids.length > 1);
+
+  const carouselIndex =
+    overflowNav && overflowNav.ids.length > 0
+      ? overflowNav.index
+      : clusterSceneNav
+        ? clusterSceneNav.index
+        : 0;
+  const carouselLen =
+    overflowNav && overflowNav.ids.length > 0
+      ? overflowNav.ids.length
+      : clusterSceneNav
+        ? clusterSceneNav.ids.length
+        : 0;
 
   return (
     <div className="app">
@@ -521,6 +896,22 @@ export default function App() {
                   ))}
                 </Select>
               </FormControl>
+              <FormControlLabel
+                sx={{ margin: 0, alignSelf: "center" }}
+                disabled={!KEY_EVENTS_ONLY_ENABLED}
+                control={
+                  <Switch
+                    size="small"
+                    checked={keyEventsOnly}
+                    onChange={(_, checked) => setKeyEventsOnly(checked)}
+                    disabled={!KEY_EVENTS_ONLY_ENABLED || !scenes?.length}
+                    inputProps={{
+                      "aria-label": "Show only key events",
+                    }}
+                  />
+                }
+                label="Key events only"
+              />
               <div className="toolbar-actions">
                 <Button variant="contained" onClick={() => void load()} disabled={loading}>
                   {loading ? "Loading…" : "Show"}
@@ -530,6 +921,7 @@ export default function App() {
                   onClick={() => {
                     setLocFilter("all");
                     setStageFilter([]);
+                    setKeyEventsOnly(false);
                   }}
                   disabled={!scenes?.length}
                 >
@@ -599,7 +991,18 @@ export default function App() {
                   active={false}
                   content={({ active, payload }) => {
                     if (!active || !payload?.length) return null;
-                    const d = payload[0].payload as (typeof chartData)[number];
+                    const d = payload[0].payload as ChartPoint;
+                    if (d.pointKind === "overflow") {
+                      const yLabel = formatAxisYearForLabel(d.axisYear);
+                      return (
+                        <div className="tooltip-box">
+                          <div className="tooltip-title">
+                            {d.overflowExtra} more in {yLabel}
+                          </div>
+                          <div className="muted">Click to open the list</div>
+                        </div>
+                      );
+                    }
                     const flagStr = flagSuffix(d.flags);
                     return (
                       <div className="tooltip-box">
@@ -632,27 +1035,55 @@ export default function App() {
                     );
                   }}
                 />
-                <Scatter
-                  data={chartData}
-                  onClick={(point, _index, e) => {
-                    if (!point?.id) return;
-                    setSelectedSceneId(point.id);
-                    const me = e as unknown as MouseEvent | undefined;
-                    if (me && typeof me.clientX === "number") {
-                      setPopupPos({ x: me.clientX, y: me.clientY });
-                    } else if (typeof point.cx === "number" && typeof point.cy === "number") {
-                      setPopupPos({ x: point.cx, y: point.cy });
+                <Scatter data={scatterData} shape={(
+                    props: Record<string, unknown> & {
+                      cx?: number;
+                      cy?: number;
+                      payload?: ChartPoint;
                     }
-                  }}
-                  shape={(props: { cx?: number; cy?: number }) => {
-                    const { cx, cy } = props;
+                  ) => {
+                    const { cx, cy, payload } = props;
                     if (cx == null || cy == null) return null;
+                    if (payload?.pointKind === "overflow") {
+                      const extra = payload.overflowExtra;
+                      const yLabel = formatAxisYearForLabel(payload.axisYear);
+                      const label = `+${extra}`;
+                      return (
+                        <g
+                          className="timeline-overflow-dot"
+                          role="button"
+                          tabIndex={0}
+                          aria-label={`${extra} more events in ${yLabel}`}
+                        >
+                          <circle
+                            cx={cx}
+                            cy={cy}
+                            r={OVERFLOW_DOT_R}
+                            fill={OVERFLOW_DOT_FILL}
+                            stroke="#fff"
+                            strokeWidth={2}
+                          />
+                          <text
+                            x={cx}
+                            y={cy}
+                            textAnchor="middle"
+                            dominantBaseline="central"
+                            fill={OVERFLOW_DOT_TEXT_FILL}
+                            fontSize={12}
+                            fontWeight={700}
+                            style={{ pointerEvents: "none" }}
+                          >
+                            {label}
+                          </text>
+                        </g>
+                      );
+                    }
                     return (
                       <circle
                         className="timeline-dot"
                         cx={cx}
                         cy={cy}
-                        r={7}
+                        r={EVENT_DOT_R}
                         fill={EVENT_DOT_FILL}
                         stroke="#fff"
                         strokeWidth={1}
@@ -660,13 +1091,19 @@ export default function App() {
                     );
                   }}
                 />
+                <Customized component={PlotClickProxy} />
               </ScatterChart>
             </div>
           )}
-          {selectedScene ? (
+          {selectedDisplay ? (
             <div
               ref={popupRef}
-              className={`tooltip-box click-popup${selectedHasSourceUrl ? "" : " click-popup--no-link"}`}
+              role="dialog"
+              aria-modal="true"
+              aria-label="Scene details"
+              className={`tooltip-box click-popup${selectedHasSourceUrl ? "" : " click-popup--no-link"}${
+                showPopupCarousel ? " click-popup--overflow" : ""
+              }`}
               style={
                 popupViewportPos
                   ? {
@@ -676,16 +1113,18 @@ export default function App() {
                   : undefined
               }
               onClick={() => {
-                const url = selectedScene.sourceUrl?.trim();
+                const url = selectedDisplay.sourceUrl?.trim();
                 if (!url) return;
                 window.open(url, "_blank", "noopener");
               }}
             >
-              {selectedScene.sourceImageUrl?.trim() ? (
+              {selectedDisplay.sourceImageUrl?.trim() ? (
                 <div className="popup-thumb-viewport" aria-hidden="true">
                   <img
                     className="popup-thumb"
-                    src={resolveSceneImageSrc(selectedScene.sourceImageUrl) ?? ""}
+                    src={
+                      resolveSceneImageSrc(selectedDisplay.sourceImageUrl) ?? ""
+                    }
                     alt=""
                     loading="lazy"
                     decoding="async"
@@ -695,12 +1134,12 @@ export default function App() {
               <div className="popup-top-row">
                 <div className="popup-line popup-line--year">
                   <i className="fa-solid fa-calendar" aria-hidden="true" />{" "}
-                  <span>{selectedScene.yearRaw}</span>
+                  <span>{selectedDisplay.yearRaw}</span>
                 </div>
                 <div className="popup-tags">
                   {(selectedSceneParts?.tags.length
                     ? selectedSceneParts.tags
-                    : [selectedScene.sceneDescription]
+                    : [selectedDisplay.sceneDescription]
                   ).map((tag) => (
                     <span key={tag} className="popup-tag">
                       {tag}
@@ -709,25 +1148,74 @@ export default function App() {
                 </div>
               </div>
               <div className="tooltip-title">
-                {selectedSceneParts?.title || selectedScene.sceneDescription}
+                {selectedSceneParts?.title || selectedDisplay.sceneDescription}
               </div>
               <div className="popup-line">
                 <i className="fa-solid fa-location-dot" aria-hidden="true" />{" "}
                 <span>
-                  {selectedScene.locations.length
-                    ? selectedScene.locations.join(", ")
+                  {selectedDisplay.locations.length
+                    ? selectedDisplay.locations.join(", ")
                     : "—"}
                 </span>
               </div>
               <div className="popup-line">
                 <i className="fa-solid fa-masks-theater" aria-hidden="true" />{" "}
                 <span>
-                  {selectedScene.onStage.length ? selectedScene.onStage.join(", ") : "—"}
+                  {selectedDisplay.onStage.length
+                    ? selectedDisplay.onStage.join(", ")
+                    : "—"}
                 </span>
               </div>
               {selectedHasSourceUrl ? null : (
                 <div className="popup-url-unavailable muted">Not available</div>
               )}
+              {showPopupCarousel ? (
+                <>
+                  <button
+                    type="button"
+                    className="popup-overflow-nav-btn"
+                    disabled={carouselIndex <= 0}
+                    onClick={(ev) => {
+                      ev.stopPropagation();
+                      if (overflowNav && overflowNav.ids.length > 0)
+                        goOverflowPrev();
+                      else goClusterScenePrev();
+                    }}
+                    onPointerDown={(ev) => ev.stopPropagation()}
+                    aria-label="Previous event"
+                  >
+                    <i
+                      className="fa-solid fa-circle-arrow-left"
+                      aria-hidden
+                    />
+                  </button>
+                  <span
+                    className="popup-overflow-nav-count muted"
+                    aria-live="polite"
+                    onPointerDown={(ev) => ev.stopPropagation()}
+                  >
+                    {carouselIndex + 1} / {carouselLen}
+                  </span>
+                  <button
+                    type="button"
+                    className="popup-overflow-nav-btn"
+                    disabled={carouselIndex >= carouselLen - 1}
+                    onClick={(ev) => {
+                      ev.stopPropagation();
+                      if (overflowNav && overflowNav.ids.length > 0)
+                        goOverflowNext();
+                      else goClusterSceneNext();
+                    }}
+                    onPointerDown={(ev) => ev.stopPropagation()}
+                    aria-label="Next event"
+                  >
+                    <i
+                      className="fa-solid fa-circle-arrow-right"
+                      aria-hidden
+                    />
+                  </button>
+                </>
+              ) : null}
             </div>
           ) : null}
           {hasShownAbout ? (
@@ -789,6 +1277,62 @@ export default function App() {
         </div>
       </div>
 
+      {overflowTiePanel ? (
+        <div
+          ref={overflowTiePanelRef}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Choose an event"
+          className="tooltip-box click-popup overflow-tie-panel"
+          style={
+            overflowTiePanelPos
+              ? {
+                  left: `${overflowTiePanelPos.left}px`,
+                  top: `${overflowTiePanelPos.top}px`,
+                }
+              : undefined
+          }
+        >
+          <div className="overflow-tie-panel-hint muted">
+            Multiple markers overlap — pick one
+          </div>
+          <ul className="overflow-tie-panel-list">
+            {overflowTiePanel.options.map((p) => (
+              <li key={`${p.id}:${p.axisYear}`}>
+                <button
+                  type="button"
+                  className="overflow-tie-panel-item"
+                  onClick={(ev) => {
+                    ev.stopPropagation();
+                    applyChartPointSelection(p, ev.clientX, ev.clientY);
+                  }}
+                >
+                  <span className="overflow-tie-panel-item-primary">
+                    {p.pointKind === "overflow"
+                      ? `+${p.overflowExtra} in ${formatAxisYearForLabel(p.axisYear)}`
+                      : p.sceneDescription}
+                  </span>
+                  <span className="overflow-tie-panel-item-secondary muted">
+                    {p.pointKind === "overflow"
+                      ? "More events this year"
+                      : (p.yearRaw ?? "—")}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : null}
+
+      {import.meta.env.DEV ? (
+        <p className="dev-server-hint muted" role="status">
+          <strong>Local dev</strong> — use the URL Vite prints (often{" "}
+          <code className="dev-server-hint-code">localhost:5173</code>; if that port
+          is busy, <code className="dev-server-hint-code">5174</code> is fine).
+          GitHub Pages (<code className="dev-server-hint-code">/Timeline/</code>)
+          only updates after a deploy.
+        </p>
+      ) : null}
     </div>
   );
 }

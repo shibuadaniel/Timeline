@@ -13,6 +13,21 @@
   margin: 0 0 0.35rem;
 }
 
+.dev-server-hint {
+  margin: 1.25rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  max-width: 40rem;
+}
+
+.dev-server-hint-code {
+  font-size: 0.85em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
 .disclaimer {
   display: flex;
   align-items: flex-start;
@@ -246,6 +261,136 @@
 
 .click-popup--no-link {
   cursor: default;
+}
+
+/* Overflow carousel: first row is prev | count | next; rest of card is full-width below */
+.click-popup--overflow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.click-popup--overflow > .popup-overflow-nav-btn {
+  flex: 0 0 auto;
+}
+
+.click-popup--overflow > .popup-overflow-nav-btn:first-of-type {
+  margin-top: 0.45rem;
+}
+
+.click-popup--overflow > .popup-overflow-nav-count {
+  flex: 1 1 auto;
+  text-align: center;
+  min-width: 0;
+}
+
+.click-popup--overflow > *:not(.popup-overflow-nav-btn):not(.popup-overflow-nav-count) {
+  flex-basis: 100%;
+}
+
+.popup-overflow-nav-count {
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+/* Icon-only control: fa-circle-arrow-* already draws the circle; no second ring from the button */
+.popup-overflow-nav-btn {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0.15rem;
+  border: none;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #0f172a;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.popup-overflow-nav-btn:hover:not(:disabled) {
+  color: #0284c7;
+  background: transparent;
+}
+
+.popup-overflow-nav-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.popup-overflow-nav-btn:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.overflow-tie-panel {
+  z-index: 25;
+  width: min(320px, calc(100% - 1rem));
+  cursor: default;
+  max-width: min(320px, calc(100% - 1rem));
+}
+
+.overflow-tie-panel-hint {
+  font-size: 0.72rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.35;
+}
+
+.overflow-tie-panel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.overflow-tie-panel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  width: 100%;
+  margin: 0;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: #f8fafc;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+  color: #0f172a;
+  box-sizing: border-box;
+}
+
+.overflow-tie-panel-item:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.overflow-tie-panel-item:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.overflow-tie-panel-item-primary {
+  font-size: 0.78rem;
+  font-weight: 600;
+  line-height: 1.3;
+  word-break: break-word;
+}
+
+.overflow-tie-panel-item-secondary {
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
+.timeline-overflow-dot:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
 .popup-url-unavailable {

@@ -10,6 +10,8 @@ export type SceneDTO = {
   sequence: number | null;
   locations: string[];
   onStage: string[];
+  /** From Notion checkbox; false/omitted when column or value absent. */
+  keyEvent: boolean;
 };
 
 type NotionPage = {
@@ -59,6 +61,13 @@ function numberVal(
   return prop.number ?? null;
 }
 
+function checkboxVal(
+  prop: { type: string; checkbox?: boolean } | undefined
+): boolean {
+  if (!prop || prop.type !== "checkbox") return false;
+  return Boolean(prop.checkbox);
+}
+
 function notionPageUrl(pageId: string): string {
   const hex = pageId.replaceAll("-", "");
   return `https://www.notion.so/${hex}`;
@@ -72,6 +81,7 @@ export function mapPageToScene(page: unknown): SceneDTO | null {
   const locProp = props[NOTION_PROPS.location];
   const stageProp = props[NOTION_PROPS.onStage];
   const seqProp = props[NOTION_PROPS.sequence];
+  const keyEventProp = props[NOTION_PROPS.keyEvent];
 
   const sceneDescription = titlePlain(
     titleProp as { type: string; title?: Array<{ plain_text: string }> }
@@ -101,6 +111,9 @@ export function mapPageToScene(page: unknown): SceneDTO | null {
     ),
     onStage: multiSelectNames(
       stageProp as { type: string; multi_select?: Array<{ name: string }> }
+    ),
+    keyEvent: checkboxVal(
+      keyEventProp as { type: string; checkbox?: boolean }
     ),
   };
 }

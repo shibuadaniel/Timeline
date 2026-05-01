@@ -6,4 +6,6 @@ export const NOTION_PROPS = {
   location: "Location",
   onStage: "On stage",
   sequence: "Sequence #",
+  /** Checkbox in Notion; omit from DB until the column exists. */
+  keyEvent: "Key event",
 } as const;
