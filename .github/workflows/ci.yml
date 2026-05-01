@@ -76,12 +76,23 @@ jobs:
             exit 1
           fi
 
+      # Prefer fresh Notion ingest; if it fails (API outage, limits, etc.), deploy the
+      # last committed public/data (manifest + latest + chunks) so Pages still updates.
       - name: Build public bundle (ingest + SPA)
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
           VITE_BASE_PATH: /Timeline/
-        run: npm run build:public
+        run: |
+          set -e
+          if npm run build:public; then
+            echo "Ingest and production build succeeded."
+          else
+            echo "::warning::build:public failed; redeploying SPA from committed public/data"
+            git restore public/data
+            git clean -fdx public/data
+            npm run build
+          fi
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
