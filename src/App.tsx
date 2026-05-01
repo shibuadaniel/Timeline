@@ -1149,7 +1149,7 @@ export default function App() {
                 if (!(t instanceof Element)) return;
                 if (t.closest(".popup-overflow-nav-btn")) return;
                 if (t.closest(".popup-overflow-nav-count")) return;
-                if (t.closest(".popup-source-open")) return;
+                if (t.closest(".tooltip-title-link")) return;
                 e.stopPropagation();
                 closeScenePopup();
               }}
@@ -1183,9 +1183,20 @@ export default function App() {
                   ))}
                 </div>
               </div>
-              <div className="tooltip-title">
-                {selectedSceneParts?.title || selectedDisplay.sceneDescription}
-              </div>
+              {selectedHasSourceUrl ? (
+                <a
+                  className="tooltip-title tooltip-title-link"
+                  href={selectedDisplay.sourceUrl!.trim()}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {selectedSceneParts?.title || selectedDisplay.sceneDescription}
+                </a>
+              ) : (
+                <div className="tooltip-title">
+                  {selectedSceneParts?.title || selectedDisplay.sceneDescription}
+                </div>
+              )}
               <div className="popup-line">
                 <i className="fa-solid fa-location-dot" aria-hidden="true" />{" "}
                 <span>
@@ -1202,21 +1213,6 @@ export default function App() {
                     : "—"}
                 </span>
               </div>
-              {selectedHasSourceUrl ? (
-                <div className="popup-line">
-                  <a
-                    className="popup-source-open"
-                    href={selectedDisplay.sourceUrl!.trim()}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fa-solid fa-arrow-up-right-from-square" aria-hidden />{" "}
-                    Open source
-                  </a>
-                </div>
-              ) : (
-                <div className="popup-url-unavailable muted">Not available</div>
-              )}
               {showPopupCarousel ? (
                 <>
                   <button

@@ -263,17 +263,6 @@
   cursor: default;
 }
 
-.popup-source-open {
-  cursor: pointer;
-  color: #0284c7;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.popup-source-open:hover {
-  text-decoration: underline;
-}
-
 /* Overflow carousel: first row is prev | count | next; rest of card is full-width below */
 .click-popup--overflow {
   display: flex;
@@ -404,14 +393,26 @@
   outline-offset: 2px;
 }
 
-.popup-url-unavailable {
-  margin-top: 0.35rem;
-  font-style: italic;
-}
-
 .tooltip-title {
   font-weight: 600;
   margin-bottom: 0.35rem;
+}
+
+a.tooltip-title-link {
+  display: block;
+  color: #0284c7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.tooltip-title-link:hover {
+  text-decoration: underline;
+}
+
+a.tooltip-title-link:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 2px;
 }
 
 /* Fixed-height slot for the image: full card width, clip overflow at bottom */
